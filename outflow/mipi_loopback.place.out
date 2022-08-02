@@ -1,0 +1,304 @@
+
+Efinix FPGA Placement and Routing.
+Version: 2021.2.323 
+Compiled: Dec 15 2021.
+
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+
+
+The Tool Is Based on VPR of University of Toronto,
+a free open source code under MIT license.
+
+
+Running Placement and Routing for Family "Trion", Device "T85F324" ...
+
+***** Beginning stage netlist pre-processing ... *****
+Successfully Read in Verific binary Netlist dump file "D:/MIPI_Loopback/mipi_loopback.vdb".
+***** Beginning VDB Netlist Checker ... *****
+VDB Netlist Checker took 0.0411342 seconds.
+	VDB Netlist Checker took 0.046875 seconds (approximately) in total CPU time.
+VDB Netlist Checker virtual memory usage: begin = 38.408 MB, end = 38.42 MB, delta = 0.012 MB
+	VDB Netlist Checker peak virtual memory usage = 78.412 MB
+VDB Netlist Checker resident set memory usage: begin = 46.988 MB, end = 47.232 MB, delta = 0.244 MB
+	VDB Netlist Checker peak resident set memory usage = 60.264 MB
+***** Ending VDB Netlist Checker ... *****
+Reading core interface constraints from 'D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv'.
+Successfully processed interface constraints file "D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv".
+Creating interface clock pin mipi_rx_cal_clk.
+Creating interface clock buffer mipi_rx_cal_clk~CLKBUF.
+Creating interface clock pin tx_esc_pll_CLKOUT0.
+Creating interface clock buffer tx_esc_pll_CLKOUT0~CLKBUF.
+Found 0 constant generator nets.
+Pass 0: Swept away 0 nets with no fanout.
+logical_block #124(my_mipi_rx_HSYNC[3]) has no fanout.
+Removing input.
+logical_block #125(my_mipi_rx_HSYNC[2]) has no fanout.
+Removing input.
+logical_block #126(my_mipi_rx_HSYNC[1]) has no fanout.
+Removing input.
+logical_block #127(my_mipi_rx_HSYNC[0]) has no fanout.
+Removing input.
+logical_block #128(my_mipi_rx_VSYNC[3]) has no fanout.
+Removing input.
+logical_block #129(my_mipi_rx_VSYNC[2]) has no fanout.
+Removing input.
+logical_block #130(my_mipi_rx_VSYNC[1]) has no fanout.
+Removing input.
+logical_block #202(my_mipi_rx_VC[1]) has no fanout.
+Removing input.
+logical_block #203(my_mipi_rx_VC[0]) has no fanout.
+Removing input.
+logical_block #226(my_mipi_rx_ULPS_CLK) has no fanout.
+Removing input.
+logical_block #227(my_mipi_rx_ULPS[3]) has no fanout.
+Removing input.
+logical_block #228(my_mipi_rx_ULPS[2]) has no fanout.
+Removing input.
+logical_block #229(my_mipi_rx_ULPS[1]) has no fanout.
+Removing input.
+logical_block #230(my_mipi_rx_ULPS[0]) has no fanout.
+Removing input.
+logical_block #231(bscan_DRCK) has no fanout.
+Removing input.
+logical_block #233(bscan_TMS) has no fanout.
+Removing input.
+logical_block #234(bscan_RUNTEST) has no fanout.
+Removing input.
+Pass 0: Swept away 17 blocks with no fanout.
+Pass 1: Swept away 0 nets with no fanout.
+Pass 1: Swept away 0 blocks with no fanout.
+Swept away 0 nets and 17 blocks in total.
+Removed 0 LUT buffers.
+Sweeped away 17 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "D:/MIPI_Loopback/mipi_loopback.vdb".
+Netlist pre-processing took 0.254996 seconds.
+	Netlist pre-processing took 0.25 seconds (approximately) in total CPU time.
+Netlist pre-processing virtual memory usage: begin = 11.932 MB, end = 50.796 MB, delta = 38.864 MB
+	Netlist pre-processing peak virtual memory usage = 78.412 MB
+Netlist pre-processing resident set memory usage: begin = 21.364 MB, end = 59.564 MB, delta = 38.2 MB
+	Netlist pre-processing peak resident set memory usage = 60.264 MB
+***** Ending stage netlist pre-processing *****
+***** Beginning stage pre-packing ... *****
+***** Ending stage pre-packing *****
+***** Beginning stage packing ... *****
+Generate proto netlist for file "D:/MIPI_Loopback/work_pnr\mipi_loopback.net_proto" took 0.009 seconds
+Creating IO constraints file 'D:/MIPI_Loopback/work_pnr\mipi_loopback.io_place'
+Packing took 0.0442747 seconds.
+	Packing took 0.046875 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 41.212 MB, end = 45.644 MB, delta = 4.432 MB
+	Packing peak virtual memory usage = 78.412 MB
+Packing resident set memory usage: begin = 50.34 MB, end = 54.784 MB, delta = 4.444 MB
+	Packing peak resident set memory usage = 60.264 MB
+***** Ending stage packing *****
+***** Beginning stage packed netlist loading ... *****
+Read proto netlist file D:/MIPI_Loopback/work_pnr\mipi_loopback.net_proto
+Read proto netlist for file "D:/MIPI_Loopback/work_pnr\mipi_loopback.net_proto" took 0.003 seconds
+Setup net and block data structure took 0.175 seconds
+Packed netlist loading took 0.196515 seconds.
+	Packed netlist loading took 0.1875 seconds (approximately) in total CPU time.
+Packed netlist loading virtual memory usage: begin = 45.644 MB, end = 111.136 MB, delta = 65.492 MB
+	Packed netlist loading peak virtual memory usage = 150.28 MB
+Packed netlist loading resident set memory usage: begin = 54.792 MB, end = 117.64 MB, delta = 62.848 MB
+	Packed netlist loading peak resident set memory usage = 156.672 MB
+***** Ending stage packed netlist loading *****
+***** Beginning stage pre-placement ... *****
+
+***** Ending stage pre-placement *****
+WARNING(1): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[3]" does not correspond to any ports.
+WARNING(2): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[2]" does not correspond to any ports.
+WARNING(3): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[1]" does not correspond to any ports.
+WARNING(4): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[3]" does not correspond to any ports.
+WARNING(5): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[2]" does not correspond to any ports.
+WARNING(6): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[1]" does not correspond to any ports.
+WARNING(7): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[3]" does not correspond to any ports.
+WARNING(8): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[2]" does not correspond to any ports.
+WARNING(9): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[1]" does not correspond to any ports.
+WARNING(10): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[0]" does not correspond to any ports.
+WARNING(11): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(12): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[3]" does not correspond to any ports.
+WARNING(13): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[2]" does not correspond to any ports.
+WARNING(14): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[1]" does not correspond to any ports.
+WARNING(15): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[0]" does not correspond to any ports.
+WARNING(16): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(17): [SDC line 103] Specified get_ports name or regular expression "my_mipi_rx_ULPS_CLK" does not correspond to any ports.
+WARNING(18): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(19): [SDC line 104] Specified get_ports name or regular expression "my_mipi_rx_ULPS_CLK" does not correspond to any ports.
+WARNING(20): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(21): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[3]" does not correspond to any ports.
+WARNING(22): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[2]" does not correspond to any ports.
+WARNING(23): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[1]" does not correspond to any ports.
+WARNING(24): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[0]" does not correspond to any ports.
+WARNING(25): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(26): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[3]" does not correspond to any ports.
+WARNING(27): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[2]" does not correspond to any ports.
+WARNING(28): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[1]" does not correspond to any ports.
+WARNING(29): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[0]" does not correspond to any ports.
+WARNING(30): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(31): [SDC line 143] Specified get_ports name or regular expression "bscan_RUNTEST" does not correspond to any ports.
+WARNING(32): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(33): [SDC line 144] Specified get_ports name or regular expression "bscan_RUNTEST" does not correspond to any ports.
+WARNING(34): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(35): [SDC line 139] Input bscan_CAPTURE is associated with an unconstrained clock bscan_TCK.
+WARNING(36): [SDC line 140] Input bscan_CAPTURE is associated with an unconstrained clock bscan_TCK.
+WARNING(37): [SDC line 141] Input bscan_RESET is associated with an unconstrained clock bscan_TCK.
+WARNING(38): [SDC line 142] Input bscan_RESET is associated with an unconstrained clock bscan_TCK.
+WARNING(39): [SDC line 145] Input bscan_SEL is associated with an unconstrained clock bscan_TCK.
+WARNING(40): [SDC line 146] Input bscan_SEL is associated with an unconstrained clock bscan_TCK.
+WARNING(41): [SDC line 147] Input bscan_UPDATE is associated with an unconstrained clock bscan_TCK.
+WARNING(42): [SDC line 148] Input bscan_UPDATE is associated with an unconstrained clock bscan_TCK.
+WARNING(43): [SDC line 149] Input bscan_SHIFT is associated with an unconstrained clock bscan_TCK.
+WARNING(44): [SDC line 150] Input bscan_SHIFT is associated with an unconstrained clock bscan_TCK.
+WARNING(45): Ignoring input constraints that were set with invalid clock.
+WARNING(46): [SDC line 137] Output bscan_TDO is associated with an unconstrained clock bscan_TCK.
+WARNING(47): [SDC line 138] Output bscan_TDO is associated with an unconstrained clock bscan_TCK.
+WARNING(48): Ignoring output constraints that were set with invalid clock.
+
+SDC file 'D:/MIPI_Loopback/mipi_loopback.sdc' parsed successfully.
+6 clocks (including virtual clocks), 176 inputs and 182 outputs were constrained.
+
+WARNING(49): There are 207 pins with no clock constraint driven by root clock: bscan_TCK
+***** Beginning stage initial placement ... *****
+Reading core interface constraints from 'D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv'.
+Successfully processed interface constraints file "D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv".
+Writing IO placement constraints to 'D:/MIPI_Loopback/outflow\mipi_loopback.interface.io'.
+
+Reading placement constraints from 'D:/MIPI_Loopback/outflow\mipi_loopback.interface.io'.
+
+Reading placement constraints from 'D:/MIPI_Loopback/work_pnr\mipi_loopback.io_place'.
+WARNING(50): Clock driver bscan_TCK should use the dedicated clock pad.
+***** Ending stage initial placement *****
+***** Beginning stage placement ... *****
+NumRegions 1
+Starting Global Placer ...
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL Worst Slack (ps) Convergence
+ ----------     -------  --------------     -------
+          1      118998           20282         1.0%
+          2       18326           20282         8.8%
+          3       11031           18767        19.4%
+          4        9274           18930        27.6%
+          5        9264           18707        33.2%
+          6       10351           18398        37.6%
+          7       11026           18993        41.1%
+          8       11598           18657        46.5%
+          9       11103           17052        53.7%
+         10       10514           16660        57.0%
+         11       10592           16401        59.5%
+         12       10279           16398        61.9%
+         13       10348           16190        63.5%
+         14        9993           16221        63.7%
+         15        9133           16151        65.0%
+         16        8712           16150        66.4%
+         17        8441           16357        68.1%
+         18        8367           16559        69.4%
+         19        8609           16603        70.4%
+         20        8452           16144        72.4%
+         21        8423           16144        73.9%
+         22        8263           16143        75.4%
+         23        8273           16131        76.8%
+         24        8079           16217        78.4%
+         25        7929           16360        79.0%
+         26        7780           16360        80.2%
+         27        7764           16305        80.8%
+         28        7724           16305        81.4%
+         29        7683           16305        82.0%
+         30        7567           16308        83.2%
+         31        7874           16308        84.2%
+         32        7600           16318        86.3%
+         33        7434           16318        88.2%
+         34        7507           16318        89.0%
+         35        7476           16611        89.5%
+         36        7383           16611        90.1%
+         37        7423           16611        90.6%
+         38        7320           16611        91.6%
+         39        7283           16611        97.5%
+         40        7159           16611        99.4%
+         41        7183           16611        99.7%
+         42        7238           16611        99.9%
+         43        7251           16611        99.9%
+         44        7275           16611        99.9%
+         45        7301           16611        99.9%
+         46        7312           16611        99.9%
+Starting Annealer
+
+ ----------     -------  --------------     -------
+  Iteration       WHPWL  Delay Max (ps)     R Limit
+ ----------     -------  --------------     -------
+          0        7159            8405        30.0
+          1       14671            8144        30.0
+          2       26014            7542        30.0
+          3       26499            7270        30.0
+          4       25217            7063        30.0
+          5       24181            7029        30.0
+          6       23714            6990        30.0
+          7       22693            7052        30.0
+          8       21753            6990        30.0
+          9       21179            6797        30.0
+         10       20526            6892        30.0
+         11       19730            6785        30.0
+         12       19371            6844        30.0
+         13       18741            6782        30.0
+         14       18288            6782        30.0
+         15       17848            6692        30.0
+         16       17104            6635        30.0
+         17       16554            6692        30.0
+         18       16034            6679        30.0
+         19       15340            6679        30.0
+         20       14756            6635        30.0
+         21       14409            6563        30.0
+         22       13980            6418        30.0
+         23       13589            6356        30.0
+         24       13091            6356        30.0
+         25       12680            6418        30.0
+         26       12229            6418        30.0
+         27       11911            6356        30.0
+         28       11714            6356        30.0
+         29       11288            6418        30.0
+         30       11080            6356        30.0
+         31       10754            6418        30.0
+         32       10525            6356        30.0
+         33       10187            6356        30.0
+         34        9978            6418        30.0
+         35        9700            6356        30.0
+         36        9515            6212        30.0
+         37        9295            6341        30.0
+         38        9023            6205        30.0
+         39        8833            6042        30.0
+         40        8734            5998        30.0
+         41        8649            5998        30.0
+         42        8424            6042        30.0
+         43        8257            6042        30.0
+         44        8100            5998        30.0
+         45        7914            5998        30.0
+         46        7337            5997        29.9
+         47        6954            5997        27.9
+Placement successful: 5132 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0487833 at 338,643
+Congestion-weighted HPWL per net: 1.10806
+
+Reading placement constraints from 'D:/MIPI_Loopback/outflow/mipi_loopback.qplace'.
+[TimingCost::InitializeTimingData]
+Finished Realigning Types (218 blocks needed type change)
+WARNING(51): There are 207 pins with no clock constraint driven by root clock: bscan_TCK
+[TimingCost::InitializeTimingData]
+
+Completed placement consistency check successfully.
+
+Placement estimated critical path delay: 5.87703 ns
+Successfully created FPGA place file 'D:/MIPI_Loopback/outflow/mipi_loopback.place'
+Placement took 19.6634 seconds.
+	Placement took 28.4062 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 111.136 MB, end = 175.984 MB, delta = 64.848 MB
+	Placement peak virtual memory usage = 1152.75 MB
+Placement resident set memory usage: begin = 117.656 MB, end = 175.448 MB, delta = 57.792 MB
+	Placement peak resident set memory usage = 1133.83 MB
+***** Ending stage placement *****

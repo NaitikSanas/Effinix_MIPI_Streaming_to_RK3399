@@ -1,0 +1,24 @@
+
+Efinix FPGA Bitstream Generator.
+Version: 2021.2.323 
+Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
+
+Compiled: Dec 15 2021.
+
+Using source file "D:/MIPI_Loopback/work_pnr/mipi_loopback.lbf"
+Generating HEX programming file for device "T85F324", family "Trion"
+Using periphery source file "D:/MIPI_Loopback/outflow/mipi_loopback.lpf"
+Generating bit file: "D:/MIPI_Loopback/outflow/mipi_loopback.bit"
+HEX Generation Options Summary:
+	Listing options specified to bitstream generation:
+	spi_low_power_mode                       = on
+	oscillator_clock_divider                 = DIV8
+	io_weak_pullup                           = on
+	release_tri_then_reset                   = on
+Finished generating "D:/MIPI_Loopback/outflow/mipi_loopback.hex"
+Efinity Bitstream Generator took 6.6056 seconds.
+	Efinity Bitstream Generator took 5.82812 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 2.768 MB, end = 5.844 MB, delta = 3.076 MB
+	Efinity Bitstream Generator peak virtual memory usage = 223.396 MB
+Efinity Bitstream Generator resident set memory usage: begin = 8.144 MB, end = 13.188 MB, delta = 5.044 MB
+	Efinity Bitstream Generator peak resident set memory usage = 197.596 MB
