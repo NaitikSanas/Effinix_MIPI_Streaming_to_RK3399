@@ -775,3 +775,324 @@
 // Aug 02, 2022 17:12:41
 ///////////////////////////////////
 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 02, 2022 18:00:37
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 02, 2022 18:05:46
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot index into non-array type wire for 'buffer' (VERI-1011) (D:/MIPI_Loopback\mipi_loopback_top.v:387)
+[EFX-0010 VERI-ERROR] cannot index into non-array type wire for 'buffer' (VERI-1011) (D:/MIPI_Loopback\mipi_loopback_top.v:388)
+[EFX-0010 VERI-ERROR] 'divider' is not declared (VERI-1128) (D:/MIPI_Loopback\mipi_loopback_top.v:390)
+[EFX-0010 VERI-ERROR] 'divider' is not declared (VERI-1128) (D:/MIPI_Loopback\mipi_loopback_top.v:391)
+[EFX-0010 VERI-ERROR] 'divider' is not declared (VERI-1128) (D:/MIPI_Loopback\mipi_loopback_top.v:392)
+[EFX-0010 VERI-ERROR] module 'mipi_loopback_top' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\mipi_loopback_top.v:780)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 02, 2022 18:29:45
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] extra comma in port association list is not allowed (VERI-2523) (D:/MIPI_Loopback\mipi_loopback_top.v:309)
+[EFX-0010 VERI-ERROR] module 'mipi_loopback_top' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\mipi_loopback_top.v:708)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 02, 2022 18:30:10
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] instantiating unknown module 'true_dual_port_ram' (VERI-1063) (D:/MIPI_Loopback\mipi_loopback_top.v:311)
+[EFX-0021 ERROR] Verific elaboration of module 'mipi_loopback_top' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 02, 2022 18:31:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 02, 2022 18:31:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 02, 2022 19:01:18
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 10:31:18
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 10:36:15
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 11:14:50
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] illegal character ',' in hexadecimal number 4848'h00, (VERI-1043) 
+[EFX-0021 ERROR] Verific elaboration of module 'mipi_loopback_top' failed.
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 11:15:25
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 11:39:43
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'hcount' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:141)
+[EFX-0010 VERI-ERROR] 'i' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:169)
+[EFX-0010 VERI-ERROR] 'hcount' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:176)
+[EFX-0010 VERI-ERROR] 'hcount' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:177)
+[EFX-0010 VERI-ERROR] 'hcount' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:178)
+[EFX-0010 VERI-ERROR] module 'video_gen' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\video_gen.v:181)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 11:42:36
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'hcount' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:141)
+[EFX-0010 VERI-ERROR] 'i' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:169)
+[EFX-0010 VERI-ERROR] 'buffer1' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:176)
+[EFX-0010 VERI-ERROR] 'buffer1' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:177)
+[EFX-0010 VERI-ERROR] 'buffer1' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:178)
+[EFX-0010 VERI-ERROR] module 'video_gen' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\video_gen.v:181)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 11:42:55
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'buffer1' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:176)
+[EFX-0010 VERI-ERROR] 'buffer1' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:177)
+[EFX-0010 VERI-ERROR] 'buffer1' is not declared (VERI-1128) (D:/MIPI_Loopback\video_gen.v:178)
+[EFX-0010 VERI-ERROR] module 'video_gen' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\video_gen.v:181)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 11:43:20
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] cannot index into non-array type wire for 'buffer1' (VERI-1011) (D:/MIPI_Loopback\video_gen.v:177)
+[EFX-0010 VERI-ERROR] cannot index into non-array type wire for 'buffer1' (VERI-1011) (D:/MIPI_Loopback\video_gen.v:178)
+[EFX-0010 VERI-ERROR] cannot index into non-array type wire for 'buffer1' (VERI-1011) (D:/MIPI_Loopback\video_gen.v:179)
+[EFX-0010 VERI-ERROR] module 'video_gen' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\video_gen.v:182)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 11:43:37
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:07:51
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:14:30
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:25:12
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'reg' (VERI-1137) (D:/MIPI_Loopback\video_gen.v:15)
+[EFX-0010 VERI-ERROR] Verilog 2000 keyword 'reg' used in incorrect context (VERI-2344) (D:/MIPI_Loopback\video_gen.v:15)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:25:22
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'reg' (VERI-1137) (D:/MIPI_Loopback\video_gen.v:15)
+[EFX-0010 VERI-ERROR] Verilog 2000 keyword 'reg' used in incorrect context (VERI-2344) (D:/MIPI_Loopback\video_gen.v:15)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:25:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:32:53
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '=' (VERI-1137) (D:/MIPI_Loopback\video_gen.v:142)
+[EFX-0010 VERI-ERROR] module 'video_gen' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\video_gen.v:183)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:36:27
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:36:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:40:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:45:06
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:50:04
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near 'end' (VERI-1137) (D:/MIPI_Loopback\video_gen.v:150)
+[EFX-0010 VERI-ERROR] Verilog 2000 keyword 'end' used in incorrect context (VERI-2344) (D:/MIPI_Loopback\video_gen.v:150)
+[EFX-0010 VERI-ERROR] module 'video_gen' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\video_gen.v:185)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:50:13
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:54:16
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 12:58:21
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 15:18:14
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 15:29:39
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 15:39:11
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 15:45:01
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 15:56:52
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 16:22:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 16:33:04
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 16:49:14
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 16:57:46
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 17:11:57
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 17:15:00
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 17:20:52
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near ',' (VERI-1137) (D:/MIPI_Loopback\mipi_loopback_top.v:343)
+[EFX-0010 VERI-ERROR] module 'mipi_loopback_top' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\mipi_loopback_top.v:380)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 17:21:13
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] syntax error near '}' (VERI-1137) (D:/MIPI_Loopback\mipi_loopback_top.v:343)
+[EFX-0010 VERI-ERROR] module 'mipi_loopback_top' is ignored due to previous errors (VERI-1072) (D:/MIPI_Loopback\mipi_loopback_top.v:380)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 17:21:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 03, 2022 18:11:42
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 06, 2022 12:35:07
+///////////////////////////////////
+

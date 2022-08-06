@@ -16,9 +16,9 @@ HEX Generation Options Summary:
 	io_weak_pullup                           = on
 	release_tri_then_reset                   = on
 Finished generating "D:/MIPI_Loopback/outflow/mipi_loopback.hex"
-Efinity Bitstream Generator took 6.6056 seconds.
+Efinity Bitstream Generator took 6.83764 seconds.
 	Efinity Bitstream Generator took 5.82812 seconds (approximately) in total CPU time.
-Efinity Bitstream Generator virtual memory usage: begin = 2.768 MB, end = 5.844 MB, delta = 3.076 MB
-	Efinity Bitstream Generator peak virtual memory usage = 223.396 MB
-Efinity Bitstream Generator resident set memory usage: begin = 8.144 MB, end = 13.188 MB, delta = 5.044 MB
-	Efinity Bitstream Generator peak resident set memory usage = 197.596 MB
+Efinity Bitstream Generator virtual memory usage: begin = 2.544 MB, end = 7.168 MB, delta = 4.624 MB
+	Efinity Bitstream Generator peak virtual memory usage = 223.152 MB
+Efinity Bitstream Generator resident set memory usage: begin = 7.904 MB, end = 13.048 MB, delta = 5.144 MB
+	Efinity Bitstream Generator peak resident set memory usage = 197.372 MB

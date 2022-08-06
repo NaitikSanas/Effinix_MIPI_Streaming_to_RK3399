@@ -1,7 +1,7 @@
 
 Efinix Static Timing Analysis Report
 Version: 2021.2.323 
-Date: Tue Aug 02 17:14:04 2022
+Date: Sat Aug 06 12:36:15 2022
 
 Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
  
@@ -31,17 +31,13 @@ tx_vga_clk                 25.000          40.000         {0.000 12.500}        
 tx_pixel_clk              100.000          10.000         {0.000 50.000}        tx_pixel_clk
 mipi_rx_cal_clk            10.000         100.000         {0.000 5.000}        mipi_rx_cal_clk
 tx_esc_pll_CLKOUT0         50.000          20.000         {0.000 25.000}        tx_esc_pll_CLKOUT0
-rx_vga_clk                 25.000          40.000         {0.000 12.500}        rx_vga_clk
 rx_pixel_clk              100.000          10.000         {0.000 50.000}        rx_pixel_clk
 
 Maximum possible analyzed clocks frequency
 Clock Name            Period (ns)   Frequency (MHz)   Edge
-tx_vga_clk                  7.788         128.396     (R-R)
-tx_pixel_clk                3.396         294.441     (R-R)
-rx_vga_clk                  8.912         112.206     (R-R)
-rx_pixel_clk                2.490         401.687     (R-R)
+tx_vga_clk                  7.578         131.958     (R-R)
 
-Geomean max period: 4.922
+Geomean max period: 7.578
 
 ---------- Clock Frequency Summary (end) ---------------
 
@@ -49,23 +45,13 @@ Geomean max period: 4.922
 
 Setup (Max) Clock Relationship
 Launch Clock        Capture Clock       Constraint (ns)   Slack (ns)    Edge
-tx_vga_clk           tx_vga_clk               25.000        17.212     (R-R)
-tx_vga_clk           tx_pixel_clk             25.000        22.849     (R-R)
-tx_pixel_clk         tx_pixel_clk            100.000        96.604     (R-R)
-rx_vga_clk           rx_vga_clk               25.000        16.088     (R-R)
-rx_vga_clk           rx_pixel_clk             25.000        21.595     (R-R)
-rx_pixel_clk         rx_vga_clk               25.000        17.570     (R-R)
-rx_pixel_clk         rx_pixel_clk            100.000        97.511     (R-R)
+tx_vga_clk           tx_vga_clk               25.000        17.422     (R-R)
+tx_vga_clk           tx_pixel_clk             25.000        17.969     (R-R)
 
 Hold (Min) Clock Relationship
 Launch Clock        Capture Clock       Constraint (ns)   Slack (ns)    Edge
 tx_vga_clk           tx_vga_clk                0.000         0.307     (R-R)
-tx_vga_clk           tx_pixel_clk              0.000         0.329     (R-R)
-tx_pixel_clk         tx_pixel_clk              0.000         1.351     (R-R)
-rx_vga_clk           rx_vga_clk                0.000         0.307     (R-R)
-rx_vga_clk           rx_pixel_clk              0.000         1.682     (R-R)
-rx_pixel_clk         rx_vga_clk                0.000         0.307     (R-R)
-rx_pixel_clk         rx_pixel_clk              0.000         0.307     (R-R)
+tx_vga_clk           tx_pixel_clk              0.000         0.558     (R-R)
 
 NOTE: Values are in nanoseconds.
 
@@ -75,27 +61,27 @@ NOTE: Values are in nanoseconds.
 
 
 ######################################################################
-Path Detail Report (rx_vga_clk vs rx_vga_clk)
+Path Detail Report (tx_vga_clk vs tx_vga_clk)
 ######################################################################
 
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin    : fifo_in0/memory_in0/mem__D$b12|RCLK
-Path End      : compare_cnt[13]~FF|D
-Launch Clock  : rx_vga_clk (RISE)
-Capture Clock : rx_vga_clk (RISE)
-Slack         : 16.088  (required time - arrival time)
-Delay         : 5.854
+Path Begin    : patgen/v_count[13]~FF|CLK
+Path End      : patgen/y[8]~FF|SR
+Launch Clock  : tx_vga_clk (RISE)
+Capture Clock : tx_vga_clk (RISE)
+Slack         : 17.422  (required time - arrival time)
+Delay         : 6.923
 
 Logic Level : 4
-Non-global nets on path : 4
+Non-global nets on path : 5
 Global nets on path     : 0
 
 Launch Clock Path Delay        :  5.310
-+ Clock To Q + Data Path Delay :  8.792
++ Clock To Q + Data Path Delay :  7.458
 --------------------------------------------
-End-of-path arrival time       : 14.102
+End-of-path arrival time       : 12.768
 
 Constraint                     : 25.000
 + Capture Clock Path Delay     :  5.310
@@ -105,62 +91,148 @@ End-of-path required time      : 30.190
 
 
 Launch Clock Path
-pin name                               model name     delay (ns)   cumulative delay (ns)    pins on net   location
-===================================================================================================================
- rx_vga_clk                             inpad            0.000                  0.000           2          (338,322)
- rx_vga_clk                             inpad            0.200                  0.200           2          (338,322)
- rx_vga_clk                             io               0.000                  0.200           2          (338,322)
+pin name                     model name    delay (ns)   cumulative delay (ns)    pins on net   location
+========================================================================================================
+ tx_vga_clk                   inpad           0.000                  0.000           2          (338,318)
+ tx_vga_clk                   inpad           0.200                  0.200           2          (338,318)
+ tx_vga_clk                   io              0.000                  0.200           2          (338,318)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in                        gbuf_block       0.320                  0.520           2          (337,322)
- CLKBUF__3|I                            gbuf             4.790                  5.310           2          (337,322)
- CLKBUF__3|O                            gbuf             0.000                  5.310        4297          (337,322)
- CLKBUF__3|clkout                       gbuf_block       0.000                  5.310        4297          (337,322)
- fifo_in0/memory_in0/mem__D$b12|RCLK    ram_4096x20      0.000                  5.310        4297          (327,622)
+ CLKBUF__0|IO_in              gbuf_block      0.320                  0.520           2          (337,318)
+ CLKBUF__0|I                  gbuf            4.790                  5.310           2          (337,318)
+ CLKBUF__0|O                  gbuf            0.000                  5.310          58          (337,318)
+ CLKBUF__0|clkout             gbuf_block      0.000                  5.310          58          (337,318)
+ patgen/v_count[13]~FF|CLK    ff              0.000                  5.310          58          (308,599)
 
 Data Path
-pin name                                    model name     delay (ns)   cumulative delay (ns)    pins on net   location
-========================================================================================================================
- fifo_in0/memory_in0/mem__D$b12|RDATA[10]    ram_4096x20       2.820                  2.820           2          (327,622)
- fifo_in0/memory_in0/mem__D$b12|O[10]        memory            1.480                  4.300           2          (327,622)
+pin name                       model name    delay (ns)   cumulative delay (ns)    pins on net   location
+==========================================================================================================
+ patgen/v_count[13]~FF|Q        ff               0.282                  0.282           4          (308,599)
+ patgen/v_count[13]~FF|O_seq    eft              0.774                  1.056           4          (308,599)
    Routing elements:  
-     Manhattan distance of X:13, Y:30
- LUT__15419|I[0]                             eft               0.267                  4.567           2          (314,592)
- LUT__15419|in[0]                            lut               0.000                  4.567           2          (314,592)
- LUT__15419|out                              lut               0.000                  4.567           2          (314,592)
- LUT__15419|O                                eft               0.341                  4.908           2          (314,592)
+     Manhattan distance of X:1, Y:3
+ LUT__884|I[0]                  efl              0.251                  1.306           4          (307,596)
+ LUT__884|in[0]                 lut              0.000                  1.307           4          (307,596)
+ LUT__884|out                   lut              0.000                  1.307           2          (307,596)
+ LUT__884|O                     efl              0.337                  1.643           2          (307,596)
    Routing elements:  
-     Manhattan distance of X:2, Y:0
- LUT__15420|I[3]                             eft               0.116                  5.024           2          (316,592)
- LUT__15420|in[3]                            lut               0.000                  5.024           2          (316,592)
- LUT__15420|out                              lut               0.000                  5.024           2          (316,592)
- LUT__15420|O                                eft               1.392                  6.416           2          (316,592)
+     Manhattan distance of X:0, Y:1
+ LUT__885|I[3]                  efl              0.115                  1.759           2          (307,595)
+ LUT__885|in[3]                 lut              0.000                  1.759           2          (307,595)
+ LUT__885|out                   lut              0.000                  1.759           5          (307,595)
+ LUT__885|O                     efl              0.903                  2.662           5          (307,595)
    Routing elements:  
-     Manhattan distance of X:0, Y:9
- LUT__15425|I[0]                             eft               0.267                  6.683           2          (316,601)
- LUT__15425|in[0]                            lut               0.000                  6.683           2          (316,601)
- LUT__15425|out                              lut               0.000                  6.683          21          (316,601)
- LUT__15425|O                                eft               1.768                  8.451          21          (316,601)
+     Manhattan distance of X:9, Y:17
+ LUT__926|I[0]                  eft              0.267                  2.929           5          (316,612)
+ LUT__926|in[0]                 lut              0.000                  2.929           5          (316,612)
+ LUT__926|out                   lut              0.000                  2.929           2          (316,612)
+ LUT__926|O                     eft              0.336                  3.265           2          (316,612)
    Routing elements:  
-     Manhattan distance of X:0, Y:37
- compare_cnt[13]~FF|I[1]                     eft               0.223                  8.674          21          (316,564)
- LUT__15764|in[1]                            lut               0.000                  8.674          21          (316,564)
- LUT__15764|out                              lut               0.000                  8.674           2          (316,564)
- compare_cnt[13]~FF|D                        ff                0.118                  8.792           2          (316,564)
+     Manhattan distance of X:0, Y:2
+ LUT__927|I[0]                  eft              0.267                  3.532           2          (316,614)
+ LUT__927|in[0]                 lut              0.000                  3.532           2          (316,614)
+ LUT__927|out                   lut              0.000                  3.532          10          (316,614)
+ LUT__927|O                     eft              3.673                  7.205          10          (316,614)
+   Routing elements:  
+     Manhattan distance of X:2, Y:2
+ patgen/y[8]~FF|SR              ff               0.253                  7.458          10          (318,612)
 
 Capture Clock Path
-pin name                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=====================================================================================================
- rx_vga_clk                inpad           0.000                  0.000           2          (338,322)
- rx_vga_clk                inpad           0.200                  0.200           2          (338,322)
- rx_vga_clk                io              0.000                  0.200           2          (338,322)
+pin name              model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=================================================================================================
+ tx_vga_clk            inpad           0.000                  0.000           2          (338,318)
+ tx_vga_clk            inpad           0.200                  0.200           2          (338,318)
+ tx_vga_clk            io              0.000                  0.200           2          (338,318)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in           gbuf_block      0.320                  0.520           2          (337,322)
- CLKBUF__3|I               gbuf            4.790                  5.310           2          (337,322)
- CLKBUF__3|O               gbuf            0.000                  5.310        4297          (337,322)
- CLKBUF__3|clkout          gbuf_block      0.000                  5.310        4297          (337,322)
- compare_cnt[13]~FF|CLK    ff              0.000                  5.310        4297          (316,564)
+ CLKBUF__0|IO_in       gbuf_block      0.320                  0.520           2          (337,318)
+ CLKBUF__0|I           gbuf            4.790                  5.310           2          (337,318)
+ CLKBUF__0|O           gbuf            0.000                  5.310          58          (337,318)
+ CLKBUF__0|clkout      gbuf_block      0.000                  5.310          58          (337,318)
+ patgen/y[8]~FF|CLK    ff              0.000                  5.310          58          (318,612)
+
+######################################################################
+Path Detail Report (tx_vga_clk vs tx_pixel_clk)
+######################################################################
+
+
+++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+Path Begin    : patgen/y[5]~FF|CLK
+Path End      : my_mipi_tx_DATA[33]
+Launch Clock  : tx_vga_clk (RISE)
+Capture Clock : tx_pixel_clk (RISE)
+Slack         : 17.969  (required time - arrival time)
+Delay         : 5.046
+
+Logic Level : 4
+Non-global nets on path : 5
+Global nets on path     : 0
+
+Launch Clock Path Delay        :  5.310
++ Clock To Q + Data Path Delay :  5.328
+--------------------------------------------
+End-of-path arrival time       : 10.638
+
+Constraint                     : 25.000
++ Capture Clock Path Delay     :  0.000
+- Clock Uncertainty            :  0.120
+- Output Delay                 : -3.727
+--------------------------------------------
+End-of-path required time      : 28.607
+
+
+Launch Clock Path
+pin name              model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=================================================================================================
+ tx_vga_clk            inpad           0.000                  0.000           2          (338,318)
+ tx_vga_clk            inpad           0.200                  0.200           2          (338,318)
+ tx_vga_clk            io              0.000                  0.200           2          (338,318)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in       gbuf_block      0.320                  0.520           2          (337,318)
+ CLKBUF__0|I           gbuf            4.790                  5.310           2          (337,318)
+ CLKBUF__0|O           gbuf            0.000                  5.310          58          (337,318)
+ CLKBUF__0|clkout      gbuf_block      0.000                  5.310          58          (337,318)
+ patgen/y[5]~FF|CLK    ff              0.000                  5.310          58          (320,623)
+
+Data Path
+pin name                model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===================================================================================================
+ patgen/y[5]~FF|Q        ff               0.282                  0.282           2          (320,623)
+ patgen/y[5]~FF|O_seq    eft              0.341                  0.622           2          (320,623)
+   Routing elements:  
+     Manhattan distance of X:3, Y:0
+ LUT__860|I[1]           efl              0.222                  0.845           2          (323,623)
+ LUT__860|in[1]          lut              0.000                  0.845           2          (323,623)
+ LUT__860|out            lut              0.000                  0.845           3          (323,623)
+ LUT__860|O              efl              0.923                  1.768           3          (323,623)
+   Routing elements:  
+     Manhattan distance of X:5, Y:0
+ LUT__861|I[1]           eft              0.223                  1.991           3          (318,623)
+ LUT__861|in[1]          lut              0.000                  1.991           3          (318,623)
+ LUT__861|out            lut              0.000                  1.991           2          (318,623)
+ LUT__861|O              eft              0.913                  2.904           2          (318,623)
+   Routing elements:  
+     Manhattan distance of X:0, Y:20
+ LUT__864|I[1]           eft              0.223                  3.128           2          (318,603)
+ LUT__864|in[1]          lut              0.000                  3.128           2          (318,603)
+ LUT__864|out            lut              0.000                  3.128          10          (318,603)
+ LUT__864|O              eft              1.230                  4.357          10          (318,603)
+   Routing elements:  
+     Manhattan distance of X:1, Y:2
+ LUT__869|I[1]           efl              0.222                  4.580          10          (317,605)
+ LUT__869|in[1]          lut              0.000                  4.580          10          (317,605)
+ LUT__869|out            lut              0.000                  4.580           2          (317,605)
+ LUT__869|O              efl              0.548                  5.128           2          (317,605)
+   Routing elements:  
+     Manhattan distance of X:21, Y:0
+ my_mipi_tx_DATA[33]     io               0.200                  5.328           2          (338,605)
+
+---------- Path Details for Max Critical Paths (end) ---------------
+
+---------- 4. Path Details for Min Critical Paths (begin) ----------
+
 
 ######################################################################
 Path Detail Report (tx_vga_clk vs tx_vga_clk)
@@ -169,89 +241,64 @@ Path Detail Report (tx_vga_clk vs tx_vga_clk)
 
 ++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-Path Begin    : patgen/h_count[9]~FF|CLK
-Path End      : patgen/h_count[8]~FF|SR
+Path Begin    : patgen/h_count[0]_2~FF|CLK
+Path End      : patgen/h_count[0]_2~FF|D
 Launch Clock  : tx_vga_clk (RISE)
 Capture Clock : tx_vga_clk (RISE)
-Slack         : 17.212  (required time - arrival time)
-Delay         : 7.133
+Slack         : 0.307  (arrival time - required time)
+Delay         : 0.226
 
-Logic Level : 4
-Non-global nets on path : 5
+Logic Level : 0
+Non-global nets on path : 1
 Global nets on path     : 0
 
-Launch Clock Path Delay        :  5.310
-+ Clock To Q + Data Path Delay :  7.668
+Launch Clock Path Delay        :  2.655
++ Clock To Q + Data Path Delay :  0.367
 --------------------------------------------
-End-of-path arrival time       : 12.978
+End-of-path arrival time       :  3.022
 
-Constraint                     : 25.000
-+ Capture Clock Path Delay     :  5.310
-- Clock Uncertainty            :  0.120
+Constraint                     :  0.000
++ Capture Clock Path Delay     :  2.655
++ Clock Uncertainty            :  0.060
 --------------------------------------------
-End-of-path required time      : 30.190
+End-of-path required time      :  2.715
 
 
 Launch Clock Path
-pin name                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=======================================================================================================
- tx_vga_clk                  inpad           0.000                  0.000           2          (338,318)
- tx_vga_clk                  inpad           0.200                  0.200           2          (338,318)
- tx_vga_clk                  io              0.000                  0.200           2          (338,318)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in             gbuf_block      0.320                  0.520           2          (337,318)
- CLKBUF__0|I                 gbuf            4.790                  5.310           2          (337,318)
- CLKBUF__0|O                 gbuf            0.000                  5.310          60          (337,318)
- CLKBUF__0|clkout            gbuf_block      0.000                  5.310          60          (337,318)
- patgen/h_count[9]~FF|CLK    ff              0.000                  5.310          60          (308,632)
-
-Data Path
 pin name                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
 =========================================================================================================
- patgen/h_count[9]~FF|Q        ff               0.282                  0.282           5          (308,632)
- patgen/h_count[9]~FF|O_seq    eft              1.946                  2.228           5          (308,632)
-   Routing elements:   feedthru(1)
-     Manhattan distance of X:2, Y:1
- LUT__15379|I[3]               eft              0.116                  2.344           5          (306,633)
- LUT__15379|in[3]              lut              0.000                  2.344           5          (306,633)
- LUT__15379|out                lut              0.000                  2.344           6          (306,633)
- LUT__15379|O                  eft              0.349                  2.693           6          (306,633)
-   Routing elements:  
-     Manhattan distance of X:0, Y:3
- LUT__15388|I[2]               eft              0.161                  2.854           6          (306,636)
- LUT__15388|in[2]              lut              0.000                  2.854           6          (306,636)
- LUT__15388|out                lut              0.000                  2.854           2          (306,636)
- LUT__15388|O                  eft              0.264                  3.117           2          (306,636)
-   Routing elements:  
-     Manhattan distance of X:0, Y:5
- LUT__15389|I[0]               eft              0.267                  3.384           2          (306,641)
- LUT__15389|in[0]              lut              0.000                  3.384           2          (306,641)
- LUT__15389|out                lut              0.000                  3.384           2          (306,641)
- LUT__15389|O                  eft              0.877                  4.262           2          (306,641)
-   Routing elements:  
-     Manhattan distance of X:8, Y:2
- LUT__15390|I[1]               eft              0.223                  4.485           2          (314,639)
- LUT__15390|in[1]              lut              0.000                  4.485           2          (314,639)
- LUT__15390|out                lut              0.000                  4.485          36          (314,639)
- LUT__15390|O                  eft              2.930                  7.415          36          (314,639)
-   Routing elements:  
-     Manhattan distance of X:8, Y:9
- patgen/h_count[8]~FF|SR       ff               0.253                  7.668          36          (306,630)
-
-Capture Clock Path
-pin name                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=======================================================================================================
- tx_vga_clk                  inpad           0.000                  0.000           2          (338,318)
- tx_vga_clk                  inpad           0.200                  0.200           2          (338,318)
- tx_vga_clk                  io              0.000                  0.200           2          (338,318)
+ tx_vga_clk                    inpad           0.000                  0.000           2          (338,318)
+ tx_vga_clk                    inpad           0.100                  0.100           2          (338,318)
+ tx_vga_clk                    io              0.000                  0.100           2          (338,318)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in             gbuf_block      0.320                  0.520           2          (337,318)
- CLKBUF__0|I                 gbuf            4.790                  5.310           2          (337,318)
- CLKBUF__0|O                 gbuf            0.000                  5.310          60          (337,318)
- CLKBUF__0|clkout            gbuf_block      0.000                  5.310          60          (337,318)
- patgen/h_count[8]~FF|CLK    ff              0.000                  5.310          60          (306,630)
+ CLKBUF__0|IO_in               gbuf_block      0.160                  0.260           2          (337,318)
+ CLKBUF__0|I                   gbuf            2.395                  2.655           2          (337,318)
+ CLKBUF__0|O                   gbuf            0.000                  2.655          58          (337,318)
+ CLKBUF__0|clkout              gbuf_block      0.000                  2.655          58          (337,318)
+ patgen/h_count[0]_2~FF|CLK    ff              0.000                  2.655          58          (314,603)
+
+Data Path
+pin name                        model name    delay (ns)   cumulative delay (ns)    pins on net   location
+===========================================================================================================
+ patgen/h_count[0]_2~FF|Q        ff               0.141                  0.141           9          (314,603)
+ patgen/h_count[0]_2~FF|O_seq    eft              0.168                  0.309           9          (314,603)
+ patgen/h_count[0]_2~FF|I[3]     eft              0.058                  0.367           9          (314,603)
+ patgen/h_count[0]_2~FF|in[3]    lut4             0.000                  0.367           9          (314,603)
+
+Capture Clock Path
+pin name                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
+=========================================================================================================
+ tx_vga_clk                    inpad           0.000                  0.000           2          (338,318)
+ tx_vga_clk                    inpad           0.100                  0.100           2          (338,318)
+ tx_vga_clk                    io              0.000                  0.100           2          (338,318)
+   Routing elements:  
+     Manhattan distance of X:1, Y:0
+ CLKBUF__0|IO_in               gbuf_block      0.160                  0.260           2          (337,318)
+ CLKBUF__0|I                   gbuf            2.395                  2.655           2          (337,318)
+ CLKBUF__0|O                   gbuf            0.000                  2.655          58          (337,318)
+ CLKBUF__0|clkout              gbuf_block      0.000                  2.655          58          (337,318)
+ patgen/h_count[0]_2~FF|CLK    ff              0.000                  2.655          58          (314,603)
 
 ######################################################################
 Path Detail Report (tx_vga_clk vs tx_pixel_clk)
@@ -264,567 +311,51 @@ Path Begin    : patgen/hsync_patgen~FF|CLK
 Path End      : hsync_patgen_PC~FF|D
 Launch Clock  : tx_vga_clk (RISE)
 Capture Clock : tx_pixel_clk (RISE)
-Slack         : 22.849  (required time - arrival time)
-Delay         : 1.631
+Slack         : 0.558  (arrival time - required time)
+Delay         : 0.477
 
 Logic Level : 1
 Non-global nets on path : 1
 Global nets on path     : 0
 
-Launch Clock Path Delay        :  5.310
-+ Clock To Q + Data Path Delay :  2.031
+Launch Clock Path Delay        :  2.655
++ Clock To Q + Data Path Delay :  0.618
 --------------------------------------------
-End-of-path arrival time       :  7.341
+End-of-path arrival time       :  3.273
 
-Constraint                     : 25.000
-+ Capture Clock Path Delay     :  5.310
-- Clock Uncertainty            :  0.120
+Constraint                     :  0.000
++ Capture Clock Path Delay     :  2.655
++ Clock Uncertainty            :  0.060
 --------------------------------------------
-End-of-path required time      : 30.190
+End-of-path required time      :  2.715
 
 
 Launch Clock Path
 pin name                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
 =========================================================================================================
  tx_vga_clk                    inpad           0.000                  0.000           2          (338,318)
- tx_vga_clk                    inpad           0.200                  0.200           2          (338,318)
- tx_vga_clk                    io              0.000                  0.200           2          (338,318)
+ tx_vga_clk                    inpad           0.100                  0.100           2          (338,318)
+ tx_vga_clk                    io              0.000                  0.100           2          (338,318)
    Routing elements:  
      Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in               gbuf_block      0.320                  0.520           2          (337,318)
- CLKBUF__0|I                   gbuf            4.790                  5.310           2          (337,318)
- CLKBUF__0|O                   gbuf            0.000                  5.310          60          (337,318)
- CLKBUF__0|clkout              gbuf_block      0.000                  5.310          60          (337,318)
- patgen/hsync_patgen~FF|CLK    ff              0.000                  5.310          60          (316,641)
+ CLKBUF__0|IO_in               gbuf_block      0.160                  0.260           2          (337,318)
+ CLKBUF__0|I                   gbuf            2.395                  2.655           2          (337,318)
+ CLKBUF__0|O                   gbuf            0.000                  2.655          58          (337,318)
+ CLKBUF__0|clkout              gbuf_block      0.000                  2.655          58          (337,318)
+ patgen/hsync_patgen~FF|CLK    ff              0.000                  2.655          58          (324,597)
 
 Data Path
 pin name                        model name    delay (ns)   cumulative delay (ns)    pins on net   location
 ===========================================================================================================
- patgen/hsync_patgen~FF|Q        ff               0.282                  0.282           2          (316,641)
- patgen/hsync_patgen~FF|O_seq    eft              1.515                  1.797           2          (316,641)
+ patgen/hsync_patgen~FF|Q        ff               0.141                  0.141           3          (324,597)
+ patgen/hsync_patgen~FF|O_seq    eft              0.343                  0.484           3          (324,597)
    Routing elements:  
-     Manhattan distance of X:14, Y:10
- hsync_patgen_PC~FF|I[3]         eft              0.116                  1.913           2          (330,631)
- LUT__15368|in[3]                lut              0.000                  1.913           2          (330,631)
- LUT__15368|out                  lut              0.000                  1.913           2          (330,631)
- hsync_patgen_PC~FF|D            ff               0.118                  2.031           2          (330,631)
+     Manhattan distance of X:0, Y:33
+ hsync_patgen_PC~FF|I[0]         eft              0.133                  0.618           3          (324,630)
+ LUT__905|in[0]                  lut              0.000                  0.618           3          (324,630)
+ LUT__905|out                    lut              0.000                  0.618           2          (324,630)
 
 Capture Clock Path
-pin name                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=====================================================================================================
- tx_pixel_clk              inpad           0.000                  0.000           2          (338,319)
- tx_pixel_clk              inpad           0.200                  0.200           2          (338,319)
- tx_pixel_clk              io              0.000                  0.200           2          (338,319)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__1|IO_in           gbuf_block      0.320                  0.520           2          (337,319)
- CLKBUF__1|I               gbuf            4.790                  5.310           2          (337,319)
- CLKBUF__1|O               gbuf            0.000                  5.310           4          (337,319)
- CLKBUF__1|clkout          gbuf_block      0.000                  5.310           4          (337,319)
- hsync_patgen_PC~FF|CLK    ff              0.000                  5.310           4          (330,631)
-
-######################################################################
-Path Detail Report (tx_pixel_clk vs tx_pixel_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : hsync_patgen_PC~FF|CLK
-Path End      : my_mipi_tx_HSYNC
-Launch Clock  : tx_pixel_clk (RISE)
-Capture Clock : tx_pixel_clk (RISE)
-Slack         : 96.604  (required time - arrival time)
-Delay         : 1.584
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  5.310
-+ Clock To Q + Data Path Delay :  1.865
---------------------------------------------
-End-of-path arrival time       :  7.175
-
-Constraint                     : 100.000
-+ Capture Clock Path Delay     :  0.000
-- Clock Uncertainty            :  0.120
-- Output Delay                 : -3.899
---------------------------------------------
-End-of-path required time      : 103.779
-
-
-Launch Clock Path
-pin name                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=====================================================================================================
- tx_pixel_clk              inpad           0.000                  0.000           2          (338,319)
- tx_pixel_clk              inpad           0.200                  0.200           2          (338,319)
- tx_pixel_clk              io              0.000                  0.200           2          (338,319)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__1|IO_in           gbuf_block      0.320                  0.520           2          (337,319)
- CLKBUF__1|I               gbuf            4.790                  5.310           2          (337,319)
- CLKBUF__1|O               gbuf            0.000                  5.310           4          (337,319)
- CLKBUF__1|clkout          gbuf_block      0.000                  5.310           4          (337,319)
- hsync_patgen_PC~FF|CLK    ff              0.000                  5.310           4          (330,631)
-
-Data Path
-pin name                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=======================================================================================================
- hsync_patgen_PC~FF|Q        ff               0.282                  0.282           4          (330,631)
- hsync_patgen_PC~FF|O_seq    eft              1.384                  1.665           4          (330,631)
-   Routing elements:  
-     Manhattan distance of X:8, Y:8
- my_mipi_tx_HSYNC            io               0.200                  1.865           4          (338,623)
-
-######################################################################
-Path Detail Report (rx_vga_clk vs rx_pixel_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : clear_error~FF|CLK
-Path End      : my_mipi_rx_CLEAR
-Launch Clock  : rx_vga_clk (RISE)
-Capture Clock : rx_pixel_clk (RISE)
-Slack         : 21.595  (required time - arrival time)
-Delay         : 1.690
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  5.310
-+ Clock To Q + Data Path Delay :  1.972
---------------------------------------------
-End-of-path arrival time       :  7.282
-
-Constraint                     : 25.000
-+ Capture Clock Path Delay     :  0.000
-- Clock Uncertainty            :  0.120
-- Output Delay                 : -3.997
---------------------------------------------
-End-of-path required time      : 28.877
-
-
-Launch Clock Path
-pin name              model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=================================================================================================
- rx_vga_clk            inpad           0.000                  0.000           2          (338,322)
- rx_vga_clk            inpad           0.200                  0.200           2          (338,322)
- rx_vga_clk            io              0.000                  0.200           2          (338,322)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in       gbuf_block      0.320                  0.520           2          (337,322)
- CLKBUF__3|I           gbuf            4.790                  5.310           2          (337,322)
- CLKBUF__3|O           gbuf            0.000                  5.310        4297          (337,322)
- CLKBUF__3|clkout      gbuf_block      0.000                  5.310        4297          (337,322)
- clear_error~FF|CLK    ff              0.000                  5.310        4297          (324,542)
-
-Data Path
-pin name                model name    delay (ns)   cumulative delay (ns)    pins on net   location
-===================================================================================================
- clear_error~FF|Q        ff               0.282                  0.282           2          (324,542)
- clear_error~FF|O_seq    eft              1.490                  1.772           2          (324,542)
-   Routing elements:  
-     Manhattan distance of X:14, Y:28
- my_mipi_rx_CLEAR        io               0.200                  1.972           2          (338,570)
-
-######################################################################
-Path Detail Report (rx_pixel_clk vs rx_vga_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : rx_count_PC[1]~FF|CLK
-Path End      : rx_data_VC[6]~FF|D
-Launch Clock  : rx_pixel_clk (RISE)
-Capture Clock : rx_vga_clk (RISE)
-Slack         : 17.570  (required time - arrival time)
-Delay         : 6.911
-
-Logic Level : 6
-Non-global nets on path : 6
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  5.310
-+ Clock To Q + Data Path Delay :  7.310
---------------------------------------------
-End-of-path arrival time       : 12.620
-
-Constraint                     : 25.000
-+ Capture Clock Path Delay     :  5.310
-- Clock Uncertainty            :  0.120
---------------------------------------------
-End-of-path required time      : 30.190
-
-
-Launch Clock Path
-pin name                 model name    delay (ns)   cumulative delay (ns)    pins on net   location
-====================================================================================================
- rx_pixel_clk             inpad           0.000                  0.000           2          (338,323)
- rx_pixel_clk             inpad           0.200                  0.200           2          (338,323)
- rx_pixel_clk             io              0.000                  0.200           2          (338,323)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__2|IO_in          gbuf_block      0.320                  0.520           2          (337,323)
- CLKBUF__2|I              gbuf            4.790                  5.310           2          (337,323)
- CLKBUF__2|O              gbuf            0.000                  5.310         225          (337,323)
- CLKBUF__2|clkout         gbuf_block      0.000                  5.310         225          (337,323)
- rx_count_PC[1]~FF|CLK    ff              0.000                  5.310         225          (332,618)
-
-Data Path
-pin name                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
-======================================================================================================
- rx_count_PC[1]~FF|Q        ff               0.282                  0.282           3          (332,618)
- rx_count_PC[1]~FF|O_seq    eft              0.788                  1.070           3          (332,618)
-   Routing elements:  
-     Manhattan distance of X:2, Y:3
- sub_149/add_2/i2|I[0]      eft              0.044                  1.113           3          (330,615)
- sub_149/add_2/i2|I0        adder            0.223                  1.337           3          (330,615)
- sub_149/add_2/i2|CO        adder            0.000                  1.337           2          (330,615)
- sub_149/add_2/i2|cout      eft              0.000                  1.337           2          (330,615)
-   Routing elements:  
-     Manhattan distance of X:0, Y:1
- sub_149/add_2/i3|CI        adder            0.050                  1.387           2          (330,616)
- sub_149/add_2/i3|CO        adder            0.000                  1.387           2          (330,616)
- sub_149/add_2/i3|cout      eft              0.000                  1.387           2          (330,616)
-   Routing elements:  
-     Manhattan distance of X:0, Y:1
- sub_149/add_2/i4|CI        adder            0.190                  1.576           2          (330,617)
- sub_149/add_2/i4|O         adder            0.000                  1.576           4          (330,617)
- sub_149/add_2/i4|O         eft              0.854                  2.430           4          (330,617)
-   Routing elements:  
-     Manhattan distance of X:0, Y:6
- LUT__15398|I[3]            eft              0.116                  2.546           4          (330,611)
- LUT__15398|in[3]           lut              0.000                  2.546           4          (330,611)
- LUT__15398|out             lut              0.000                  2.546          18          (330,611)
- LUT__15398|O               eft              1.459                  4.006          18          (330,611)
-   Routing elements:  
-     Manhattan distance of X:2, Y:15
- LUT__15400|I[1]            eft              0.223                  4.229          18          (332,596)
- LUT__15400|in[1]           lut              0.000                  4.229          18          (332,596)
- LUT__15400|out             lut              0.000                  4.229          17          (332,596)
- LUT__15400|O               eft              2.697                  6.926          17          (332,596)
-   Routing elements:   feedthru(1)
-     Manhattan distance of X:2, Y:2
- rx_data_VC[6]~FF|I[0]      eft              0.267                  7.192          17          (334,594)
- LUT__15542|in[0]           lut              0.000                  7.193          17          (334,594)
- LUT__15542|out             lut              0.000                  7.193           2          (334,594)
- rx_data_VC[6]~FF|D         ff               0.118                  7.310           2          (334,594)
-
-Capture Clock Path
-pin name                model name    delay (ns)   cumulative delay (ns)    pins on net   location
-===================================================================================================
- rx_vga_clk              inpad           0.000                  0.000           2          (338,322)
- rx_vga_clk              inpad           0.200                  0.200           2          (338,322)
- rx_vga_clk              io              0.000                  0.200           2          (338,322)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in         gbuf_block      0.320                  0.520           2          (337,322)
- CLKBUF__3|I             gbuf            4.790                  5.310           2          (337,322)
- CLKBUF__3|O             gbuf            0.000                  5.310        4297          (337,322)
- CLKBUF__3|clkout        gbuf_block      0.000                  5.310        4297          (337,322)
- rx_data_VC[6]~FF|CLK    ff              0.000                  5.310        4297          (334,594)
-
-######################################################################
-Path Detail Report (rx_pixel_clk vs rx_pixel_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : my_mipi_rx_DATA[44]
-Path End      : rx_data_PC[44]~FF|D
-Launch Clock  : rx_pixel_clk (RISE)
-Capture Clock : rx_pixel_clk (RISE)
-Slack         : 97.511  (required time - arrival time)
-Delay         : 2.422
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  0.000
-+ Data Path Delay              :  2.540
-+ Input Delay                  :  5.140
---------------------------------------------
-End-of-path arrival time       :  7.680
-
-Constraint                     : 100.000
-+ Capture Clock Path Delay     :  5.310
-- Clock Uncertainty            :  0.120
---------------------------------------------
-End-of-path required time      : 105.190
-
-
-Data Path
-pin name                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
-======================================================================================================
- my_mipi_rx_DATA[44]        inpad            0.200                  0.200           2          (338,595)
- my_mipi_rx_DATA[44]        io               2.061                  2.261           2          (338,595)
-   Routing elements:  
-     Manhattan distance of X:16, Y:1
- rx_data_PC[44]~FF|I[2]     eft              0.161                  2.422           2          (322,596)
- rx_data_PC[44]~FF|in[2]    lut4             0.000                  2.422           2          (322,596)
- rx_data_PC[44]~FF|D        ff               0.118                  2.540           2          (322,596)
-
-Capture Clock Path
-pin name                 model name    delay (ns)   cumulative delay (ns)    pins on net   location
-====================================================================================================
- rx_pixel_clk             inpad           0.000                  0.000           2          (338,323)
- rx_pixel_clk             inpad           0.200                  0.200           2          (338,323)
- rx_pixel_clk             io              0.000                  0.200           2          (338,323)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__2|IO_in          gbuf_block      0.320                  0.520           2          (337,323)
- CLKBUF__2|I              gbuf            4.790                  5.310           2          (337,323)
- CLKBUF__2|O              gbuf            0.000                  5.310         225          (337,323)
- CLKBUF__2|clkout         gbuf_block      0.000                  5.310         225          (337,323)
- rx_data_PC[44]~FF|CLK    ff              0.000                  5.310         225          (322,596)
-
----------- Path Details for Max Critical Paths (end) ---------------
-
----------- 4. Path Details for Min Critical Paths (begin) ----------
-
-
-######################################################################
-Path Detail Report (rx_vga_clk vs rx_vga_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : vsync_golden_delay[2039]~FF|CLK
-Path End      : vsync_golden_delay[2040]~FF|D
-Launch Clock  : rx_vga_clk (RISE)
-Capture Clock : rx_vga_clk (RISE)
-Slack         : 0.307  (arrival time - required time)
-Delay         : 0.226
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  2.655
-+ Clock To Q + Data Path Delay :  0.367
---------------------------------------------
-End-of-path arrival time       :  3.022
-
-Constraint                     :  0.000
-+ Capture Clock Path Delay     :  2.655
-+ Clock Uncertainty            :  0.060
---------------------------------------------
-End-of-path required time      :  2.715
-
-
-Launch Clock Path
-pin name                           model name    delay (ns)   cumulative delay (ns)    pins on net   location
-==============================================================================================================
- rx_vga_clk                         inpad           0.000                  0.000           2          (338,322)
- rx_vga_clk                         inpad           0.100                  0.100           2          (338,322)
- rx_vga_clk                         io              0.000                  0.100           2          (338,322)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in                    gbuf_block      0.160                  0.260           2          (337,322)
- CLKBUF__3|I                        gbuf            2.395                  2.655           2          (337,322)
- CLKBUF__3|O                        gbuf            0.000                  2.655        4297          (337,322)
- CLKBUF__3|clkout                   gbuf_block      0.000                  2.655        4297          (337,322)
- vsync_golden_delay[2039]~FF|CLK    ff              0.000                  2.655        4297          (334,448)
-
-Data Path
-pin name                             model name    delay (ns)   cumulative delay (ns)    pins on net   location
-================================================================================================================
- vsync_golden_delay[2039]~FF|Q        ff               0.141                  0.141           2          (334,448)
- vsync_golden_delay[2039]~FF|O_seq    eft              0.168                  0.309           2          (334,448)
-   Routing elements:  
-     Manhattan distance of X:2, Y:0
- vsync_golden_delay[2040]~FF|I[3]     eft              0.058                  0.367           2          (336,448)
- vsync_golden_delay[2040]~FF|in[3]    lut4             0.000                  0.367           2          (336,448)
-
-Capture Clock Path
-pin name                           model name    delay (ns)   cumulative delay (ns)    pins on net   location
-==============================================================================================================
- rx_vga_clk                         inpad           0.000                  0.000           2          (338,322)
- rx_vga_clk                         inpad           0.100                  0.100           2          (338,322)
- rx_vga_clk                         io              0.000                  0.100           2          (338,322)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in                    gbuf_block      0.160                  0.260           2          (337,322)
- CLKBUF__3|I                        gbuf            2.395                  2.655           2          (337,322)
- CLKBUF__3|O                        gbuf            0.000                  2.655        4297          (337,322)
- CLKBUF__3|clkout                   gbuf_block      0.000                  2.655        4297          (337,322)
- vsync_golden_delay[2040]~FF|CLK    ff              0.000                  2.655        4297          (336,448)
-
-######################################################################
-Path Detail Report (tx_vga_clk vs tx_vga_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : patgen/v_count[6]~FF|CLK
-Path End      : patgen/v_count[6]~FF|D
-Launch Clock  : tx_vga_clk (RISE)
-Capture Clock : tx_vga_clk (RISE)
-Slack         : 0.307  (arrival time - required time)
-Delay         : 0.226
-
-Logic Level : 1
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  2.655
-+ Clock To Q + Data Path Delay :  0.367
---------------------------------------------
-End-of-path arrival time       :  3.022
-
-Constraint                     :  0.000
-+ Capture Clock Path Delay     :  2.655
-+ Clock Uncertainty            :  0.060
---------------------------------------------
-End-of-path required time      :  2.715
-
-
-Launch Clock Path
-pin name                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=======================================================================================================
- tx_vga_clk                  inpad           0.000                  0.000           2          (338,318)
- tx_vga_clk                  inpad           0.100                  0.100           2          (338,318)
- tx_vga_clk                  io              0.000                  0.100           2          (338,318)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in             gbuf_block      0.160                  0.260           2          (337,318)
- CLKBUF__0|I                 gbuf            2.395                  2.655           2          (337,318)
- CLKBUF__0|O                 gbuf            0.000                  2.655          60          (337,318)
- CLKBUF__0|clkout            gbuf_block      0.000                  2.655          60          (337,318)
- patgen/v_count[6]~FF|CLK    ff              0.000                  2.655          60          (326,637)
-
-Data Path
-pin name                      model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=========================================================================================================
- patgen/v_count[6]~FF|Q        ff               0.141                  0.141           7          (326,637)
- patgen/v_count[6]~FF|O_seq    eft              0.168                  0.309           7          (326,637)
- patgen/v_count[6]~FF|I[3]     eft              0.058                  0.367           7          (326,637)
- LUT__15459|in[3]              lut              0.000                  0.367           7          (326,637)
- LUT__15459|out                lut              0.000                  0.367           2          (326,637)
-
-Capture Clock Path
-pin name                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=======================================================================================================
- tx_vga_clk                  inpad           0.000                  0.000           2          (338,318)
- tx_vga_clk                  inpad           0.100                  0.100           2          (338,318)
- tx_vga_clk                  io              0.000                  0.100           2          (338,318)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in             gbuf_block      0.160                  0.260           2          (337,318)
- CLKBUF__0|I                 gbuf            2.395                  2.655           2          (337,318)
- CLKBUF__0|O                 gbuf            0.000                  2.655          60          (337,318)
- CLKBUF__0|clkout            gbuf_block      0.000                  2.655          60          (337,318)
- patgen/v_count[6]~FF|CLK    ff              0.000                  2.655          60          (326,637)
-
-######################################################################
-Path Detail Report (tx_vga_clk vs tx_pixel_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : valid_h_patgen_divided~FF|CLK
-Path End      : valid_h_patgen_PC~FF|D
-Launch Clock  : tx_vga_clk (RISE)
-Capture Clock : tx_pixel_clk (RISE)
-Slack         : 0.329  (arrival time - required time)
-Delay         : 0.249
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  2.655
-+ Clock To Q + Data Path Delay :  0.389
---------------------------------------------
-End-of-path arrival time       :  3.044
-
-Constraint                     :  0.000
-+ Capture Clock Path Delay     :  2.655
-+ Clock Uncertainty            :  0.060
---------------------------------------------
-End-of-path required time      :  2.715
-
-
-Launch Clock Path
-pin name                         model name    delay (ns)   cumulative delay (ns)    pins on net   location
-============================================================================================================
- tx_vga_clk                       inpad           0.000                  0.000           2          (338,318)
- tx_vga_clk                       inpad           0.100                  0.100           2          (338,318)
- tx_vga_clk                       io              0.000                  0.100           2          (338,318)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__0|IO_in                  gbuf_block      0.160                  0.260           2          (337,318)
- CLKBUF__0|I                      gbuf            2.395                  2.655           2          (337,318)
- CLKBUF__0|O                      gbuf            0.000                  2.655          60          (337,318)
- CLKBUF__0|clkout                 gbuf_block      0.000                  2.655          60          (337,318)
- valid_h_patgen_divided~FF|CLK    ff              0.000                  2.655          60          (318,629)
-
-Data Path
-pin name                           model name    delay (ns)   cumulative delay (ns)    pins on net   location
-==============================================================================================================
- valid_h_patgen_divided~FF|Q        ff               0.141                  0.141           2          (318,629)
- valid_h_patgen_divided~FF|O_seq    eft              0.168                  0.309           2          (318,629)
-   Routing elements:  
-     Manhattan distance of X:0, Y:3
- valid_h_patgen_PC~FF|I[2]          eft              0.080                  0.389           2          (318,632)
- valid_h_patgen_PC~FF|in[2]         lut4             0.000                  0.389           2          (318,632)
-
-Capture Clock Path
-pin name                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=======================================================================================================
- tx_pixel_clk                inpad           0.000                  0.000           2          (338,319)
- tx_pixel_clk                inpad           0.100                  0.100           2          (338,319)
- tx_pixel_clk                io              0.000                  0.100           2          (338,319)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__1|IO_in             gbuf_block      0.160                  0.260           2          (337,319)
- CLKBUF__1|I                 gbuf            2.395                  2.655           2          (337,319)
- CLKBUF__1|O                 gbuf            0.000                  2.655           4          (337,319)
- CLKBUF__1|clkout            gbuf_block      0.000                  2.655           4          (337,319)
- valid_h_patgen_PC~FF|CLK    ff              0.000                  2.655           4          (318,632)
-
-######################################################################
-Path Detail Report (tx_pixel_clk vs tx_pixel_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : vsync_patgen_PC~FF|CLK
-Path End      : my_mipi_tx_VSYNC
-Launch Clock  : tx_pixel_clk (RISE)
-Capture Clock : tx_pixel_clk (RISE)
-Slack         : 1.351  (arrival time - required time)
-Delay         : 0.566
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  2.655
-+ Clock To Q + Data Path Delay :  0.706
---------------------------------------------
-End-of-path arrival time       :  3.361
-
-Constraint                     :  0.000
-+ Capture Clock Path Delay     :  0.000
-+ Clock Uncertainty            :  0.060
-- Output Delay                 : -1.950
---------------------------------------------
-End-of-path required time      :  2.010
-
-
-Launch Clock Path
 pin name                  model name    delay (ns)   cumulative delay (ns)    pins on net   location
 =====================================================================================================
  tx_pixel_clk              inpad           0.000                  0.000           2          (338,319)
@@ -834,207 +365,8 @@ pin name                  model name    delay (ns)   cumulative delay (ns)    pi
      Manhattan distance of X:1, Y:0
  CLKBUF__1|IO_in           gbuf_block      0.160                  0.260           2          (337,319)
  CLKBUF__1|I               gbuf            2.395                  2.655           2          (337,319)
- CLKBUF__1|O               gbuf            0.000                  2.655           4          (337,319)
- CLKBUF__1|clkout          gbuf_block      0.000                  2.655           4          (337,319)
- vsync_patgen_PC~FF|CLK    ff              0.000                  2.655           4          (336,628)
-
-Data Path
-pin name                    model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=======================================================================================================
- vsync_patgen_PC~FF|Q        ff               0.141                  0.141           2          (336,628)
- vsync_patgen_PC~FF|O_seq    eft              0.466                  0.606           2          (336,628)
-   Routing elements:  
-     Manhattan distance of X:2, Y:5
- my_mipi_tx_VSYNC            io               0.100                  0.706           2          (338,623)
-
-######################################################################
-Path Detail Report (rx_vga_clk vs rx_pixel_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : clear_error~FF|CLK
-Path End      : my_mipi_rx_CLEAR
-Launch Clock  : rx_vga_clk (RISE)
-Capture Clock : rx_pixel_clk (RISE)
-Slack         : 1.682  (arrival time - required time)
-Delay         : 0.845
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  2.655
-+ Clock To Q + Data Path Delay :  0.986
---------------------------------------------
-End-of-path arrival time       :  3.641
-
-Constraint                     :  0.000
-+ Capture Clock Path Delay     :  0.000
-+ Clock Uncertainty            :  0.060
-- Output Delay                 : -1.899
---------------------------------------------
-End-of-path required time      :  1.959
-
-
-Launch Clock Path
-pin name              model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=================================================================================================
- rx_vga_clk            inpad           0.000                  0.000           2          (338,322)
- rx_vga_clk            inpad           0.100                  0.100           2          (338,322)
- rx_vga_clk            io              0.000                  0.100           2          (338,322)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in       gbuf_block      0.160                  0.260           2          (337,322)
- CLKBUF__3|I           gbuf            2.395                  2.655           2          (337,322)
- CLKBUF__3|O           gbuf            0.000                  2.655        4297          (337,322)
- CLKBUF__3|clkout      gbuf_block      0.000                  2.655        4297          (337,322)
- clear_error~FF|CLK    ff              0.000                  2.655        4297          (324,542)
-
-Data Path
-pin name                model name    delay (ns)   cumulative delay (ns)    pins on net   location
-===================================================================================================
- clear_error~FF|Q        ff               0.141                  0.141           2          (324,542)
- clear_error~FF|O_seq    eft              0.745                  0.886           2          (324,542)
-   Routing elements:  
-     Manhattan distance of X:14, Y:28
- my_mipi_rx_CLEAR        io               0.100                  0.986           2          (338,570)
-
-######################################################################
-Path Detail Report (rx_pixel_clk vs rx_vga_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : rx_error_PC[0]~FF|CLK
-Path End      : rx_error_VC[0]~FF|D
-Launch Clock  : rx_pixel_clk (RISE)
-Capture Clock : rx_vga_clk (RISE)
-Slack         : 0.307  (arrival time - required time)
-Delay         : 0.226
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  2.655
-+ Clock To Q + Data Path Delay :  0.367
---------------------------------------------
-End-of-path arrival time       :  3.022
-
-Constraint                     :  0.000
-+ Capture Clock Path Delay     :  2.655
-+ Clock Uncertainty            :  0.060
---------------------------------------------
-End-of-path required time      :  2.715
-
-
-Launch Clock Path
-pin name                 model name    delay (ns)   cumulative delay (ns)    pins on net   location
-====================================================================================================
- rx_pixel_clk             inpad           0.000                  0.000           2          (338,323)
- rx_pixel_clk             inpad           0.100                  0.100           2          (338,323)
- rx_pixel_clk             io              0.000                  0.100           2          (338,323)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__2|IO_in          gbuf_block      0.160                  0.260           2          (337,323)
- CLKBUF__2|I              gbuf            2.395                  2.655           2          (337,323)
- CLKBUF__2|O              gbuf            0.000                  2.655         225          (337,323)
- CLKBUF__2|clkout         gbuf_block      0.000                  2.655         225          (337,323)
- rx_error_PC[0]~FF|CLK    ff              0.000                  2.655         225          (328,543)
-
-Data Path
-pin name                   model name    delay (ns)   cumulative delay (ns)    pins on net   location
-======================================================================================================
- rx_error_PC[0]~FF|Q        ff               0.141                  0.141           2          (328,543)
- rx_error_PC[0]~FF|O_seq    eft              0.168                  0.309           2          (328,543)
-   Routing elements:  
-     Manhattan distance of X:0, Y:1
- rx_error_VC[0]~FF|I[3]     eft              0.058                  0.367           2          (328,542)
- rx_error_VC[0]~FF|in[3]    lut4             0.000                  0.367           2          (328,542)
-
-Capture Clock Path
-pin name                 model name    delay (ns)   cumulative delay (ns)    pins on net   location
-====================================================================================================
- rx_vga_clk               inpad           0.000                  0.000           2          (338,322)
- rx_vga_clk               inpad           0.100                  0.100           2          (338,322)
- rx_vga_clk               io              0.000                  0.100           2          (338,322)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__3|IO_in          gbuf_block      0.160                  0.260           2          (337,322)
- CLKBUF__3|I              gbuf            2.395                  2.655           2          (337,322)
- CLKBUF__3|O              gbuf            0.000                  2.655        4297          (337,322)
- CLKBUF__3|clkout         gbuf_block      0.000                  2.655        4297          (337,322)
- rx_error_VC[0]~FF|CLK    ff              0.000                  2.655        4297          (328,542)
-
-######################################################################
-Path Detail Report (rx_pixel_clk vs rx_pixel_clk)
-######################################################################
-
-
-++++ Path 1 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-Path Begin    : edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/d_clkb~FF|CLK
-Path End      : edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/edb_top_inst/VIO_0/vio_core_inst/probe_in_sync[11]~FF|D
-Launch Clock  : rx_pixel_clk (RISE)
-Capture Clock : rx_pixel_clk (RISE)
-Slack         : 0.307  (arrival time - required time)
-Delay         : 0.226
-
-Logic Level : 0
-Non-global nets on path : 1
-Global nets on path     : 0
-
-Launch Clock Path Delay        :  2.655
-+ Clock To Q + Data Path Delay :  0.367
---------------------------------------------
-End-of-path arrival time       :  3.022
-
-Constraint                     :  0.000
-+ Capture Clock Path Delay     :  2.655
-+ Clock Uncertainty            :  0.060
---------------------------------------------
-End-of-path required time      :  2.715
-
-
-Launch Clock Path
-pin name                                                                                model name    delay (ns)   cumulative delay (ns)    pins on net   location
-===================================================================================================================================================================
- rx_pixel_clk                                                                            inpad           0.000                  0.000           2          (338,323)
- rx_pixel_clk                                                                            inpad           0.100                  0.100           2          (338,323)
- rx_pixel_clk                                                                            io              0.000                  0.100           2          (338,323)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__2|IO_in                                                                         gbuf_block      0.160                  0.260           2          (337,323)
- CLKBUF__2|I                                                                             gbuf            2.395                  2.655           2          (337,323)
- CLKBUF__2|O                                                                             gbuf            0.000                  2.655         225          (337,323)
- CLKBUF__2|clkout                                                                        gbuf_block      0.000                  2.655         225          (337,323)
- edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/d_clkb~FF|CLK    ff              0.000                  2.655         225          (308,533)
-
-Data Path
-pin name                                                                                                                              model name    delay (ns)   cumulative delay (ns)    pins on net   location
-=================================================================================================================================================================================================================
- edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/d_clkb~FF|Q                                                    ff               0.141                  0.141           2          (308,533)
- edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/d_clkb~FF|O_seq                                                eft              0.168                  0.309           2          (308,533)
-   Routing elements:  
-     Manhattan distance of X:0, Y:1
- edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/edb_top_inst/VIO_0/vio_core_inst/probe_in_sync[11]~FF|I[3]     eft              0.058                  0.367           2          (308,532)
- edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/edb_top_inst/VIO_0/vio_core_inst/probe_in_sync[11]~FF|in[3]    lut4             0.000                  0.367           2          (308,532)
-
-Capture Clock Path
-pin name                                                                                                                            model name    delay (ns)   cumulative delay (ns)    pins on net   location
-===============================================================================================================================================================================================================
- rx_pixel_clk                                                                                                                        inpad           0.000                  0.000           2          (338,323)
- rx_pixel_clk                                                                                                                        inpad           0.100                  0.100           2          (338,323)
- rx_pixel_clk                                                                                                                        io              0.000                  0.100           2          (338,323)
-   Routing elements:  
-     Manhattan distance of X:1, Y:0
- CLKBUF__2|IO_in                                                                                                                     gbuf_block      0.160                  0.260           2          (337,323)
- CLKBUF__2|I                                                                                                                         gbuf            2.395                  2.655           2          (337,323)
- CLKBUF__2|O                                                                                                                         gbuf            0.000                  2.655         225          (337,323)
- CLKBUF__2|clkout                                                                                                                    gbuf_block      0.000                  2.655         225          (337,323)
- edb_top_inst/VIO_0/vio_core_inst/gen_probe_in_sync[11].sync_probe_in_U/edb_top_inst/VIO_0/vio_core_inst/probe_in_sync[11]~FF|CLK    ff              0.000                  2.655         225          (308,532)
+ CLKBUF__1|O               gbuf            0.000                  2.655           2          (337,319)
+ CLKBUF__1|clkout          gbuf_block      0.000                  2.655           2          (337,319)
+ hsync_patgen_PC~FF|CLK    ff              0.000                  2.655           2          (324,630)
 
 ---------- Path Details for Min Critical Paths (end) ---------------

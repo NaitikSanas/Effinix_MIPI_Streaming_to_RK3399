@@ -1,7 +1,7 @@
 
 Efinity Interface Designer Report
 Version: 2021.2.323
-Date: 2022-08-02 17:13
+Date: 2022-08-06 12:35
 
 Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -171,7 +171,7 @@ Output GPIO Configuration:
 +---------------+----------+--------------+----------------+-----------------+---------------+----------------+--------------------+--------------+-----------------+
 | Instance Name | Resource | Clock Region | Ref Clock Mode | Reference Clock | Feedback Mode | Feedback Clock |      Clkout0       |   Clkout1    |     Clkout2     |
 +---------------+----------+--------------+----------------+-----------------+---------------+----------------+--------------------+--------------+-----------------+
-|     mypll     | PLL_TR0  |              |    external    |     ref_clk     |    internal   |  tx_pixel_clk  |     tx_vga_clk     | tx_pixel_clk | mipi_rx_cal_clk |
+|     mypll     | PLL_TR0  |              |    external    |     ref_clk     |    internal   |                |     tx_vga_clk     | tx_pixel_clk | mipi_rx_cal_clk |
 |   tx_esc_pll  | PLL_TR1  |              |    external    |     refclk2     |    internal   |                | tx_esc_pll_CLKOUT0 |  rx_vga_clk  |   rx_pixel_clk  |
 +---------------+----------+--------------+----------------+-----------------+---------------+----------------+--------------------+--------------+-----------------+
 
@@ -370,16 +370,16 @@ Timing
 
 Clock Timer
 T_clk_post (ns)               : 285
-T_clk_trail (ns)              : 80
-T_clk_prepare (ns)            : 70
-T_clk_zero (ns)               : 400
+T_clk_trail (ns)              : 100
+T_clk_prepare (ns)            : 90
+T_clk_zero (ns)               : 500
 Escape Clock Frequency (MHz)  : 12.00
 T_clk_pre (ns)                : 500
 
 Data Timer
-T_hs_prepare (ns)             : 90
+T_hs_prepare (ns)             : 120
 T_hs_zero (ns)                : 262
-T_hs_trail (ns)               : 180
+T_hs_trail (ns)               : 60
 
 ---------- MIPI Tx Usage Summary (end) ----------
 

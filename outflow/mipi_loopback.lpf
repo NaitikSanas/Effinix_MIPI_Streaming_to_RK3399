@@ -2,7 +2,7 @@
 <efxpt:periphery design="mipi_loopback" device="T85F324" xmlns:efxpt="http://www.efinixinc.com/peri_device_db" xmlns:efxutil="http://www.efinixinc.com/peri_tool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_device_db lpf.xsd">
   <!-- Efinity Logical Peripheral File -->
   <!-- Version: 2021.2.323 -->
-  <!-- Date: 2022-08-02 17:13 -->
+  <!-- Date: 2022-08-06 12:35 -->
   <!-- Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved. -->
   <efxpt:sequence size="333">
     <efxpt:instance id="GPIOL_00" index="0" type="gpio"/>
@@ -6135,11 +6135,11 @@
     <efxpt:parameter name="PCR_VCONTROL" value="FIXED"/>
     <efxpt:parameter name="PCR_XCFGI_CLK_POST" value="N2"/>
     <efxpt:parameter name="PCR_XCFGI_CLK_ZEROTIMEUP" value="P0"/>
-    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_CLK" value="P0"/>
-    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT0" value="P0"/>
-    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT1" value="P0"/>
-    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT2" value="P0"/>
-    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT3" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_CLK" value="P2"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT0" value="P3"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT1" value="P3"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT2" value="P3"/>
+    <efxpt:parameter name="PCR_XCFGI_PREPARETIME_DAT3" value="P3"/>
     <efxpt:parameter name="PCR_XCFGI_RESERVED_0" value="FIXED"/>
     <efxpt:parameter name="PCR_XCFGI_RESERVED_1" value="FIXED"/>
     <efxpt:parameter name="PCR_XCFGI_RESERVED_10" value="FIXED"/>
@@ -6158,12 +6158,12 @@
     <efxpt:parameter name="PCR_XCFGI_RESERVED_7" value="FIXED"/>
     <efxpt:parameter name="PCR_XCFGI_RESERVED_8" value="FIXED"/>
     <efxpt:parameter name="PCR_XCFGI_RESERVED_9" value="FIXED"/>
-    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_CLK" value="P0"/>
-    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT0" value="P9"/>
-    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT1" value="P9"/>
-    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT2" value="P9"/>
-    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT3" value="P9"/>
-    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_CLK" value="P0"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_CLK" value="P2"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT0" value="N3"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT1" value="N3"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT2" value="N3"/>
+    <efxpt:parameter name="PCR_XCFGI_TRAILTIME_DAT3" value="N3"/>
+    <efxpt:parameter name="PCR_XCFGI_ZEROTIME_CLK" value="P10"/>
     <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT0" value="P0"/>
     <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT1" value="P0"/>
     <efxpt:parameter name="PCR_XCFGI_ZEROTIME_DAT2" value="P0"/>

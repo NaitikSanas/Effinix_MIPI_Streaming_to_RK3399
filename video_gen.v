@@ -11,7 +11,8 @@ module video_gen (
  output       video_vsync_o,
  output       video_valid_h_o,
  output       video_valid_h_o_2,
- output       video_valid_v_o
+ output       video_valid_v_o,
+ output reg [9:0] x,y
 );
 
 parameter syncPulse_h= 128;            
@@ -128,17 +129,56 @@ end // always @ (posedge clk)
 //----------------------------------------------------------------
 ////////// DISPLAY
 //----------------------------------------------------------------
-   wire [7:0] red;
-   wire [7:0] green;
-   wire [7:0] blue;
-   reg [7:0]  red_o;
-   reg [7:0]  green_o;
-   reg [7:0]  blue_o;
-wire [23:0] buffer1 = {8'h48,8'h45,8'h4c}, 
-            buffer2 = {8'h4c,8'h4f,8'h21};
-   
-assign red =  (h_count>activeEnd_h && h_count[0])? buffer1[7:0]  :buffer2[7:0];//(video_pattern==3) ? v_count[6:2] : (video_pattern==2) ? h_count[6:2] : (video_pattern==1) ? bar_data[15:11] : checker_data[15:11];
-assign green =(h_count>activeEnd_h && h_count[0])? buffer1[15:8] :buffer2[15:8]; //(video_pattern==3) ? v_count[6:1] : (video_pattern==2) ? h_count[6:1] : (video_pattern==1) ? bar_data[10:5] : checker_data[10:5];
+wire [7:0] red;
+wire [7:0] green;
+wire [7:0] blue;
+reg [7:0]  red_o;
+reg [7:0]  green_o;
+reg [7:0]  blue_o;
+
+//------ Get XY Cordinates of screen 
+
+always @(posedge clk)begin
+    if(h_count >= activeStart_h && h_count <= activeEnd_h)begin
+        x <= h_count - activeStart_h; //x + 1;
+    end
+    else begin
+        x <= 0;
+        end
+    if(v_count >= activeStart_v && v_count <= activeEnd_v)begin
+        y <= v_count - (syncPulse_v + backPorch_v);
+    end
+    else y <= 0;
+end 
+ /*  
+true_dual_port_ram
+#(
+	.DATA_WIDTH(48),
+	.ADDR_WIDTH(9),
+	.WRITE_MODE_1("WRITE_FIRST"),
+	.WRITE_MODE_2("WRITE_FIRST"),
+	.OUTPUT_REG_1("TRUE"),
+	.OUTPUT_REG_2("TRUE"),
+	.RAM_INIT_FILE("buffer.mem")		// Initial code file   ("piv2_720p_reg.mem")
+)
+inst_piv2_reg
+(
+	.we1(1'b0),
+	.we2(1'b0),
+	.clka(tx_vga_clk),
+	.clkb(tx_vga_clk),
+	.din1({8{1'b0}}),
+	.din2({8{1'b0}}),
+	.addr1(i[9:0]),
+	//.addr2(i_dbg_addr),
+	.dout1(pixel_data)
+//	.dout2(o_dbg_dout)
+);
+
+*/
+wire [63:0]buffer1, buffer2;
+assign red =  (h_count>activeEnd_h && h_count[0])? buffer1[7:0]:buffer2[7:0];//(video_pattern==3) ? v_count[6:2] : (video_pattern==2) ? h_count[6:2] : (video_pattern==1) ? bar_data[15:11] : checker_data[15:11];
+assign green =(h_count>activeEnd_h && h_count[0])? buffer1[15:8]:buffer2[15:8]; //(video_pattern==3) ? v_count[6:1] : (video_pattern==2) ? h_count[6:1] : (video_pattern==1) ? bar_data[10:5] : checker_data[10:5];
 assign blue = (h_count>activeEnd_h && h_count[0])? buffer1[23:16]:buffer2[23:8]; //(video_pattern==3) ? v_count[6:2] :(video_pattern==2) ? h_count[6:2] : (video_pattern==1) ? bar_data[4:0] : checker_data[4:0];
 
 

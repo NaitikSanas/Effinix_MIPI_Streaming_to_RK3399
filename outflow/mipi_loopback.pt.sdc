@@ -1,7 +1,7 @@
 
 # Efinity Interface Designer SDC
 # Version: 2021.2.323
-# Date: 2022-08-02 17:13
+# Date: 2022-08-06 12:35
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 

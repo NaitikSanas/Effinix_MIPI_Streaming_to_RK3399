@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<efxpt:design_db name="mipi_loopback" device_def="T85F324" location="D:\MIPI_Loopback" version="2021.2.323" db_version="20212999" last_change_date="Tue Aug  2 15:18:58 2022" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
+<efxpt:design_db name="mipi_loopback" device_def="T85F324" location="D:\MIPI_Loopback" version="2021.2.323" db_version="20212999" last_change_date="Sat Aug  6 12:34:58 2022" xmlns:efxpt="http://www.efinixinc.com/peri_design_db" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_design_db peri_design_db.xsd ">
     <efxpt:device_info>
         <efxpt:iobank_info>
             <efxpt:iobank name="1A" iostd="3.3 V LVTTL / LVCMOS"/>
@@ -59,7 +59,7 @@
             <efxpt:output_clock name="tx_vga_clk" number="0" out_divider="117" adv_out_phase_shift="0"/>
             <efxpt:output_clock name="tx_pixel_clk" number="1" out_divider="234" adv_out_phase_shift="0"/>
             <efxpt:output_clock name="mipi_rx_cal_clk" number="2" out_divider="15" adv_out_phase_shift="0"/>
-            <efxpt:adv_prop ref_clock_mode="external" ref_clock1_name="" ext_ref_clock_id="2" clksel_name="" feedback_clock_name="tx_pixel_clk" feedback_mode="internal"/>
+            <efxpt:adv_prop ref_clock_mode="external" ref_clock1_name="" ext_ref_clock_id="2" clksel_name="" feedback_clock_name="" feedback_mode="internal"/>
         </efxpt:pll>
     </efxpt:pll_info>
     <efxpt:lvds_info/>
@@ -128,7 +128,7 @@
                 <efxpt:phy_lane lane_id="2" logical_lane_id="4" is_pn_swap="false"/>
                 <efxpt:phy_lane lane_id="3" logical_lane_id="2" is_pn_swap="false"/>
                 <efxpt:phy_lane lane_id="4" logical_lane_id="3" is_pn_swap="false"/>
-                <efxpt:tx_timing t_clk_post="1" t_clk_trail="7" t_clk_prepare="2" t_clk_zero="3" t_clk_pre="2" t_hs_prepare="2" t_hs_zero="2" t_hs_trail="17"/>
+                <efxpt:tx_timing t_clk_post="1" t_clk_trail="9" t_clk_prepare="4" t_clk_zero="7" t_clk_pre="2" t_hs_prepare="4" t_hs_zero="2" t_hs_trail="5"/>
             </efxpt:mtx_info>
         </efxpt:mipi>
     </efxpt:mipi_info>
