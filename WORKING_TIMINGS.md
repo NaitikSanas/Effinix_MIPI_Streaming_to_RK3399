@@ -1,4 +1,4 @@
-FPGA Side : 
+### FPGA Side : 
     VGA Timings :
         Horizontal parameters:
             -Sync Pulse   : 80
@@ -16,7 +16,7 @@ FPGA Side :
         -VGA Clock     : 12.80 MHz
         -MIPI TX Clock : 6.40  MHz
 
-RK3399 Driver Configuration :
+### RK3399 Driver Configuration :
     -Media bus format : MEDIA_BUS_FMT_RGB888_1X24
     -Width   : 640 
 	-Height  : 480
