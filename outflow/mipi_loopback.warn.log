@@ -27768,3 +27768,714 @@
 [EFX-0011 VERI-WARNING] Input/Inout Port bscan_CAPTURE is unconnected and will be removed 
 [EFX-0011 VERI-WARNING] Input/Inout Port bscan_TCK is unconnected and will be removed 
 [EFX-0011 VERI-WARNING] Input/Inout Port bscan_UPDATE is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:39:17
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+[EFX-0011 VERI-WARNING] port 'tx_ena' remains unconnected for this instance (VERI-1927) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:333)
+[EFX-0011 VERI-WARNING] port 'rx_error' is not connected on this instance (VERI-2435) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:333)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:143)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:149)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 8 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:182)
+[EFX-0011 VERI-WARNING] net 'buffer1[23]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:140)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:147)
+[EFX-0011 VERI-WARNING] actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:148)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:149)
+[EFX-0011 VERI-WARNING] expression size 4 truncated to fit in target size 3 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:236)
+[EFX-0011 VERI-WARNING] expression size 88 truncated to fit in target size 64 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:252)
+[EFX-0011 VERI-WARNING] expression size 27 truncated to fit in target size 26 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:289)
+[EFX-0011 VERI-WARNING] 'os_pulse' should be on the sensitivity list of the process (VHDL-1251) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\uart.vhd:106)
+[EFX-0011 VERI-WARNING] incomplete sensitivity list specified; assuming completeness (VHDL-1613) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\uart.vhd:142)
+[EFX-0011 VERI-WARNING] expression size 65 truncated to fit in target size 64 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:350)
+[EFX-0011 VERI-WARNING] net 'valid_data' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:283)
+[EFX-0011 VERI-WARNING] net 'uart_rx' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:332)
+[EFX-0011 VERI-WARNING] input port 'tx_ena' remains unconnected for this instance (VDB-1053) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:327)
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_DPHY_RSTN' wire 'my_mipi_rx_DPHY_RSTN' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_RSTN' wire 'my_mipi_rx_RSTN' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_CLEAR' wire 'my_mipi_rx_CLEAR' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[1]' wire 'my_mipi_rx_LANES[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[0]' wire 'my_mipi_rx_LANES[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[3]' wire 'my_mipi_rx_VC_ENA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[2]' wire 'my_mipi_rx_VC_ENA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[1]' wire 'my_mipi_rx_VC_ENA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[0]' wire 'my_mipi_rx_VC_ENA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'bscan_TDO' wire 'bscan_TDO' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_vsync. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0266 WARNING] Module Instance 'uart_txrx' input pin tied to constant (reset_n=1).
+[EFX-0011 VERI-WARNING] Input/Inout Port sw4 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port sw5 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port uart_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx_vga_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx_pixel_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VALID is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[63] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[62] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[61] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[60] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[59] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[58] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[57] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[56] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[55] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[54] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[53] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[52] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[51] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[50] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[49] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[48] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[47] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[46] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[45] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[44] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[43] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[42] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[41] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[40] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[39] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[38] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[37] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[36] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[35] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[34] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[33] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[32] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[31] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[30] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[29] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[28] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[27] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[26] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[25] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[24] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[23] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[22] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[21] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[20] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[19] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[18] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[17] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[16] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[15] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[14] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[13] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[12] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[11] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[10] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[9] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[8] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[7] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[6] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[17] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[16] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[15] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[14] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[13] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[12] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[11] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[10] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[9] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[8] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[7] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[6] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS_CLK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RESET is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_SEL is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_SHIFT is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TDI is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_CAPTURE is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_UPDATE is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:48:23
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:48:38
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:49:24
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:143)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:149)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 8 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:182)
+[EFX-0011 VERI-WARNING] net 'buffer1[23]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:140)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:147)
+[EFX-0011 VERI-WARNING] actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:148)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:149)
+[EFX-0011 VERI-WARNING] expression size 27 truncated to fit in target size 26 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:217)
+[EFX-0011 VERI-WARNING] expression size 65 truncated to fit in target size 64 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:233)
+[EFX-0011 VERI-WARNING] net 'valid_data' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:211)
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_DPHY_RSTN' wire 'my_mipi_rx_DPHY_RSTN' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_RSTN' wire 'my_mipi_rx_RSTN' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_CLEAR' wire 'my_mipi_rx_CLEAR' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[1]' wire 'my_mipi_rx_LANES[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[0]' wire 'my_mipi_rx_LANES[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[3]' wire 'my_mipi_rx_VC_ENA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[2]' wire 'my_mipi_rx_VC_ENA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[1]' wire 'my_mipi_rx_VC_ENA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[0]' wire 'my_mipi_rx_VC_ENA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'bscan_TDO' wire 'bscan_TDO' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_vsync. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] Input/Inout Port sw4 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port sw5 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port uart_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx_vga_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port tx_pixel_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx_pixel_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VALID is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[63] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[62] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[61] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[60] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[59] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[58] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[57] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[56] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[55] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[54] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[53] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[52] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[51] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[50] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[49] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[48] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[47] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[46] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[45] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[44] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[43] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[42] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[41] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[40] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[39] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[38] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[37] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[36] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[35] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[34] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[33] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[32] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[31] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[30] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[29] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[28] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[27] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[26] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[25] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[24] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[23] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[22] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[21] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[20] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[19] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[18] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[17] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[16] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[15] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[14] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[13] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[12] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[11] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[10] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[9] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[8] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[7] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[6] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[17] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[16] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[15] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[14] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[13] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[12] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[11] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[10] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[9] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[8] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[7] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[6] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS_CLK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RESET is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_SEL is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_SHIFT is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TDI is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_CAPTURE is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_UPDATE is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:50:02
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:143)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:149)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 8 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:182)
+[EFX-0011 VERI-WARNING] net 'buffer1[23]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:140)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:147)
+[EFX-0011 VERI-WARNING] actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:148)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:149)
+[EFX-0011 VERI-WARNING] expression size 27 truncated to fit in target size 26 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:165)
+[EFX-0011 VERI-WARNING] expression size 65 truncated to fit in target size 64 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:181)
+[EFX-0011 VERI-WARNING] net 'video_pattern[1]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:118)
+[EFX-0011 VERI-WARNING] net 'valid_data' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:159)
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_DPHY_RSTN' wire 'my_mipi_rx_DPHY_RSTN' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_RSTN' wire 'my_mipi_rx_RSTN' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_CLEAR' wire 'my_mipi_rx_CLEAR' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[1]' wire 'my_mipi_rx_LANES[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[0]' wire 'my_mipi_rx_LANES[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[3]' wire 'my_mipi_rx_VC_ENA[3]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[2]' wire 'my_mipi_rx_VC_ENA[2]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[1]' wire 'my_mipi_rx_VC_ENA[1]' is not driven.
+[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[0]' wire 'my_mipi_rx_VC_ENA[0]' is not driven.
+[EFX-0256 WARNING] The primary output port 'bscan_TDO' wire 'bscan_TDO' is not driven.
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_vsync. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] Input/Inout Port sw4 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port sw5 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port uart_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx_vga_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port tx_pixel_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port rx_pixel_clk is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VALID is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_HSYNC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VSYNC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[63] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[62] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[61] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[60] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[59] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[58] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[57] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[56] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[55] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[54] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[53] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[52] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[51] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[50] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[49] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[48] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[47] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[46] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[45] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[44] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[43] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[42] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[41] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[40] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[39] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[38] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[37] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[36] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[35] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[34] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[33] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[32] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[31] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[30] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[29] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[28] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[27] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[26] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[25] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[24] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[23] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[22] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[21] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[20] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[19] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[18] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[17] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[16] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[15] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[14] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[13] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[12] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[11] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[10] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[9] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[8] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[7] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[6] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_DATA[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_TYPE[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VC[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_VC[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_CNT[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[17] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[16] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[15] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[14] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[13] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[12] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[11] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[10] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[9] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[8] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[7] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[6] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[5] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[4] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ERROR[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS_CLK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[3] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[2] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[1] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port my_mipi_rx_ULPS[0] is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_DRCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RESET is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TMS is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_RUNTEST is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_SEL is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_SHIFT is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TDI is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_CAPTURE is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_TCK is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port bscan_UPDATE is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:53:50
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:143)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:149)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 8 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:182)
+[EFX-0011 VERI-WARNING] net 'buffer1[23]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:105)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:112)
+[EFX-0011 VERI-WARNING] actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:113)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:114)
+[EFX-0011 VERI-WARNING] expression size 27 truncated to fit in target size 26 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:130)
+[EFX-0011 VERI-WARNING] expression size 65 truncated to fit in target size 64 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:146)
+[EFX-0011 VERI-WARNING] net 'video_pattern[1]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:83)
+[EFX-0011 VERI-WARNING] net 'valid_data' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:124)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_vsync. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] Input/Inout Port sw4 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port sw5 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port tx_pixel_clk is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:56:08
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:143)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:149)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 8 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:182)
+[EFX-0011 VERI-WARNING] net 'buffer1[23]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:105)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:112)
+[EFX-0011 VERI-WARNING] actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:113)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:114)
+[EFX-0011 VERI-WARNING] expression size 27 truncated to fit in target size 26 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:130)
+[EFX-0011 VERI-WARNING] expression size 65 truncated to fit in target size 64 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:146)
+[EFX-0011 VERI-WARNING] net 'video_pattern[1]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:83)
+[EFX-0011 VERI-WARNING] net 'valid_data' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:124)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_vsync. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] Input/Inout Port sw4 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port sw5 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port tx_pixel_clk is unconnected and will be removed 

@@ -1,8 +1,8 @@
 Module Resource Usage Distribution Estimates
-Generated at: Aug 06, 2022 12:35:08
+Generated at: Aug 08, 2022 09:56:08
 
 Note: some resources maybe grouped under different hierarchy due to optimization and LUT mapping
 
 Module	         FFs	        ADDs	        LUTs	      RAMs	 DSP/MULTs
-mipi_loopback_top:mipi_loopback_top                         	      58(1)	       0(0)	     131(9)	     0(0)	     0(0)	
-+patgen:video_gen(syncPulse_h=80,backPorch_h=50,activeVideo_h=640,frontPorch_h=50,syncPulse_v=80,backPorch_v=5,activeVideo_v=480,frontPorch_v=5)	     57(57)	       0(0)	   122(122)	     0(0)	     0(0)	
+mipi_loopback_top:mipi_loopback_top                         	      57(0)	       0(0)	     125(8)	     0(0)	     0(0)	
++patgen:video_gen(syncPulse_h=80,backPorch_h=50,activeVideo_h=640,frontPorch_h=50,syncPulse_v=80,backPorch_v=5,activeVideo_v=480,frontPorch_v=5)	     57(57)	       0(0)	   117(117)	     0(0)	     0(0)	

@@ -1,7 +1,7 @@
 
 Efinix FPGA Placement and Routing.
 Version: 2021.2.323 
-Date: Sat Aug 06 12:35:24 2022
+Date: Mon Aug 08 09:56:22 2022
 
 Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
  
@@ -11,12 +11,12 @@ Top-level Entity Name: mipi_loopback
 Elapsed time for packing: 0 hours 0 minutes 0 seconds
 
 ---------- Resource Summary (begin) ----------
-Inputs: 5 / 1108 (0.45%)
-Outputs: 118 / 1263 (9.34%)
-Clocks: 5 / 16 (31.25%)
-Logic Elements: 138 / 84096 (0.16%)
-	LE: LUTs/Adders: 133 / 84096 (0.16%)
-	LE: Registers: 58 / 84096 (0.07%)
+Inputs: 3 / 1108 (0.27%)
+Outputs: 108 / 1263 (8.55%)
+Clocks: 3 / 16 (18.75%)
+Logic Elements: 132 / 84096 (0.16%)
+	LE: LUTs/Adders: 127 / 84096 (0.15%)
+	LE: Registers: 57 / 84096 (0.07%)
 Memory Blocks: 0 / 792 (0.00%)
 Multipliers: 0 / 240 (0.00%)
 ---------- Resource Summary (end) ----------
@@ -27,6 +27,7 @@ Multipliers: 0 / 240 (0.00%)
 +------------------------+--------------+
 | Missing Interface Pins | Input/Output |
 +------------------------+--------------+
+|       bscan_TDO        |    Output    |
 |       bscan_SEL        |    Input     |
 |       bscan_DRCK       |    Input     |
 |       bscan_TDI        |    Input     |
@@ -40,117 +41,8 @@ Multipliers: 0 / 240 (0.00%)
 |          sw5           |    Input     |
 |          sw4           |    Input     |
 |         rst_n          |    Input     |
-|       rx_vga_clk       |    Input     |
-|   my_mipi_rx_ULPS[3]   |    Input     |
-|   my_mipi_rx_ULPS[2]   |    Input     |
-|   my_mipi_rx_ULPS[1]   |    Input     |
-|   my_mipi_rx_ULPS[0]   |    Input     |
-|  my_mipi_rx_ULPS_CLK   |    Input     |
-|  my_mipi_rx_ERROR[17]  |    Input     |
-|  my_mipi_rx_ERROR[16]  |    Input     |
-|  my_mipi_rx_ERROR[15]  |    Input     |
-|  my_mipi_rx_ERROR[14]  |    Input     |
-|  my_mipi_rx_ERROR[13]  |    Input     |
-|  my_mipi_rx_ERROR[12]  |    Input     |
-|  my_mipi_rx_ERROR[11]  |    Input     |
-|  my_mipi_rx_ERROR[10]  |    Input     |
-|  my_mipi_rx_ERROR[9]   |    Input     |
-|  my_mipi_rx_ERROR[8]   |    Input     |
-|  my_mipi_rx_ERROR[7]   |    Input     |
-|  my_mipi_rx_ERROR[6]   |    Input     |
-|  my_mipi_rx_ERROR[5]   |    Input     |
-|  my_mipi_rx_ERROR[4]   |    Input     |
-|  my_mipi_rx_ERROR[3]   |    Input     |
-|  my_mipi_rx_ERROR[2]   |    Input     |
-|  my_mipi_rx_ERROR[1]   |    Input     |
-|  my_mipi_rx_ERROR[0]   |    Input     |
-|    my_mipi_rx_VC[1]    |    Input     |
-|    my_mipi_rx_VC[0]    |    Input     |
-|    my_mipi_rx_VALID    |    Input     |
-|   my_mipi_rx_TYPE[5]   |    Input     |
-|   my_mipi_rx_TYPE[4]   |    Input     |
-|   my_mipi_rx_TYPE[3]   |    Input     |
-|   my_mipi_rx_TYPE[2]   |    Input     |
-|   my_mipi_rx_TYPE[1]   |    Input     |
-|   my_mipi_rx_TYPE[0]   |    Input     |
-|  my_mipi_rx_DATA[63]   |    Input     |
-|  my_mipi_rx_DATA[62]   |    Input     |
-|  my_mipi_rx_DATA[61]   |    Input     |
-|  my_mipi_rx_DATA[60]   |    Input     |
-|  my_mipi_rx_DATA[59]   |    Input     |
-|  my_mipi_rx_DATA[58]   |    Input     |
-|  my_mipi_rx_DATA[57]   |    Input     |
-|  my_mipi_rx_DATA[56]   |    Input     |
-|  my_mipi_rx_DATA[55]   |    Input     |
-|  my_mipi_rx_DATA[54]   |    Input     |
-|  my_mipi_rx_DATA[53]   |    Input     |
-|  my_mipi_rx_DATA[52]   |    Input     |
-|  my_mipi_rx_DATA[51]   |    Input     |
-|  my_mipi_rx_DATA[50]   |    Input     |
-|  my_mipi_rx_DATA[49]   |    Input     |
-|  my_mipi_rx_DATA[48]   |    Input     |
-|  my_mipi_rx_DATA[47]   |    Input     |
-|  my_mipi_rx_DATA[46]   |    Input     |
-|  my_mipi_rx_DATA[45]   |    Input     |
-|  my_mipi_rx_DATA[44]   |    Input     |
-|  my_mipi_rx_DATA[43]   |    Input     |
-|  my_mipi_rx_DATA[42]   |    Input     |
-|  my_mipi_rx_DATA[41]   |    Input     |
-|  my_mipi_rx_DATA[40]   |    Input     |
-|  my_mipi_rx_DATA[39]   |    Input     |
-|  my_mipi_rx_DATA[38]   |    Input     |
-|  my_mipi_rx_DATA[37]   |    Input     |
-|  my_mipi_rx_DATA[36]   |    Input     |
-|  my_mipi_rx_DATA[35]   |    Input     |
-|  my_mipi_rx_DATA[34]   |    Input     |
-|  my_mipi_rx_DATA[33]   |    Input     |
-|  my_mipi_rx_DATA[32]   |    Input     |
-|  my_mipi_rx_DATA[31]   |    Input     |
-|  my_mipi_rx_DATA[30]   |    Input     |
-|  my_mipi_rx_DATA[29]   |    Input     |
-|  my_mipi_rx_DATA[28]   |    Input     |
-|  my_mipi_rx_DATA[27]   |    Input     |
-|  my_mipi_rx_DATA[26]   |    Input     |
-|  my_mipi_rx_DATA[25]   |    Input     |
-|  my_mipi_rx_DATA[24]   |    Input     |
-|  my_mipi_rx_DATA[23]   |    Input     |
-|  my_mipi_rx_DATA[22]   |    Input     |
-|  my_mipi_rx_DATA[21]   |    Input     |
-|  my_mipi_rx_DATA[20]   |    Input     |
-|  my_mipi_rx_DATA[19]   |    Input     |
-|  my_mipi_rx_DATA[18]   |    Input     |
-|  my_mipi_rx_DATA[17]   |    Input     |
-|  my_mipi_rx_DATA[16]   |    Input     |
-|  my_mipi_rx_DATA[15]   |    Input     |
-|  my_mipi_rx_DATA[14]   |    Input     |
-|  my_mipi_rx_DATA[13]   |    Input     |
-|  my_mipi_rx_DATA[12]   |    Input     |
-|  my_mipi_rx_DATA[11]   |    Input     |
-|  my_mipi_rx_DATA[10]   |    Input     |
-|   my_mipi_rx_DATA[9]   |    Input     |
-|   my_mipi_rx_DATA[8]   |    Input     |
-|   my_mipi_rx_DATA[7]   |    Input     |
-|   my_mipi_rx_DATA[6]   |    Input     |
-|   my_mipi_rx_DATA[5]   |    Input     |
-|   my_mipi_rx_DATA[4]   |    Input     |
-|   my_mipi_rx_DATA[3]   |    Input     |
-|   my_mipi_rx_DATA[2]   |    Input     |
-|   my_mipi_rx_DATA[1]   |    Input     |
-|   my_mipi_rx_DATA[0]   |    Input     |
-|   my_mipi_rx_CNT[3]    |    Input     |
-|   my_mipi_rx_CNT[2]    |    Input     |
-|   my_mipi_rx_CNT[1]    |    Input     |
-|   my_mipi_rx_CNT[0]    |    Input     |
-|  my_mipi_rx_HSYNC[3]   |    Input     |
-|  my_mipi_rx_VSYNC[3]   |    Input     |
-|  my_mipi_rx_HSYNC[2]   |    Input     |
-|  my_mipi_rx_VSYNC[2]   |    Input     |
-|  my_mipi_rx_HSYNC[1]   |    Input     |
-|  my_mipi_rx_VSYNC[1]   |    Input     |
-|  my_mipi_rx_HSYNC[0]   |    Input     |
-|  my_mipi_rx_VSYNC[0]   |    Input     |
 +------------------------+--------------+
 
 ----------- IO Interface Summary (end) ----------
 
-Elapsed time for placement: 0 hours 0 minutes 14 seconds
+Elapsed time for placement: 0 hours 0 minutes 16 seconds

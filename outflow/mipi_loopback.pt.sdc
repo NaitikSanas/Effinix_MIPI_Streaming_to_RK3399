@@ -1,7 +1,7 @@
 
 # Efinity Interface Designer SDC
 # Version: 2021.2.323
-# Date: 2022-08-06 12:35
+# Date: 2022-08-08 09:56
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -11,12 +11,9 @@
 
 # PLL Constraints
 #################
-create_clock -period 78.14 tx_vga_clk
+create_clock -period 78.13 tx_vga_clk
 create_clock -period 156.27 tx_pixel_clk
-create_clock -period 10.02 mipi_rx_cal_clk
-create_clock -period 83.33 tx_esc_pll_CLKOUT0
-create_clock -period 25.00 rx_vga_clk
-create_clock -period 100.00 rx_pixel_clk
+create_clock -period 83.30 tx_esc_pll_CLKOUT0
 
 # GPIO Constraints
 ####################
@@ -24,8 +21,6 @@ create_clock -period 100.00 rx_pixel_clk
 # set_input_delay -clock <CLOCK> -min <MIN CALCULATION> [get_ports {mipi_refclk}]
 # set_input_delay -clock <CLOCK> -max <MAX CALCULATION> [get_ports {ref_clk}]
 # set_input_delay -clock <CLOCK> -min <MIN CALCULATION> [get_ports {ref_clk}]
-# set_input_delay -clock <CLOCK> -max <MAX CALCULATION> [get_ports {refclk2}]
-# set_input_delay -clock <CLOCK> -min <MIN CALCULATION> [get_ports {refclk2}]
 
 # LVDS RX GPIO Constraints
 ############################
@@ -42,29 +37,6 @@ create_clock -period 100.00 rx_pixel_clk
 
 # LVDS Rx Constraints
 ####################
-
-# MIPI RX Constraints
-#####################################
-set_output_delay -clock rx_pixel_clk -max -4.746 [get_ports {my_mipi_rx_VC_ENA[3] my_mipi_rx_VC_ENA[2] my_mipi_rx_VC_ENA[1] my_mipi_rx_VC_ENA[0]}]
-set_output_delay -clock rx_pixel_clk -min -2.587 [get_ports {my_mipi_rx_VC_ENA[3] my_mipi_rx_VC_ENA[2] my_mipi_rx_VC_ENA[1] my_mipi_rx_VC_ENA[0]}]
-set_output_delay -clock rx_pixel_clk -max -5.197 [get_ports {my_mipi_rx_CLEAR}]
-set_output_delay -clock rx_pixel_clk -min -2.498 [get_ports {my_mipi_rx_CLEAR}]
-set_input_delay -clock rx_pixel_clk -max 6.394 [get_ports {my_mipi_rx_VSYNC[3] my_mipi_rx_VSYNC[2] my_mipi_rx_VSYNC[1] my_mipi_rx_VSYNC[0]}]
-set_input_delay -clock rx_pixel_clk -min 3.197 [get_ports {my_mipi_rx_VSYNC[3] my_mipi_rx_VSYNC[2] my_mipi_rx_VSYNC[1] my_mipi_rx_VSYNC[0]}]
-set_input_delay -clock rx_pixel_clk -max 6.388 [get_ports {my_mipi_rx_HSYNC[3] my_mipi_rx_HSYNC[2] my_mipi_rx_HSYNC[1] my_mipi_rx_HSYNC[0]}]
-set_input_delay -clock rx_pixel_clk -min 3.194 [get_ports {my_mipi_rx_HSYNC[3] my_mipi_rx_HSYNC[2] my_mipi_rx_HSYNC[1] my_mipi_rx_HSYNC[0]}]
-set_input_delay -clock rx_pixel_clk -max 6.242 [get_ports {my_mipi_rx_VALID}]
-set_input_delay -clock rx_pixel_clk -min 3.121 [get_ports {my_mipi_rx_VALID}]
-set_input_delay -clock rx_pixel_clk -max 6.312 [get_ports {my_mipi_rx_CNT[3] my_mipi_rx_CNT[2] my_mipi_rx_CNT[1] my_mipi_rx_CNT[0]}]
-set_input_delay -clock rx_pixel_clk -min 3.156 [get_ports {my_mipi_rx_CNT[3] my_mipi_rx_CNT[2] my_mipi_rx_CNT[1] my_mipi_rx_CNT[0]}]
-set_input_delay -clock rx_pixel_clk -max 6.340 [get_ports {my_mipi_rx_DATA[*]}]
-set_input_delay -clock rx_pixel_clk -min 3.170 [get_ports {my_mipi_rx_DATA[*]}]
-set_input_delay -clock rx_pixel_clk -max 6.257 [get_ports {my_mipi_rx_ERROR[*]}]
-set_input_delay -clock rx_pixel_clk -min 3.128 [get_ports {my_mipi_rx_ERROR[*]}]
-set_input_delay -clock rx_pixel_clk -max 6.255 [get_ports {my_mipi_rx_ULPS_CLK}]
-set_input_delay -clock rx_pixel_clk -min 3.127 [get_ports {my_mipi_rx_ULPS_CLK}]
-set_input_delay -clock rx_pixel_clk -max 6.264 [get_ports {my_mipi_rx_ULPS[3] my_mipi_rx_ULPS[2] my_mipi_rx_ULPS[1] my_mipi_rx_ULPS[0]}]
-set_input_delay -clock rx_pixel_clk -min 3.132 [get_ports {my_mipi_rx_ULPS[3] my_mipi_rx_ULPS[2] my_mipi_rx_ULPS[1] my_mipi_rx_ULPS[0]}]
 
 # MIPI TX Constraints
 #####################################

@@ -5,20 +5,20 @@ Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
 
 Compiled: Dec 15 2021.
 
-Using source file "D:/MIPI_Loopback/work_pnr/mipi_loopback.lbf"
+Using source file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr/mipi_loopback.lbf"
 Generating HEX programming file for device "T85F324", family "Trion"
-Using periphery source file "D:/MIPI_Loopback/outflow/mipi_loopback.lpf"
-Generating bit file: "D:/MIPI_Loopback/outflow/mipi_loopback.bit"
+Using periphery source file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.lpf"
+Generating bit file: "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.bit"
 HEX Generation Options Summary:
 	Listing options specified to bitstream generation:
 	spi_low_power_mode                       = on
 	oscillator_clock_divider                 = DIV8
 	io_weak_pullup                           = on
 	release_tri_then_reset                   = on
-Finished generating "D:/MIPI_Loopback/outflow/mipi_loopback.hex"
-Efinity Bitstream Generator took 6.83764 seconds.
-	Efinity Bitstream Generator took 5.82812 seconds (approximately) in total CPU time.
-Efinity Bitstream Generator virtual memory usage: begin = 2.544 MB, end = 7.168 MB, delta = 4.624 MB
-	Efinity Bitstream Generator peak virtual memory usage = 223.152 MB
-Efinity Bitstream Generator resident set memory usage: begin = 7.904 MB, end = 13.048 MB, delta = 5.144 MB
-	Efinity Bitstream Generator peak resident set memory usage = 197.372 MB
+Finished generating "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.hex"
+Efinity Bitstream Generator took 6.73975 seconds.
+	Efinity Bitstream Generator took 5.70312 seconds (approximately) in total CPU time.
+Efinity Bitstream Generator virtual memory usage: begin = 2.556 MB, end = 5.612 MB, delta = 3.056 MB
+	Efinity Bitstream Generator peak virtual memory usage = 223.268 MB
+Efinity Bitstream Generator resident set memory usage: begin = 7.916 MB, end = 12.952 MB, delta = 5.036 MB
+	Efinity Bitstream Generator peak resident set memory usage = 197.304 MB

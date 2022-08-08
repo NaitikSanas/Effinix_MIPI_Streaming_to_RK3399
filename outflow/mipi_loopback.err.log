@@ -1096,3 +1096,50 @@
 // Aug 06, 2022 12:35:07
 ///////////////////////////////////
 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:39:17
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:48:23
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'valid_h_patgen_PC' is not declared (VERI-1128) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:217)
+[EFX-0010 VERI-ERROR] 'hsync_patgen_PC' is not declared (VERI-1128) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:250)
+[EFX-0010 VERI-ERROR] module 'mipi_loopback_top' is ignored due to previous errors (VERI-1072) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:255)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:48:38
+///////////////////////////////////
+
+[EFX-0010 VERI-ERROR] 'valid_h_patgen_PC' is not declared (VERI-1128) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:217)
+[EFX-0010 VERI-ERROR] module 'mipi_loopback_top' is ignored due to previous errors (VERI-1072) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:255)
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:49:24
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:50:02
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:53:50
+///////////////////////////////////
+
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 09:56:08
+///////////////////////////////////
+

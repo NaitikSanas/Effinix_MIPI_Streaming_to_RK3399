@@ -1,6 +1,5 @@
-cell { name: "patgen/hsync_patgen~FF" type: "eft" mode: "logic_ff_clk_RISING" }
 cell { name: "patgen/valid_v_patgen~FF" type: "eft" mode: "logic_ff_clk_RISING" }
-cell { name: "hsync_patgen_PC~FF" type: "eft" mode: "logic_ff_clk_RISING" }
+cell { name: "patgen/hsync_patgen~FF" type: "eft" mode: "logic_ff_clk_RISING" }
 cell { name: "patgen/valid_h_patgen~FF" type: "eft" mode: "logic_ff_clk_RISING" }
 cell { name: "patgen/x[0]~FF" type: "eft" mode: "logic_ff_clk_RISING" }
 cell { name: "patgen/vsync_patgen~FF" type: "eft" mode: "logic_ff_clk_RISING" }
@@ -60,7 +59,6 @@ cell { name: "tx_vga_clk" type: "io" mode: "inpad" fixed {x: 338 y: 318 k: 1} }
 cell { name: "led5" type: "io" mode: "outpad" fixed {x: 307 y: 643 k: 0} }
 cell { name: "led6" type: "io" mode: "outpad" fixed {x: 308 y: 643 k: 0} }
 cell { name: "tx_pixel_clk" type: "io" mode: "inpad" fixed {x: 338 y: 319 k: 1} }
-cell { name: "rx_pixel_clk" type: "io" mode: "inpad" fixed {x: 338 y: 323 k: 1} }
 cell { name: "my_mipi_tx_DPHY_RSTN" type: "io" mode: "outpad" fixed {x: 338 y: 571 k: 0} }
 cell { name: "my_mipi_tx_RSTN" type: "io" mode: "outpad" fixed {x: 338 y: 571 k: 2} }
 cell { name: "my_mipi_tx_VALID" type: "io" mode: "outpad" fixed {x: 338 y: 622 k: 2} }
@@ -167,203 +165,108 @@ cell { name: "my_mipi_tx_ULPS_EXIT[1]" type: "io" mode: "outpad" fixed {x: 338 y
 cell { name: "my_mipi_tx_ULPS_EXIT[0]" type: "io" mode: "outpad" fixed {x: 338 y: 575 k: 0} }
 cell { name: "my_mipi_tx_ULPS_CLK_ENTER" type: "io" mode: "outpad" fixed {x: 338 y: 576 k: 2} }
 cell { name: "my_mipi_tx_ULPS_CLK_EXIT" type: "io" mode: "outpad" fixed {x: 338 y: 576 k: 0} }
-cell { name: "my_mipi_rx_DPHY_RSTN" type: "io" mode: "outpad" fixed {x: 338 y: 567 k: 0} }
-cell { name: "my_mipi_rx_RSTN" type: "io" mode: "outpad" fixed {x: 338 y: 566 k: 2} }
-cell { name: "my_mipi_rx_CLEAR" type: "io" mode: "outpad" fixed {x: 338 y: 570 k: 2} }
-cell { name: "my_mipi_rx_LANES[1]" type: "io" mode: "outpad" fixed {x: 338 y: 567 k: 2} }
-cell { name: "my_mipi_rx_LANES[0]" type: "io" mode: "outpad" fixed {x: 338 y: 568 k: 0} }
-cell { name: "my_mipi_rx_VC_ENA[3]" type: "io" mode: "outpad" fixed {x: 338 y: 568 k: 2} }
-cell { name: "my_mipi_rx_VC_ENA[2]" type: "io" mode: "outpad" fixed {x: 338 y: 569 k: 0} }
-cell { name: "my_mipi_rx_VC_ENA[1]" type: "io" mode: "outpad" fixed {x: 338 y: 569 k: 2} }
-cell { name: "my_mipi_rx_VC_ENA[0]" type: "io" mode: "outpad" fixed {x: 338 y: 570 k: 0} }
-cell { name: "bscan_TDO" type: "io" mode: "outpad" fixed {x: 0 y: 2 k: 0} }
 cell { name: "VCC" type: "efl" mode: "logic" }
 cell { name: "GND" type: "efl" mode: "logic" }
-cell { name: "LUT__855" type: "efl" mode: "logic" }
-cell { name: "LUT__856" type: "efl" mode: "logic" }
-cell { name: "LUT__857" type: "efl" mode: "logic" }
-cell { name: "LUT__858" type: "efl" mode: "logic" }
-cell { name: "LUT__859" type: "efl" mode: "logic" }
-cell { name: "LUT__860" type: "efl" mode: "logic" }
-cell { name: "LUT__861" type: "efl" mode: "logic" }
-cell { name: "LUT__862" type: "efl" mode: "logic" }
-cell { name: "LUT__863" type: "efl" mode: "logic" }
-cell { name: "LUT__864" type: "efl" mode: "logic" }
-cell { name: "LUT__865" type: "efl" mode: "logic" }
-cell { name: "LUT__866" type: "efl" mode: "logic" }
-cell { name: "LUT__867" type: "efl" mode: "logic" }
-cell { name: "LUT__868" type: "efl" mode: "logic" }
-cell { name: "LUT__869" type: "efl" mode: "logic" }
-cell { name: "LUT__870" type: "efl" mode: "logic" }
-cell { name: "LUT__871" type: "efl" mode: "logic" }
-cell { name: "LUT__872" type: "efl" mode: "logic" }
-cell { name: "LUT__873" type: "efl" mode: "logic" }
-cell { name: "LUT__874" type: "efl" mode: "logic" }
-cell { name: "LUT__875" type: "efl" mode: "logic" }
-cell { name: "LUT__876" type: "efl" mode: "logic" }
-cell { name: "LUT__877" type: "efl" mode: "logic" }
-cell { name: "LUT__878" type: "efl" mode: "logic" }
-cell { name: "LUT__879" type: "efl" mode: "logic" }
-cell { name: "LUT__880" type: "efl" mode: "logic" }
-cell { name: "LUT__881" type: "efl" mode: "logic" }
-cell { name: "LUT__882" type: "efl" mode: "logic" }
-cell { name: "LUT__884" type: "efl" mode: "logic" }
-cell { name: "LUT__885" type: "efl" mode: "logic" }
-cell { name: "LUT__886" type: "efl" mode: "logic" }
-cell { name: "LUT__887" type: "efl" mode: "logic" }
-cell { name: "LUT__888" type: "efl" mode: "logic" }
-cell { name: "LUT__889" type: "efl" mode: "logic" }
-cell { name: "LUT__890" type: "efl" mode: "logic" }
-cell { name: "LUT__892" type: "efl" mode: "logic" }
-cell { name: "LUT__893" type: "efl" mode: "logic" }
-cell { name: "LUT__894" type: "efl" mode: "logic" }
-cell { name: "LUT__895" type: "efl" mode: "logic" }
-cell { name: "LUT__896" type: "efl" mode: "logic" }
-cell { name: "LUT__897" type: "efl" mode: "logic" }
-cell { name: "LUT__898" type: "efl" mode: "logic" }
-cell { name: "LUT__899" type: "efl" mode: "logic" }
-cell { name: "LUT__906" type: "efl" mode: "logic" }
-cell { name: "LUT__907" type: "efl" mode: "logic" }
-cell { name: "LUT__908" type: "efl" mode: "logic" }
-cell { name: "LUT__909" type: "efl" mode: "logic" }
-cell { name: "LUT__910" type: "efl" mode: "logic" }
-cell { name: "LUT__912" type: "efl" mode: "logic" }
-cell { name: "LUT__913" type: "efl" mode: "logic" }
-cell { name: "LUT__914" type: "efl" mode: "logic" }
-cell { name: "LUT__915" type: "efl" mode: "logic" }
-cell { name: "LUT__917" type: "efl" mode: "logic" }
-cell { name: "LUT__918" type: "efl" mode: "logic" }
-cell { name: "LUT__919" type: "efl" mode: "logic" }
-cell { name: "LUT__920" type: "efl" mode: "logic" }
-cell { name: "LUT__921" type: "efl" mode: "logic" }
-cell { name: "LUT__922" type: "efl" mode: "logic" }
-cell { name: "LUT__923" type: "efl" mode: "logic" }
-cell { name: "LUT__924" type: "efl" mode: "logic" }
-cell { name: "LUT__925" type: "efl" mode: "logic" }
-cell { name: "LUT__926" type: "efl" mode: "logic" }
-cell { name: "LUT__927" type: "efl" mode: "logic" }
-cell { name: "LUT__931" type: "efl" mode: "logic" }
-cell { name: "LUT__933" type: "efl" mode: "logic" }
-cell { name: "LUT__936" type: "efl" mode: "logic" }
-cell { name: "LUT__940" type: "efl" mode: "logic" }
-cell { name: "LUT__941" type: "efl" mode: "logic" }
-cell { name: "LUT__945" type: "efl" mode: "logic" }
-cell { name: "LUT__946" type: "efl" mode: "logic" }
-cell { name: "LUT__949" type: "efl" mode: "logic" }
-cell { name: "LUT__950" type: "efl" mode: "logic" }
-cell { name: "LUT__972" type: "efl" mode: "logic" }
-cell { name: "LUT__977" type: "efl" mode: "logic" }
-cell { name: "LUT__982" type: "efl" mode: "logic" }
-cell { name: "LUT__983" type: "efl" mode: "logic" }
-cell { name: "LUT__986" type: "efl" mode: "logic" }
-cell { name: "LUT__854" type: "efl" mode: "logic" }
-cell { name: "CLKBUF__1" type: "gbuf_block" mode: "gbuf_block" fixed {x: 337 y: 319 k: 0} }
+cell { name: "LUT__375" type: "efl" mode: "logic" }
+cell { name: "LUT__376" type: "efl" mode: "logic" }
+cell { name: "LUT__377" type: "efl" mode: "logic" }
+cell { name: "LUT__378" type: "efl" mode: "logic" }
+cell { name: "LUT__379" type: "efl" mode: "logic" }
+cell { name: "LUT__380" type: "efl" mode: "logic" }
+cell { name: "LUT__381" type: "efl" mode: "logic" }
+cell { name: "LUT__382" type: "efl" mode: "logic" }
+cell { name: "LUT__383" type: "efl" mode: "logic" }
+cell { name: "LUT__384" type: "efl" mode: "logic" }
+cell { name: "LUT__385" type: "efl" mode: "logic" }
+cell { name: "LUT__386" type: "efl" mode: "logic" }
+cell { name: "LUT__387" type: "efl" mode: "logic" }
+cell { name: "LUT__388" type: "efl" mode: "logic" }
+cell { name: "LUT__389" type: "efl" mode: "logic" }
+cell { name: "LUT__390" type: "efl" mode: "logic" }
+cell { name: "LUT__391" type: "efl" mode: "logic" }
+cell { name: "LUT__392" type: "efl" mode: "logic" }
+cell { name: "LUT__393" type: "efl" mode: "logic" }
+cell { name: "LUT__394" type: "efl" mode: "logic" }
+cell { name: "LUT__395" type: "efl" mode: "logic" }
+cell { name: "LUT__396" type: "efl" mode: "logic" }
+cell { name: "LUT__397" type: "efl" mode: "logic" }
+cell { name: "LUT__398" type: "efl" mode: "logic" }
+cell { name: "LUT__399" type: "efl" mode: "logic" }
+cell { name: "LUT__400" type: "efl" mode: "logic" }
+cell { name: "LUT__402" type: "efl" mode: "logic" }
+cell { name: "LUT__403" type: "efl" mode: "logic" }
+cell { name: "LUT__404" type: "efl" mode: "logic" }
+cell { name: "LUT__405" type: "efl" mode: "logic" }
+cell { name: "LUT__406" type: "efl" mode: "logic" }
+cell { name: "LUT__407" type: "efl" mode: "logic" }
+cell { name: "LUT__408" type: "efl" mode: "logic" }
+cell { name: "LUT__409" type: "efl" mode: "logic" }
+cell { name: "LUT__410" type: "efl" mode: "logic" }
+cell { name: "LUT__411" type: "efl" mode: "logic" }
+cell { name: "LUT__412" type: "efl" mode: "logic" }
+cell { name: "LUT__413" type: "efl" mode: "logic" }
+cell { name: "LUT__414" type: "efl" mode: "logic" }
+cell { name: "LUT__415" type: "efl" mode: "logic" }
+cell { name: "LUT__416" type: "efl" mode: "logic" }
+cell { name: "LUT__418" type: "efl" mode: "logic" }
+cell { name: "LUT__419" type: "efl" mode: "logic" }
+cell { name: "LUT__420" type: "efl" mode: "logic" }
+cell { name: "LUT__421" type: "efl" mode: "logic" }
+cell { name: "LUT__422" type: "efl" mode: "logic" }
+cell { name: "LUT__424" type: "efl" mode: "logic" }
+cell { name: "LUT__425" type: "efl" mode: "logic" }
+cell { name: "LUT__426" type: "efl" mode: "logic" }
+cell { name: "LUT__427" type: "efl" mode: "logic" }
+cell { name: "LUT__429" type: "efl" mode: "logic" }
+cell { name: "LUT__430" type: "efl" mode: "logic" }
+cell { name: "LUT__431" type: "efl" mode: "logic" }
+cell { name: "LUT__432" type: "efl" mode: "logic" }
+cell { name: "LUT__433" type: "efl" mode: "logic" }
+cell { name: "LUT__434" type: "efl" mode: "logic" }
+cell { name: "LUT__435" type: "efl" mode: "logic" }
+cell { name: "LUT__436" type: "efl" mode: "logic" }
+cell { name: "LUT__437" type: "efl" mode: "logic" }
+cell { name: "LUT__438" type: "efl" mode: "logic" }
+cell { name: "LUT__442" type: "efl" mode: "logic" }
+cell { name: "LUT__444" type: "efl" mode: "logic" }
+cell { name: "LUT__449" type: "efl" mode: "logic" }
+cell { name: "LUT__453" type: "efl" mode: "logic" }
+cell { name: "LUT__455" type: "efl" mode: "logic" }
+cell { name: "LUT__458" type: "efl" mode: "logic" }
+cell { name: "LUT__480" type: "efl" mode: "logic" }
+cell { name: "LUT__483" type: "efl" mode: "logic" }
+cell { name: "LUT__486" type: "efl" mode: "logic" }
+cell { name: "LUT__487" type: "efl" mode: "logic" }
+cell { name: "LUT__492" type: "efl" mode: "logic" }
+cell { name: "LUT__495" type: "efl" mode: "logic" }
+cell { name: "LUT__374" type: "efl" mode: "logic" }
 cell { name: "CLKBUF__0" type: "gbuf_block" mode: "gbuf_block" fixed {x: 337 y: 318 k: 0} }
-cell { name: "mipi_rx_cal_clk" type: "io" mode: "inpad" fixed {x: 338 y: 320 k: 1} }
-cell { name: "mipi_rx_cal_clk~CLKBUF" type: "gbuf_block" mode: "gbuf_block" fixed {x: 337 y: 320 k: 0} }
-cell { name: "rx_pixel_clk~CLKBUF" type: "gbuf_block" mode: "gbuf_block" fixed {x: 337 y: 323 k: 0} }
-cell { name: "tx_esc_pll_CLKOUT0" type: "io" mode: "inpad" fixed {x: 338 y: 321 k: 1} }
-cell { name: "tx_esc_pll_CLKOUT0~CLKBUF" type: "gbuf_block" mode: "gbuf_block" fixed {x: 337 y: 321 k: 0} }
+cell { name: "tx_esc_pll_CLKOUT0" type: "io" mode: "inpad" fixed {x: 338 y: 320 k: 1} }
+cell { name: "tx_esc_pll_CLKOUT0~CLKBUF" type: "gbuf_block" mode: "gbuf_block" fixed {x: 337 y: 320 k: 0} }
+cell { name: "tx_pixel_clk~CLKBUF" type: "gbuf_block" mode: "gbuf_block" fixed {x: 337 y: 319 k: 0} }
 net {
-	name: "n506"
-	terminal	{ cell: "LUT__877" port: "O" }
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[0]" }
+	name: "n230"
+	terminal	{ cell: "LUT__399" port: "O" }
+	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "I[0]" }
+	terminal	{ cell: "LUT__430" port: "I[1]" }
  }
 net {
-	name: "n503"
-	terminal	{ cell: "LUT__874" port: "O" }
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/h_count[10]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/h_count[11]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__909" port: "I[3]" }
-	terminal	{ cell: "LUT__913" port: "I[3]" }
-	terminal	{ cell: "LUT__982" port: "I[0]" }
+	name: "n231"
+	terminal	{ cell: "LUT__400" port: "O" }
+	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__412" port: "I[3]" }
  }
 net {
-	name: "n509"
-	terminal	{ cell: "LUT__880" port: "O" }
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[2]" }
- }
-net {
-	name: "n511"
-	terminal	{ cell: "LUT__882" port: "O" }
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__895" port: "I[0]" }
-	terminal	{ cell: "LUT__910" port: "I[0]" }
-	terminal	{ cell: "LUT__914" port: "I[3]" }
- }
-net {
-	name: "vcc"
-	type: CONSTANT
-	terminal	{ cell: "VCC" port: "O" }
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "CE" }
-	terminal	{ cell: "hsync_patgen_PC~FF" port: "CE" }
-	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[0]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[0]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[0]_2~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[1]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[2]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[3]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[4]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[5]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[6]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[7]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[8]~FF" port: "CE" }
-	terminal	{ cell: "patgen/x[9]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[1]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[2]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[3]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[4]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[5]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[6]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[7]~FF" port: "CE" }
-	terminal	{ cell: "patgen/y[8]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[1]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[2]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[3]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[4]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[5]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[6]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[7]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[8]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[9]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[10]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[11]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[12]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[13]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[14]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[15]~FF" port: "CE" }
-	terminal	{ cell: "patgen/h_count[16]~FF" port: "CE" }
-	terminal	{ cell: "my_mipi_tx_DPHY_RSTN" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_RSTN" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[45]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[30]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[27]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[26]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[22]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[19]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[18]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[6]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_DATA[3]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_TYPE[5]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_TYPE[2]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_LANES[0]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_HRES[9]" port: "outpad" }
-	terminal	{ cell: "my_mipi_tx_HRES[7]" port: "outpad" }
-	terminal	{ cell: "CLKBUF__1" port: "I[0]" }
-	terminal	{ cell: "CLKBUF__0" port: "I[0]" }
-	terminal	{ cell: "mipi_rx_cal_clk~CLKBUF" port: "I[0]" }
-	terminal	{ cell: "rx_pixel_clk~CLKBUF" port: "I[0]" }
-	terminal	{ cell: "tx_esc_pll_CLKOUT0~CLKBUF" port: "I[0]" }
+	name: "ceg_net1"
+	terminal	{ cell: "LUT__412" port: "O" }
+	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "CE" }
  }
 net {
 	name: "gnd"
 	type: CONSTANT
 	terminal	{ cell: "GND" port: "O" }
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "RE" }
 	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "RE" }
-	terminal	{ cell: "hsync_patgen_PC~FF" port: "RE" }
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "RE" }
 	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "RE" }
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "RE" }
 	terminal	{ cell: "patgen/v_count[0]~FF" port: "RE" }
@@ -440,30 +343,19 @@ net {
 	terminal	{ cell: "my_mipi_tx_ULPS_EXIT[0]" port: "outpad" }
 	terminal	{ cell: "my_mipi_tx_ULPS_CLK_ENTER" port: "outpad" }
 	terminal	{ cell: "my_mipi_tx_ULPS_CLK_EXIT" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_DPHY_RSTN" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_RSTN" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_CLEAR" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_LANES[1]" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_LANES[0]" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_VC_ENA[3]" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_VC_ENA[2]" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_VC_ENA[1]" port: "outpad" }
-	terminal	{ cell: "my_mipi_rx_VC_ENA[0]" port: "outpad" }
-	terminal	{ cell: "bscan_TDO" port: "outpad" }
  }
 net {
-	name: "my_mipi_tx_HSYNC"
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "O_seq" }
-	terminal	{ cell: "hsync_patgen_PC~FF" port: "I[0]" }
-	terminal	{ cell: "my_mipi_tx_HSYNC" port: "outpad" }
+	name: "valid_v_patgen"
+	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "O_seq" }
+	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "I[3]" }
  }
 net {
 	name: "tx_vga_clk~O"
 	type: GLOBAL_CLOCK
 	gbuf_driven: true
 	terminal	{ cell: "CLKBUF__0" port: "clkout" }
-	terminal	{ cell: "patgen/hsync_patgen~FF" port: "clk" }
 	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "clk" }
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "clk" }
 	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "clk" }
 	terminal	{ cell: "patgen/x[0]~FF" port: "clk" }
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "clk" }
@@ -521,70 +413,125 @@ net {
 	terminal	{ cell: "patgen/h_count[16]~FF" port: "clk" }
  }
 net {
-	name: "n515"
-	terminal	{ cell: "LUT__887" port: "O" }
-	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__899" port: "I[2]" }
+	name: "patgen/h_count[9]"
+	terminal	{ cell: "patgen/h_count[9]~FF" port: "O_seq" }
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/x[9]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/h_count[9]~FF" port: "I[2]" }
+	terminal	{ cell: "LUT__405" port: "I[1]" }
+	terminal	{ cell: "LUT__422" port: "I[1]" }
  }
 net {
-	name: "n518"
-	terminal	{ cell: "LUT__890" port: "O" }
-	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__898" port: "I[2]" }
-	terminal	{ cell: "LUT__918" port: "I[3]" }
+	name: "patgen/h_count[8]"
+	terminal	{ cell: "patgen/h_count[8]~FF" port: "O_seq" }
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/x[8]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/x[9]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/h_count[8]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/h_count[9]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__405" port: "I[0]" }
+	terminal	{ cell: "LUT__422" port: "I[0]" }
  }
 net {
-	name: "ceg_net1"
-	terminal	{ cell: "LUT__899" port: "O" }
-	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "CE" }
+	name: "n241"
+	terminal	{ cell: "LUT__413" port: "O" }
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[2]" }
  }
 net {
-	name: "valid_v_patgen"
-	terminal	{ cell: "patgen/valid_v_patgen~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__910" port: "I[1]" }
+	name: "n244"
+	terminal	{ cell: "LUT__416" port: "O" }
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "I[3]" }
  }
 net {
-	name: "my_mipi_tx_VSYNC"
-	terminal	{ cell: "patgen/vsync_patgen~FF" port: "O_seq" }
-	terminal	{ cell: "hsync_patgen_PC~FF" port: "I[1]" }
-	terminal	{ cell: "my_mipi_tx_VSYNC" port: "outpad" }
+	name: "vcc"
+	type: CONSTANT
+	terminal	{ cell: "VCC" port: "O" }
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "CE" }
+	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[0]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[0]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[0]_2~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[1]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[2]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[3]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[4]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[5]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[6]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[7]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[8]~FF" port: "CE" }
+	terminal	{ cell: "patgen/x[9]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[1]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[2]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[3]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[4]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[5]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[6]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[7]~FF" port: "CE" }
+	terminal	{ cell: "patgen/y[8]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[1]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[2]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[3]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[4]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[5]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[6]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[7]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[8]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[9]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[10]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[11]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[12]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[13]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[14]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[15]~FF" port: "CE" }
+	terminal	{ cell: "patgen/h_count[16]~FF" port: "CE" }
+	terminal	{ cell: "my_mipi_tx_DPHY_RSTN" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_RSTN" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[45]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[30]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[27]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[26]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[22]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[19]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[18]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[6]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_DATA[3]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_TYPE[5]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_TYPE[2]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_LANES[0]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_HRES[9]" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_HRES[7]" port: "outpad" }
+	terminal	{ cell: "CLKBUF__0" port: "I[0]" }
+	terminal	{ cell: "tx_esc_pll_CLKOUT0~CLKBUF" port: "I[0]" }
+	terminal	{ cell: "tx_pixel_clk~CLKBUF" port: "I[0]" }
  }
 net {
-	name: "led5"
-	terminal	{ cell: "hsync_patgen_PC~FF" port: "O_seq" }
+	name: "my_mipi_tx_HSYNC"
+	terminal	{ cell: "patgen/hsync_patgen~FF" port: "O_seq" }
 	terminal	{ cell: "led5" port: "outpad" }
+	terminal	{ cell: "my_mipi_tx_HSYNC" port: "outpad" }
  }
 net {
-	name: "tx_pixel_clk~O"
-	type: GLOBAL_CLOCK
-	gbuf_driven: true
-	terminal	{ cell: "CLKBUF__1" port: "clkout" }
-	terminal	{ cell: "hsync_patgen_PC~FF" port: "clk" }
- }
-net {
-	name: "n527"
-	terminal	{ cell: "LUT__908" port: "O" }
+	name: "n246"
+	terminal	{ cell: "LUT__419" port: "O" }
 	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/x[8]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/x[9]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__914" port: "I[0]" }
+	terminal	{ cell: "patgen/x[7]~FF" port: "I[0]" }
  }
 net {
-	name: "n508"
-	terminal	{ cell: "LUT__879" port: "O" }
+	name: "n235"
+	terminal	{ cell: "LUT__405" port: "O" }
 	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__880" port: "I[2]" }
-	terminal	{ cell: "LUT__914" port: "I[1]" }
+	terminal	{ cell: "patgen/h_count[10]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/h_count[11]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__407" port: "I[2]" }
+	terminal	{ cell: "LUT__416" port: "I[2]" }
+	terminal	{ cell: "LUT__425" port: "I[1]" }
+	terminal	{ cell: "LUT__492" port: "I[0]" }
  }
 net {
-	name: "n528"
-	terminal	{ cell: "LUT__909" port: "O" }
+	name: "n249"
+	terminal	{ cell: "LUT__422" port: "O" }
 	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "I[2]" }
- }
-net {
-	name: "n529"
-	terminal	{ cell: "LUT__910" port: "O" }
-	terminal	{ cell: "patgen/valid_h_patgen~FF" port: "I[3]" }
+	terminal	{ cell: "LUT__425" port: "I[2]" }
  }
 net {
 	name: "my_mipi_tx_VALID"
@@ -599,13 +546,13 @@ net {
 	terminal	{ cell: "patgen/h_count[1]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[2]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[3]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__893" port: "I[0]" }
-	terminal	{ cell: "LUT__912" port: "I[0]" }
-	terminal	{ cell: "LUT__972" port: "I[0]" }
+	terminal	{ cell: "LUT__404" port: "I[0]" }
+	terminal	{ cell: "LUT__424" port: "I[0]" }
+	terminal	{ cell: "LUT__480" port: "I[0]" }
  }
 net {
 	name: "patgen/n442"
-	terminal	{ cell: "LUT__914" port: "O" }
+	terminal	{ cell: "LUT__425" port: "O" }
 	terminal	{ cell: "patgen/x[0]~FF" port: "RE" }
 	terminal	{ cell: "patgen/x[1]~FF" port: "RE" }
 	terminal	{ cell: "patgen/x[2]~FF" port: "RE" }
@@ -620,53 +567,54 @@ net {
 net {
 	name: "x[0]"
 	terminal	{ cell: "patgen/x[0]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__856" port: "I[0]" }
+	terminal	{ cell: "LUT__377" port: "I[0]" }
  }
 net {
-	name: "patgen/v_count[2]"
-	terminal	{ cell: "patgen/v_count[2]~FF" port: "O_seq" }
+	name: "n229"
+	terminal	{ cell: "LUT__398" port: "O" }
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/v_count[2]~FF" port: "I[2]" }
-	terminal	{ cell: "patgen/y[2]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__886" port: "I[2]" }
-	terminal	{ cell: "LUT__918" port: "I[0]" }
-	terminal	{ cell: "LUT__920" port: "I[0]" }
-	terminal	{ cell: "LUT__923" port: "I[2]" }
-	terminal	{ cell: "LUT__931" port: "I[2]" }
+	terminal	{ cell: "LUT__399" port: "I[1]" }
+	terminal	{ cell: "LUT__412" port: "I[2]" }
+	terminal	{ cell: "LUT__437" port: "I[0]" }
  }
 net {
-	name: "n523"
-	terminal	{ cell: "LUT__897" port: "O" }
+	name: "n238"
+	terminal	{ cell: "LUT__409" port: "O" }
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__898" port: "I[0]" }
+	terminal	{ cell: "LUT__411" port: "I[2]" }
  }
 net {
-	name: "n532"
-	terminal	{ cell: "LUT__915" port: "O" }
+	name: "n252"
+	terminal	{ cell: "LUT__427" port: "O" }
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "I[2]" }
  }
 net {
-	name: "n513"
-	terminal	{ cell: "LUT__885" port: "O" }
+	name: "n225"
+	terminal	{ cell: "LUT__394" port: "O" }
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__887" port: "I[0]" }
-	terminal	{ cell: "LUT__918" port: "I[1]" }
-	terminal	{ cell: "LUT__926" port: "I[2]" }
+	terminal	{ cell: "LUT__396" port: "I[2]" }
+	terminal	{ cell: "LUT__411" port: "I[0]" }
+	terminal	{ cell: "LUT__437" port: "I[1]" }
  }
 net {
-	name: "ceg_net10"
-	terminal	{ cell: "LUT__919" port: "O" }
+	name: "ceg_net5"
+	terminal	{ cell: "LUT__430" port: "O" }
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "CE" }
  }
 net {
 	name: "patgen/equal_5/n33"
 	terminal	{ cell: "patgen/vsync_patgen~FF" port: "O" }
 	terminal	{ cell: "patgen/v_count[1]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/v_count[3]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/v_count[3]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/v_count[4]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/v_count[5]~FF" port: "I[3]" }
-	terminal	{ cell: "patgen/v_count[9]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__919" port: "I[1]" }
+	terminal	{ cell: "patgen/v_count[9]~FF" port: "I[3]" }
+	terminal	{ cell: "LUT__430" port: "I[2]" }
+ }
+net {
+	name: "my_mipi_tx_VSYNC"
+	terminal	{ cell: "patgen/vsync_patgen~FF" port: "O_seq" }
+	terminal	{ cell: "my_mipi_tx_VSYNC" port: "outpad" }
  }
 net {
 	name: "patgen/v_count[0]_2"
@@ -676,15 +624,16 @@ net {
 	terminal	{ cell: "patgen/v_count[2]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/y[1]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/y[2]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__886" port: "I[3]" }
-	terminal	{ cell: "LUT__915" port: "I[0]" }
-	terminal	{ cell: "LUT__917" port: "I[0]" }
-	terminal	{ cell: "LUT__923" port: "I[0]" }
-	terminal	{ cell: "LUT__931" port: "I[0]" }
+	terminal	{ cell: "LUT__400" port: "I[3]" }
+	terminal	{ cell: "LUT__427" port: "I[0]" }
+	terminal	{ cell: "LUT__429" port: "I[0]" }
+	terminal	{ cell: "LUT__432" port: "I[0]" }
+	terminal	{ cell: "LUT__442" port: "I[0]" }
+	terminal	{ cell: "LUT__444" port: "I[0]" }
  }
 net {
 	name: "patgen/equal_4/n33"
-	terminal	{ cell: "LUT__895" port: "O" }
+	terminal	{ cell: "LUT__407" port: "O" }
 	terminal	{ cell: "patgen/v_count[0]~FF" port: "CE" }
 	terminal	{ cell: "patgen/h_count[0]_2~FF" port: "RE" }
 	terminal	{ cell: "patgen/v_count[1]~FF" port: "CE" }
@@ -719,12 +668,12 @@ net {
 	terminal	{ cell: "patgen/h_count[14]~FF" port: "RE" }
 	terminal	{ cell: "patgen/h_count[15]~FF" port: "RE" }
 	terminal	{ cell: "patgen/h_count[16]~FF" port: "RE" }
-	terminal	{ cell: "LUT__899" port: "I[0]" }
-	terminal	{ cell: "LUT__919" port: "I[2]" }
+	terminal	{ cell: "LUT__412" port: "I[0]" }
+	terminal	{ cell: "LUT__430" port: "I[3]" }
  }
 net {
 	name: "patgen/n475"
-	terminal	{ cell: "LUT__927" port: "O" }
+	terminal	{ cell: "LUT__438" port: "O" }
 	terminal	{ cell: "patgen/y[0]~FF" port: "RE" }
 	terminal	{ cell: "patgen/y[1]~FF" port: "RE" }
 	terminal	{ cell: "patgen/y[2]~FF" port: "RE" }
@@ -738,7 +687,7 @@ net {
 net {
 	name: "y[0]"
 	terminal	{ cell: "patgen/y[0]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__862" port: "I[0]" }
+	terminal	{ cell: "LUT__380" port: "I[0]" }
  }
 net {
 	name: "~patgen/n677"
@@ -751,42 +700,53 @@ net {
 	terminal	{ cell: "patgen/v_count[2]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[1]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[2]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__886" port: "I[0]" }
-	terminal	{ cell: "LUT__915" port: "I[2]" }
-	terminal	{ cell: "LUT__917" port: "I[1]" }
-	terminal	{ cell: "LUT__920" port: "I[1]" }
-	terminal	{ cell: "LUT__923" port: "I[1]" }
-	terminal	{ cell: "LUT__931" port: "I[1]" }
+	terminal	{ cell: "LUT__400" port: "I[0]" }
+	terminal	{ cell: "LUT__427" port: "I[2]" }
+	terminal	{ cell: "LUT__429" port: "I[1]" }
+	terminal	{ cell: "LUT__432" port: "I[1]" }
+	terminal	{ cell: "LUT__435" port: "I[1]" }
+	terminal	{ cell: "LUT__442" port: "I[1]" }
+	terminal	{ cell: "LUT__444" port: "I[1]" }
  }
 net {
-	name: "n542"
-	terminal	{ cell: "LUT__931" port: "O" }
+	name: "patgen/v_count[2]"
+	terminal	{ cell: "patgen/v_count[2]~FF" port: "O_seq" }
+	terminal	{ cell: "patgen/v_count[2]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/y[2]~FF" port: "I[2]" }
+	terminal	{ cell: "LUT__400" port: "I[2]" }
+	terminal	{ cell: "LUT__427" port: "I[1]" }
+	terminal	{ cell: "LUT__429" port: "I[2]" }
+	terminal	{ cell: "LUT__432" port: "I[2]" }
+	terminal	{ cell: "LUT__435" port: "I[0]" }
+	terminal	{ cell: "LUT__442" port: "I[2]" }
+	terminal	{ cell: "LUT__444" port: "I[2]" }
+ }
+net {
+	name: "n261"
+	terminal	{ cell: "LUT__442" port: "O" }
 	terminal	{ cell: "patgen/v_count[3]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__933" port: "I[0]" }
-	terminal	{ cell: "LUT__936" port: "I[1]" }
-	terminal	{ cell: "LUT__949" port: "I[0]" }
  }
 net {
 	name: "patgen/v_count[3]"
 	terminal	{ cell: "patgen/v_count[3]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[3]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[3]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[4]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__886" port: "I[1]" }
-	terminal	{ cell: "LUT__915" port: "I[3]" }
-	terminal	{ cell: "LUT__917" port: "I[2]" }
-	terminal	{ cell: "LUT__920" port: "I[2]" }
-	terminal	{ cell: "LUT__924" port: "I[1]" }
-	terminal	{ cell: "LUT__933" port: "I[1]" }
-	terminal	{ cell: "LUT__936" port: "I[2]" }
-	terminal	{ cell: "LUT__949" port: "I[1]" }
+	terminal	{ cell: "LUT__400" port: "I[1]" }
+	terminal	{ cell: "LUT__426" port: "I[0]" }
+	terminal	{ cell: "LUT__429" port: "I[3]" }
+	terminal	{ cell: "LUT__433" port: "I[1]" }
+	terminal	{ cell: "LUT__435" port: "I[2]" }
+	terminal	{ cell: "LUT__442" port: "I[3]" }
+	terminal	{ cell: "LUT__444" port: "I[3]" }
  }
 net {
-	name: "n543"
-	terminal	{ cell: "LUT__933" port: "O" }
+	name: "n262"
+	terminal	{ cell: "LUT__444" port: "O" }
 	terminal	{ cell: "patgen/v_count[4]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/v_count[5]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__941" port: "I[0]" }
+	terminal	{ cell: "patgen/v_count[6]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/v_count[7]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__449" port: "I[1]" }
  }
 net {
 	name: "patgen/v_count[4]"
@@ -794,9 +754,10 @@ net {
 	terminal	{ cell: "patgen/v_count[4]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/v_count[5]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[4]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__888" port: "I[1]" }
-	terminal	{ cell: "LUT__896" port: "I[0]" }
-	terminal	{ cell: "LUT__924" port: "I[2]" }
+	terminal	{ cell: "LUT__395" port: "I[3]" }
+	terminal	{ cell: "LUT__410" port: "I[0]" }
+	terminal	{ cell: "LUT__426" port: "I[1]" }
+	terminal	{ cell: "LUT__433" port: "I[2]" }
  }
 net {
 	name: "patgen/v_count[5]"
@@ -804,114 +765,123 @@ net {
 	terminal	{ cell: "patgen/v_count[5]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/y[5]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[6]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__888" port: "I[0]" }
-	terminal	{ cell: "LUT__896" port: "I[1]" }
-	terminal	{ cell: "LUT__925" port: "I[1]" }
+	terminal	{ cell: "LUT__395" port: "I[0]" }
+	terminal	{ cell: "LUT__410" port: "I[1]" }
+	terminal	{ cell: "LUT__426" port: "I[2]" }
+	terminal	{ cell: "LUT__434" port: "I[1]" }
  }
 net {
-	name: "n544"
-	terminal	{ cell: "LUT__936" port: "O" }
+	name: "n239"
+	terminal	{ cell: "LUT__410" port: "O" }
 	terminal	{ cell: "patgen/v_count[6]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/v_count[7]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/v_count[8]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__946" port: "I[0]" }
+	terminal	{ cell: "LUT__411" port: "I[1]" }
+	terminal	{ cell: "LUT__435" port: "I[3]" }
+	terminal	{ cell: "LUT__449" port: "I[0]" }
  }
 net {
 	name: "patgen/v_count[6]"
 	terminal	{ cell: "patgen/v_count[6]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[6]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/v_count[7]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/v_count[8]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/v_count[6]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/v_count[7]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/y[6]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__888" port: "I[2]" }
-	terminal	{ cell: "LUT__897" port: "I[0]" }
-	terminal	{ cell: "LUT__921" port: "I[0]" }
-	terminal	{ cell: "LUT__925" port: "I[2]" }
-	terminal	{ cell: "LUT__940" port: "I[1]" }
-	terminal	{ cell: "LUT__946" port: "I[2]" }
+	terminal	{ cell: "LUT__395" port: "I[2]" }
+	terminal	{ cell: "LUT__408" port: "I[0]" }
+	terminal	{ cell: "LUT__434" port: "I[2]" }
+	terminal	{ cell: "LUT__449" port: "I[2]" }
  }
 net {
 	name: "patgen/v_count[7]"
 	terminal	{ cell: "patgen/v_count[7]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[7]~FF" port: "I[2]" }
-	terminal	{ cell: "patgen/v_count[8]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/v_count[7]~FF" port: "I[3]" }
 	terminal	{ cell: "patgen/y[7]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[8]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__889" port: "I[0]" }
-	terminal	{ cell: "LUT__921" port: "I[1]" }
-	terminal	{ cell: "LUT__940" port: "I[2]" }
-	terminal	{ cell: "LUT__946" port: "I[3]" }
+	terminal	{ cell: "LUT__395" port: "I[1]" }
+	terminal	{ cell: "LUT__408" port: "I[1]" }
+	terminal	{ cell: "LUT__431" port: "I[0]" }
+	terminal	{ cell: "LUT__449" port: "I[3]" }
+ }
+net {
+	name: "n263"
+	terminal	{ cell: "LUT__449" port: "O" }
+	terminal	{ cell: "patgen/v_count[8]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/v_count[9]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/v_count[10]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/v_count[12]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/v_count[13]~FF" port: "I[0]" }
+	terminal	{ cell: "LUT__453" port: "I[0]" }
+	terminal	{ cell: "LUT__458" port: "I[0]" }
  }
 net {
 	name: "patgen/v_count[8]"
 	terminal	{ cell: "patgen/v_count[8]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[8]~FF" port: "I[3]" }
+	terminal	{ cell: "patgen/v_count[8]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/v_count[9]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/v_count[10]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/y[8]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__889" port: "I[1]" }
-	terminal	{ cell: "LUT__921" port: "I[2]" }
-	terminal	{ cell: "LUT__941" port: "I[2]" }
-	terminal	{ cell: "LUT__945" port: "I[0]" }
- }
-net {
-	name: "n546"
-	terminal	{ cell: "LUT__941" port: "O" }
-	terminal	{ cell: "patgen/v_count[9]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/v_count[10]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/v_count[11]~FF" port: "I[0]" }
+	terminal	{ cell: "LUT__396" port: "I[0]" }
+	terminal	{ cell: "LUT__408" port: "I[2]" }
+	terminal	{ cell: "LUT__431" port: "I[1]" }
+	terminal	{ cell: "LUT__453" port: "I[1]" }
+	terminal	{ cell: "LUT__455" port: "I[0]" }
  }
 net {
 	name: "patgen/v_count[9]"
 	terminal	{ cell: "patgen/v_count[9]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[9]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/v_count[10]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/v_count[11]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__890" port: "I[0]" }
-	terminal	{ cell: "LUT__897" port: "I[2]" }
-	terminal	{ cell: "LUT__922" port: "I[3]" }
-	terminal	{ cell: "LUT__927" port: "I[1]" }
-	terminal	{ cell: "LUT__945" port: "I[1]" }
+	terminal	{ cell: "patgen/v_count[9]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/v_count[10]~FF" port: "I[2]" }
+	terminal	{ cell: "LUT__396" port: "I[1]" }
+	terminal	{ cell: "LUT__409" port: "I[1]" }
+	terminal	{ cell: "LUT__431" port: "I[2]" }
+	terminal	{ cell: "LUT__436" port: "I[2]" }
+	terminal	{ cell: "LUT__453" port: "I[2]" }
+	terminal	{ cell: "LUT__455" port: "I[1]" }
  }
 net {
 	name: "patgen/v_count[10]"
 	terminal	{ cell: "patgen/v_count[10]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[10]~FF" port: "I[2]" }
-	terminal	{ cell: "patgen/v_count[11]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__889" port: "I[2]" }
-	terminal	{ cell: "LUT__926" port: "I[0]" }
-	terminal	{ cell: "LUT__945" port: "I[2]" }
+	terminal	{ cell: "patgen/v_count[10]~FF" port: "I[3]" }
+	terminal	{ cell: "LUT__394" port: "I[0]" }
+	terminal	{ cell: "LUT__453" port: "I[3]" }
+	terminal	{ cell: "LUT__455" port: "I[2]" }
+ }
+net {
+	name: "n264"
+	terminal	{ cell: "LUT__453" port: "O" }
+	terminal	{ cell: "patgen/v_count[11]~FF" port: "I[0]" }
  }
 net {
 	name: "patgen/v_count[11]"
 	terminal	{ cell: "patgen/v_count[11]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[11]~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__889" port: "I[3]" }
-	terminal	{ cell: "LUT__926" port: "I[1]" }
-	terminal	{ cell: "LUT__945" port: "I[3]" }
+	terminal	{ cell: "patgen/v_count[11]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__394" port: "I[1]" }
+	terminal	{ cell: "LUT__455" port: "I[3]" }
  }
 net {
-	name: "n548"
-	terminal	{ cell: "LUT__946" port: "O" }
-	terminal	{ cell: "patgen/v_count[12]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/v_count[13]~FF" port: "I[0]" }
+	name: "n265"
+	terminal	{ cell: "LUT__455" port: "O" }
+	terminal	{ cell: "patgen/v_count[12]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/v_count[13]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__458" port: "I[1]" }
  }
 net {
 	name: "patgen/v_count[12]"
 	terminal	{ cell: "patgen/v_count[12]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[12]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/v_count[13]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__885" port: "I[0]" }
-	terminal	{ cell: "LUT__949" port: "I[2]" }
+	terminal	{ cell: "patgen/v_count[12]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/v_count[13]~FF" port: "I[2]" }
+	terminal	{ cell: "LUT__398" port: "I[0]" }
+	terminal	{ cell: "LUT__458" port: "I[2]" }
  }
 net {
 	name: "patgen/v_count[13]"
 	terminal	{ cell: "patgen/v_count[13]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/v_count[13]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__884" port: "I[0]" }
-	terminal	{ cell: "LUT__949" port: "I[3]" }
+	terminal	{ cell: "patgen/v_count[13]~FF" port: "I[3]" }
+	terminal	{ cell: "LUT__397" port: "I[0]" }
+	terminal	{ cell: "LUT__458" port: "I[3]" }
  }
 net {
-	name: "n550"
-	terminal	{ cell: "LUT__950" port: "O" }
+	name: "n266"
+	terminal	{ cell: "LUT__458" port: "O" }
 	terminal	{ cell: "patgen/v_count[14]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/v_count[15]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/v_count[16]~FF" port: "I[0]" }
@@ -922,20 +892,20 @@ net {
 	terminal	{ cell: "patgen/v_count[14]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/v_count[15]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/v_count[16]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__884" port: "I[1]" }
+	terminal	{ cell: "LUT__397" port: "I[1]" }
  }
 net {
 	name: "patgen/v_count[15]"
 	terminal	{ cell: "patgen/v_count[15]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/v_count[15]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/v_count[16]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__885" port: "I[1]" }
+	terminal	{ cell: "LUT__397" port: "I[2]" }
  }
 net {
 	name: "patgen/v_count[16]"
 	terminal	{ cell: "patgen/v_count[16]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/v_count[16]~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__885" port: "I[2]" }
+	terminal	{ cell: "LUT__397" port: "I[3]" }
  }
 net {
 	name: "patgen/h_count[1]"
@@ -943,313 +913,294 @@ net {
 	terminal	{ cell: "patgen/x[1]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/x[2]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/x[3]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/x[4]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[1]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/h_count[2]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/h_count[3]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__893" port: "I[1]" }
-	terminal	{ cell: "LUT__906" port: "I[0]" }
-	terminal	{ cell: "LUT__912" port: "I[1]" }
-	terminal	{ cell: "LUT__972" port: "I[1]" }
+	terminal	{ cell: "LUT__406" port: "I[0]" }
+	terminal	{ cell: "LUT__419" port: "I[0]" }
+	terminal	{ cell: "LUT__420" port: "I[0]" }
+	terminal	{ cell: "LUT__424" port: "I[1]" }
+	terminal	{ cell: "LUT__480" port: "I[1]" }
  }
 net {
 	name: "x[1]"
 	terminal	{ cell: "patgen/x[1]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__856" port: "I[1]" }
+	terminal	{ cell: "LUT__377" port: "I[1]" }
  }
 net {
 	name: "patgen/h_count[2]"
 	terminal	{ cell: "patgen/h_count[2]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/x[2]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/x[3]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/x[4]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/h_count[2]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/h_count[3]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__876" port: "I[0]" }
-	terminal	{ cell: "LUT__893" port: "I[3]" }
-	terminal	{ cell: "LUT__906" port: "I[1]" }
-	terminal	{ cell: "LUT__913" port: "I[0]" }
-	terminal	{ cell: "LUT__972" port: "I[2]" }
+	terminal	{ cell: "LUT__406" port: "I[1]" }
+	terminal	{ cell: "LUT__415" port: "I[0]" }
+	terminal	{ cell: "LUT__420" port: "I[1]" }
+	terminal	{ cell: "LUT__480" port: "I[2]" }
  }
 net {
 	name: "x[2]"
 	terminal	{ cell: "patgen/x[2]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__855" port: "I[2]" }
-	terminal	{ cell: "LUT__856" port: "I[2]" }
+	terminal	{ cell: "LUT__377" port: "I[2]" }
+	terminal	{ cell: "LUT__374" port: "I[0]" }
  }
 net {
 	name: "patgen/h_count[3]"
 	terminal	{ cell: "patgen/h_count[3]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/x[3]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/x[4]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/h_count[3]~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__876" port: "I[1]" }
-	terminal	{ cell: "LUT__894" port: "I[0]" }
-	terminal	{ cell: "LUT__906" port: "I[2]" }
-	terminal	{ cell: "LUT__972" port: "I[3]" }
+	terminal	{ cell: "LUT__404" port: "I[1]" }
+	terminal	{ cell: "LUT__415" port: "I[1]" }
+	terminal	{ cell: "LUT__420" port: "I[2]" }
+	terminal	{ cell: "LUT__480" port: "I[3]" }
  }
 net {
 	name: "x[3]"
 	terminal	{ cell: "patgen/x[3]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__855" port: "I[0]" }
-	terminal	{ cell: "LUT__858" port: "I[0]" }
- }
-net {
-	name: "n525"
-	terminal	{ cell: "LUT__906" port: "O" }
-	terminal	{ cell: "patgen/x[4]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/x[5]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__907" port: "I[2]" }
+	terminal	{ cell: "LUT__378" port: "I[2]" }
+	terminal	{ cell: "LUT__374" port: "I[1]" }
  }
 net {
 	name: "patgen/h_count[4]"
 	terminal	{ cell: "patgen/h_count[4]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/x[4]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/x[5]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/x[4]~FF" port: "I[3]" }
 	terminal	{ cell: "patgen/h_count[4]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/h_count[5]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__875" port: "I[0]" }
-	terminal	{ cell: "LUT__878" port: "I[0]" }
-	terminal	{ cell: "LUT__892" port: "I[0]" }
-	terminal	{ cell: "LUT__907" port: "I[0]" }
-	terminal	{ cell: "LUT__912" port: "I[2]" }
+	terminal	{ cell: "LUT__406" port: "I[2]" }
+	terminal	{ cell: "LUT__413" port: "I[0]" }
+	terminal	{ cell: "LUT__414" port: "I[0]" }
+	terminal	{ cell: "LUT__418" port: "I[0]" }
+	terminal	{ cell: "LUT__420" port: "I[3]" }
+	terminal	{ cell: "LUT__483" port: "I[1]" }
+	terminal	{ cell: "LUT__486" port: "I[0]" }
  }
 net {
 	name: "x[4]"
 	terminal	{ cell: "patgen/x[4]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__855" port: "I[1]" }
-	terminal	{ cell: "LUT__858" port: "I[1]" }
+	terminal	{ cell: "LUT__378" port: "I[0]" }
+	terminal	{ cell: "LUT__374" port: "I[2]" }
+ }
+net {
+	name: "n247"
+	terminal	{ cell: "LUT__420" port: "O" }
+	terminal	{ cell: "patgen/x[5]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/x[6]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__421" port: "I[2]" }
  }
 net {
 	name: "patgen/h_count[5]"
 	terminal	{ cell: "patgen/h_count[5]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/x[5]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/x[5]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/x[6]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[5]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__875" port: "I[1]" }
-	terminal	{ cell: "LUT__878" port: "I[1]" }
-	terminal	{ cell: "LUT__892" port: "I[1]" }
-	terminal	{ cell: "LUT__907" port: "I[1]" }
-	terminal	{ cell: "LUT__912" port: "I[3]" }
+	terminal	{ cell: "LUT__406" port: "I[3]" }
+	terminal	{ cell: "LUT__413" port: "I[1]" }
+	terminal	{ cell: "LUT__414" port: "I[1]" }
+	terminal	{ cell: "LUT__418" port: "I[1]" }
+	terminal	{ cell: "LUT__421" port: "I[1]" }
+	terminal	{ cell: "LUT__483" port: "I[2]" }
+	terminal	{ cell: "LUT__486" port: "I[1]" }
  }
 net {
 	name: "x[5]"
 	terminal	{ cell: "patgen/x[5]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__857" port: "I[0]" }
-	terminal	{ cell: "LUT__854" port: "I[0]" }
- }
-net {
-	name: "n526"
-	terminal	{ cell: "LUT__907" port: "O" }
-	terminal	{ cell: "patgen/x[6]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/x[7]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__908" port: "I[0]" }
-	terminal	{ cell: "LUT__909" port: "I[2]" }
+	terminal	{ cell: "LUT__376" port: "I[1]" }
+	terminal	{ cell: "LUT__379" port: "I[1]" }
  }
 net {
 	name: "patgen/h_count[6]"
 	terminal	{ cell: "patgen/h_count[6]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/x[6]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/x[7]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/h_count[6]~FF" port: "I[2]" }
-	terminal	{ cell: "patgen/h_count[7]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__877" port: "I[1]" }
-	terminal	{ cell: "LUT__878" port: "I[2]" }
-	terminal	{ cell: "LUT__894" port: "I[1]" }
-	terminal	{ cell: "LUT__908" port: "I[1]" }
-	terminal	{ cell: "LUT__909" port: "I[1]" }
-	terminal	{ cell: "LUT__977" port: "I[2]" }
+	terminal	{ cell: "patgen/x[6]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/h_count[6]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/h_count[7]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__404" port: "I[2]" }
+	terminal	{ cell: "LUT__413" port: "I[2]" }
+	terminal	{ cell: "LUT__414" port: "I[2]" }
+	terminal	{ cell: "LUT__415" port: "I[2]" }
+	terminal	{ cell: "LUT__421" port: "I[0]" }
+	terminal	{ cell: "LUT__486" port: "I[2]" }
  }
 net {
 	name: "x[6]"
 	terminal	{ cell: "patgen/x[6]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__857" port: "I[1]" }
-	terminal	{ cell: "LUT__854" port: "I[1]" }
+	terminal	{ cell: "LUT__376" port: "I[2]" }
+	terminal	{ cell: "LUT__378" port: "I[3]" }
  }
 net {
-	name: "patgen/h_count[7]"
-	terminal	{ cell: "patgen/h_count[7]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/x[7]~FF" port: "I[2]" }
-	terminal	{ cell: "patgen/h_count[7]~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__877" port: "I[2]" }
-	terminal	{ cell: "LUT__880" port: "I[1]" }
-	terminal	{ cell: "LUT__894" port: "I[2]" }
-	terminal	{ cell: "LUT__908" port: "I[2]" }
-	terminal	{ cell: "LUT__909" port: "I[0]" }
-	terminal	{ cell: "LUT__977" port: "I[3]" }
+	name: "n248"
+	terminal	{ cell: "LUT__421" port: "O" }
+	terminal	{ cell: "patgen/x[7]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/x[8]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/x[9]~FF" port: "I[0]" }
+	terminal	{ cell: "LUT__422" port: "I[2]" }
  }
 net {
 	name: "x[7]"
 	terminal	{ cell: "patgen/x[7]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__859" port: "I[2]" }
-	terminal	{ cell: "LUT__854" port: "I[2]" }
- }
-net {
-	name: "patgen/h_count[8]"
-	terminal	{ cell: "patgen/h_count[8]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/x[8]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/x[9]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/h_count[8]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/h_count[9]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__874" port: "I[0]" }
-	terminal	{ cell: "LUT__879" port: "I[0]" }
-	terminal	{ cell: "LUT__892" port: "I[2]" }
+	terminal	{ cell: "LUT__375" port: "I[0]" }
  }
 net {
 	name: "x[8]"
 	terminal	{ cell: "patgen/x[8]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__859" port: "I[0]" }
-	terminal	{ cell: "LUT__854" port: "I[3]" }
- }
-net {
-	name: "patgen/h_count[9]"
-	terminal	{ cell: "patgen/h_count[9]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/x[9]~FF" port: "I[2]" }
-	terminal	{ cell: "patgen/h_count[9]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__874" port: "I[1]" }
-	terminal	{ cell: "LUT__879" port: "I[1]" }
-	terminal	{ cell: "LUT__892" port: "I[3]" }
+	terminal	{ cell: "LUT__375" port: "I[1]" }
  }
 net {
 	name: "x[9]"
 	terminal	{ cell: "patgen/x[9]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__859" port: "I[3]" }
-	terminal	{ cell: "LUT__865" port: "I[0]" }
-	terminal	{ cell: "LUT__866" port: "I[0]" }
-	terminal	{ cell: "LUT__867" port: "I[0]" }
-	terminal	{ cell: "LUT__868" port: "I[0]" }
-	terminal	{ cell: "LUT__869" port: "I[0]" }
-	terminal	{ cell: "LUT__870" port: "I[0]" }
-	terminal	{ cell: "LUT__871" port: "I[0]" }
-	terminal	{ cell: "LUT__872" port: "I[0]" }
-	terminal	{ cell: "LUT__873" port: "I[0]" }
+	terminal	{ cell: "LUT__385" port: "I[2]" }
+	terminal	{ cell: "LUT__386" port: "I[2]" }
+	terminal	{ cell: "LUT__387" port: "I[2]" }
+	terminal	{ cell: "LUT__388" port: "I[2]" }
+	terminal	{ cell: "LUT__389" port: "I[2]" }
+	terminal	{ cell: "LUT__390" port: "I[2]" }
+	terminal	{ cell: "LUT__391" port: "I[2]" }
+	terminal	{ cell: "LUT__392" port: "I[2]" }
+	terminal	{ cell: "LUT__393" port: "I[2]" }
  }
 net {
 	name: "y[1]"
 	terminal	{ cell: "patgen/y[1]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__862" port: "I[1]" }
+	terminal	{ cell: "LUT__380" port: "I[1]" }
  }
 net {
 	name: "y[2]"
 	terminal	{ cell: "patgen/y[2]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__861" port: "I[1]" }
-	terminal	{ cell: "LUT__862" port: "I[2]" }
+	terminal	{ cell: "LUT__380" port: "I[2]" }
+	terminal	{ cell: "LUT__383" port: "I[1]" }
  }
 net {
-	name: "n538"
-	terminal	{ cell: "LUT__923" port: "O" }
+	name: "n255"
+	terminal	{ cell: "LUT__432" port: "O" }
 	terminal	{ cell: "patgen/y[3]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/y[4]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__924" port: "I[0]" }
+	terminal	{ cell: "LUT__433" port: "I[0]" }
  }
 net {
 	name: "y[3]"
 	terminal	{ cell: "patgen/y[3]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__861" port: "I[2]" }
-	terminal	{ cell: "LUT__863" port: "I[0]" }
+	terminal	{ cell: "LUT__382" port: "I[0]" }
+	terminal	{ cell: "LUT__383" port: "I[2]" }
  }
 net {
 	name: "y[4]"
 	terminal	{ cell: "patgen/y[4]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__861" port: "I[3]" }
-	terminal	{ cell: "LUT__863" port: "I[1]" }
+	terminal	{ cell: "LUT__382" port: "I[1]" }
+	terminal	{ cell: "LUT__383" port: "I[3]" }
  }
 net {
-	name: "n539"
-	terminal	{ cell: "LUT__924" port: "O" }
+	name: "n256"
+	terminal	{ cell: "LUT__433" port: "O" }
 	terminal	{ cell: "patgen/y[5]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/y[6]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__925" port: "I[0]" }
+	terminal	{ cell: "LUT__434" port: "I[0]" }
  }
 net {
 	name: "y[5]"
 	terminal	{ cell: "patgen/y[5]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__860" port: "I[0]" }
+	terminal	{ cell: "LUT__381" port: "I[0]" }
  }
 net {
 	name: "y[6]"
 	terminal	{ cell: "patgen/y[6]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__860" port: "I[1]" }
+	terminal	{ cell: "LUT__381" port: "I[1]" }
  }
 net {
-	name: "n540"
-	terminal	{ cell: "LUT__925" port: "O" }
+	name: "n257"
+	terminal	{ cell: "LUT__434" port: "O" }
 	terminal	{ cell: "patgen/y[7]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/y[8]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__927" port: "I[0]" }
+	terminal	{ cell: "LUT__438" port: "I[0]" }
  }
 net {
 	name: "y[7]"
 	terminal	{ cell: "patgen/y[7]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__864" port: "I[2]" }
+	terminal	{ cell: "LUT__384" port: "I[2]" }
  }
 net {
 	name: "y[8]"
 	terminal	{ cell: "patgen/y[8]~FF" port: "O_seq" }
-	terminal	{ cell: "LUT__864" port: "I[3]" }
+	terminal	{ cell: "LUT__384" port: "I[3]" }
  }
 net {
-	name: "n551"
-	terminal	{ cell: "LUT__972" port: "O" }
+	name: "n267"
+	terminal	{ cell: "LUT__480" port: "O" }
 	terminal	{ cell: "patgen/h_count[4]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[5]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/h_count[6]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/h_count[7]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__977" port: "I[1]" }
+	terminal	{ cell: "LUT__483" port: "I[0]" }
+	terminal	{ cell: "LUT__487" port: "I[0]" }
  }
 net {
-	name: "n504"
-	terminal	{ cell: "LUT__875" port: "O" }
+	name: "n268"
+	terminal	{ cell: "LUT__483" port: "O" }
 	terminal	{ cell: "patgen/h_count[6]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[7]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__876" port: "I[2]" }
-	terminal	{ cell: "LUT__977" port: "I[0]" }
  }
 net {
-	name: "n552"
-	terminal	{ cell: "LUT__977" port: "O" }
+	name: "patgen/h_count[7]"
+	terminal	{ cell: "patgen/h_count[7]~FF" port: "O_seq" }
+	terminal	{ cell: "patgen/h_count[7]~FF" port: "I[2]" }
+	terminal	{ cell: "LUT__404" port: "I[3]" }
+	terminal	{ cell: "LUT__413" port: "I[3]" }
+	terminal	{ cell: "LUT__414" port: "I[3]" }
+	terminal	{ cell: "LUT__415" port: "I[3]" }
+	terminal	{ cell: "LUT__421" port: "I[3]" }
+	terminal	{ cell: "LUT__486" port: "I[3]" }
+ }
+net {
+	name: "n270"
+	terminal	{ cell: "LUT__487" port: "O" }
 	terminal	{ cell: "patgen/h_count[8]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[9]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[10]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[11]~FF" port: "I[0]" }
-	terminal	{ cell: "LUT__983" port: "I[0]" }
-	terminal	{ cell: "LUT__986" port: "I[0]" }
+	terminal	{ cell: "patgen/h_count[12]~FF" port: "I[0]" }
+	terminal	{ cell: "patgen/h_count[13]~FF" port: "I[0]" }
+	terminal	{ cell: "LUT__495" port: "I[0]" }
  }
 net {
 	name: "patgen/h_count[10]"
 	terminal	{ cell: "patgen/h_count[10]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/h_count[10]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/h_count[11]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__882" port: "I[0]" }
-	terminal	{ cell: "LUT__982" port: "I[1]" }
+	terminal	{ cell: "LUT__402" port: "I[0]" }
+	terminal	{ cell: "LUT__492" port: "I[1]" }
  }
 net {
 	name: "patgen/h_count[11]"
 	terminal	{ cell: "patgen/h_count[11]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/h_count[11]~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__882" port: "I[1]" }
-	terminal	{ cell: "LUT__982" port: "I[2]" }
+	terminal	{ cell: "LUT__402" port: "I[1]" }
+	terminal	{ cell: "LUT__492" port: "I[2]" }
  }
 net {
-	name: "n554"
-	terminal	{ cell: "LUT__983" port: "O" }
-	terminal	{ cell: "patgen/h_count[12]~FF" port: "I[0]" }
-	terminal	{ cell: "patgen/h_count[13]~FF" port: "I[0]" }
+	name: "n271"
+	terminal	{ cell: "LUT__492" port: "O" }
+	terminal	{ cell: "patgen/h_count[12]~FF" port: "I[1]" }
+	terminal	{ cell: "patgen/h_count[13]~FF" port: "I[1]" }
+	terminal	{ cell: "LUT__495" port: "I[1]" }
  }
 net {
 	name: "patgen/h_count[12]"
 	terminal	{ cell: "patgen/h_count[12]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/h_count[12]~FF" port: "I[1]" }
-	terminal	{ cell: "patgen/h_count[13]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__882" port: "I[2]" }
-	terminal	{ cell: "LUT__986" port: "I[2]" }
+	terminal	{ cell: "patgen/h_count[12]~FF" port: "I[2]" }
+	terminal	{ cell: "patgen/h_count[13]~FF" port: "I[2]" }
+	terminal	{ cell: "LUT__402" port: "I[2]" }
+	terminal	{ cell: "LUT__495" port: "I[2]" }
  }
 net {
 	name: "patgen/h_count[13]"
 	terminal	{ cell: "patgen/h_count[13]~FF" port: "O_seq" }
-	terminal	{ cell: "patgen/h_count[13]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__881" port: "I[0]" }
-	terminal	{ cell: "LUT__986" port: "I[3]" }
+	terminal	{ cell: "patgen/h_count[13]~FF" port: "I[3]" }
+	terminal	{ cell: "LUT__402" port: "I[3]" }
+	terminal	{ cell: "LUT__495" port: "I[3]" }
  }
 net {
-	name: "n555"
-	terminal	{ cell: "LUT__986" port: "O" }
+	name: "n272"
+	terminal	{ cell: "LUT__495" port: "O" }
 	terminal	{ cell: "patgen/h_count[14]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[15]~FF" port: "I[0]" }
 	terminal	{ cell: "patgen/h_count[16]~FF" port: "I[0]" }
@@ -1260,20 +1211,20 @@ net {
 	terminal	{ cell: "patgen/h_count[14]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/h_count[15]~FF" port: "I[1]" }
 	terminal	{ cell: "patgen/h_count[16]~FF" port: "I[1]" }
-	terminal	{ cell: "LUT__881" port: "I[1]" }
+	terminal	{ cell: "LUT__403" port: "I[0]" }
  }
 net {
 	name: "patgen/h_count[15]"
 	terminal	{ cell: "patgen/h_count[15]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/h_count[15]~FF" port: "I[2]" }
 	terminal	{ cell: "patgen/h_count[16]~FF" port: "I[2]" }
-	terminal	{ cell: "LUT__881" port: "I[2]" }
+	terminal	{ cell: "LUT__403" port: "I[1]" }
  }
 net {
 	name: "patgen/h_count[16]"
 	terminal	{ cell: "patgen/h_count[16]~FF" port: "O_seq" }
 	terminal	{ cell: "patgen/h_count[16]~FF" port: "I[3]" }
-	terminal	{ cell: "LUT__881" port: "I[3]" }
+	terminal	{ cell: "LUT__403" port: "I[2]" }
  }
 net {
 	name: "tx_vga_clk"
@@ -1285,17 +1236,11 @@ net {
 	name: "tx_pixel_clk"
 	gbuf_driven: true
 	terminal	{ cell: "tx_pixel_clk" port: "inpad" }
-	terminal	{ cell: "CLKBUF__1" port: "IO_in" }
- }
-net {
-	name: "rx_pixel_clk"
-	gbuf_driven: true
-	terminal	{ cell: "rx_pixel_clk" port: "inpad" }
-	terminal	{ cell: "rx_pixel_clk~CLKBUF" port: "IO_in" }
+	terminal	{ cell: "tx_pixel_clk~CLKBUF" port: "IO_in" }
  }
 net {
 	name: "my_mipi_tx_DATA[0]"
-	terminal	{ cell: "LUT__865" port: "O" }
+	terminal	{ cell: "LUT__385" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[47]" port: "outpad" }
 	terminal	{ cell: "my_mipi_tx_DATA[46]" port: "outpad" }
 	terminal	{ cell: "my_mipi_tx_DATA[44]" port: "outpad" }
@@ -1322,271 +1267,230 @@ net {
  }
 net {
 	name: "my_mipi_tx_DATA[38]"
-	terminal	{ cell: "LUT__866" port: "O" }
+	terminal	{ cell: "LUT__386" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[38]" port: "outpad" }
  }
 net {
 	name: "my_mipi_tx_DATA[35]"
-	terminal	{ cell: "LUT__867" port: "O" }
+	terminal	{ cell: "LUT__387" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[35]" port: "outpad" }
  }
 net {
 	name: "my_mipi_tx_DATA[34]"
-	terminal	{ cell: "LUT__868" port: "O" }
+	terminal	{ cell: "LUT__388" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[34]" port: "outpad" }
  }
 net {
 	name: "my_mipi_tx_DATA[33]"
-	terminal	{ cell: "LUT__869" port: "O" }
+	terminal	{ cell: "LUT__389" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[33]" port: "outpad" }
  }
 net {
 	name: "my_mipi_tx_DATA[32]"
-	terminal	{ cell: "LUT__870" port: "O" }
+	terminal	{ cell: "LUT__390" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[32]" port: "outpad" }
  }
 net {
 	name: "my_mipi_tx_DATA[14]"
-	terminal	{ cell: "LUT__871" port: "O" }
+	terminal	{ cell: "LUT__391" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[14]" port: "outpad" }
  }
 net {
 	name: "my_mipi_tx_DATA[10]"
-	terminal	{ cell: "LUT__872" port: "O" }
+	terminal	{ cell: "LUT__392" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[10]" port: "outpad" }
  }
 net {
 	name: "my_mipi_tx_DATA[8]"
-	terminal	{ cell: "LUT__873" port: "O" }
+	terminal	{ cell: "LUT__393" port: "O" }
 	terminal	{ cell: "my_mipi_tx_DATA[8]" port: "outpad" }
  }
 net {
-	name: "n492"
-	terminal	{ cell: "LUT__854" port: "O" }
-	terminal	{ cell: "LUT__855" port: "I[3]" }
+	name: "n215"
+	terminal	{ cell: "LUT__375" port: "O" }
+	terminal	{ cell: "LUT__376" port: "I[3]" }
+	terminal	{ cell: "LUT__379" port: "I[2]" }
  }
 net {
-	name: "n493"
-	terminal	{ cell: "LUT__855" port: "O" }
-	terminal	{ cell: "LUT__865" port: "I[1]" }
-	terminal	{ cell: "LUT__866" port: "I[1]" }
-	terminal	{ cell: "LUT__867" port: "I[1]" }
-	terminal	{ cell: "LUT__868" port: "I[1]" }
-	terminal	{ cell: "LUT__869" port: "I[1]" }
-	terminal	{ cell: "LUT__870" port: "I[1]" }
-	terminal	{ cell: "LUT__871" port: "I[1]" }
-	terminal	{ cell: "LUT__872" port: "I[1]" }
-	terminal	{ cell: "LUT__873" port: "I[1]" }
+	name: "n214"
+	terminal	{ cell: "LUT__374" port: "O" }
+	terminal	{ cell: "LUT__376" port: "I[0]" }
  }
 net {
-	name: "n494"
-	terminal	{ cell: "LUT__856" port: "O" }
-	terminal	{ cell: "LUT__858" port: "I[2]" }
+	name: "n216"
+	terminal	{ cell: "LUT__376" port: "O" }
+	terminal	{ cell: "LUT__385" port: "I[1]" }
+	terminal	{ cell: "LUT__386" port: "I[1]" }
+	terminal	{ cell: "LUT__387" port: "I[1]" }
+	terminal	{ cell: "LUT__388" port: "I[1]" }
+	terminal	{ cell: "LUT__389" port: "I[1]" }
+	terminal	{ cell: "LUT__390" port: "I[1]" }
+	terminal	{ cell: "LUT__391" port: "I[1]" }
+	terminal	{ cell: "LUT__392" port: "I[1]" }
+	terminal	{ cell: "LUT__393" port: "I[1]" }
  }
 net {
-	name: "n495"
-	terminal	{ cell: "LUT__857" port: "O" }
-	terminal	{ cell: "LUT__858" port: "I[3]" }
+	name: "n217"
+	terminal	{ cell: "LUT__377" port: "O" }
+	terminal	{ cell: "LUT__378" port: "I[1]" }
  }
 net {
-	name: "n496"
-	terminal	{ cell: "LUT__858" port: "O" }
-	terminal	{ cell: "LUT__859" port: "I[1]" }
+	name: "n218"
+	terminal	{ cell: "LUT__378" port: "O" }
+	terminal	{ cell: "LUT__379" port: "I[0]" }
  }
 net {
-	name: "n497"
-	terminal	{ cell: "LUT__859" port: "O" }
-	terminal	{ cell: "LUT__865" port: "I[2]" }
-	terminal	{ cell: "LUT__866" port: "I[2]" }
-	terminal	{ cell: "LUT__867" port: "I[2]" }
-	terminal	{ cell: "LUT__868" port: "I[2]" }
-	terminal	{ cell: "LUT__869" port: "I[2]" }
-	terminal	{ cell: "LUT__870" port: "I[2]" }
-	terminal	{ cell: "LUT__871" port: "I[2]" }
-	terminal	{ cell: "LUT__872" port: "I[2]" }
-	terminal	{ cell: "LUT__873" port: "I[2]" }
+	name: "n219"
+	terminal	{ cell: "LUT__379" port: "O" }
+	terminal	{ cell: "LUT__385" port: "I[0]" }
+	terminal	{ cell: "LUT__386" port: "I[0]" }
+	terminal	{ cell: "LUT__387" port: "I[0]" }
+	terminal	{ cell: "LUT__388" port: "I[0]" }
+	terminal	{ cell: "LUT__389" port: "I[0]" }
+	terminal	{ cell: "LUT__390" port: "I[0]" }
+	terminal	{ cell: "LUT__391" port: "I[0]" }
+	terminal	{ cell: "LUT__392" port: "I[0]" }
+	terminal	{ cell: "LUT__393" port: "I[0]" }
  }
 net {
-	name: "n498"
-	terminal	{ cell: "LUT__860" port: "O" }
-	terminal	{ cell: "LUT__861" port: "I[0]" }
-	terminal	{ cell: "LUT__863" port: "I[3]" }
+	name: "n220"
+	terminal	{ cell: "LUT__380" port: "O" }
+	terminal	{ cell: "LUT__382" port: "I[2]" }
  }
 net {
-	name: "n499"
-	terminal	{ cell: "LUT__861" port: "O" }
-	terminal	{ cell: "LUT__864" port: "I[1]" }
+	name: "n221"
+	terminal	{ cell: "LUT__381" port: "O" }
+	terminal	{ cell: "LUT__382" port: "I[3]" }
+	terminal	{ cell: "LUT__383" port: "I[0]" }
  }
 net {
-	name: "n500"
-	terminal	{ cell: "LUT__862" port: "O" }
-	terminal	{ cell: "LUT__863" port: "I[2]" }
+	name: "n222"
+	terminal	{ cell: "LUT__382" port: "O" }
+	terminal	{ cell: "LUT__384" port: "I[1]" }
  }
 net {
-	name: "n501"
-	terminal	{ cell: "LUT__863" port: "O" }
-	terminal	{ cell: "LUT__864" port: "I[0]" }
+	name: "n223"
+	terminal	{ cell: "LUT__383" port: "O" }
+	terminal	{ cell: "LUT__384" port: "I[0]" }
  }
 net {
-	name: "n502"
-	terminal	{ cell: "LUT__864" port: "O" }
-	terminal	{ cell: "LUT__865" port: "I[3]" }
-	terminal	{ cell: "LUT__866" port: "I[3]" }
-	terminal	{ cell: "LUT__867" port: "I[3]" }
-	terminal	{ cell: "LUT__868" port: "I[3]" }
-	terminal	{ cell: "LUT__869" port: "I[3]" }
-	terminal	{ cell: "LUT__870" port: "I[3]" }
-	terminal	{ cell: "LUT__871" port: "I[3]" }
-	terminal	{ cell: "LUT__872" port: "I[3]" }
-	terminal	{ cell: "LUT__873" port: "I[3]" }
+	name: "n224"
+	terminal	{ cell: "LUT__384" port: "O" }
+	terminal	{ cell: "LUT__385" port: "I[3]" }
+	terminal	{ cell: "LUT__386" port: "I[3]" }
+	terminal	{ cell: "LUT__387" port: "I[3]" }
+	terminal	{ cell: "LUT__388" port: "I[3]" }
+	terminal	{ cell: "LUT__389" port: "I[3]" }
+	terminal	{ cell: "LUT__390" port: "I[3]" }
+	terminal	{ cell: "LUT__391" port: "I[3]" }
+	terminal	{ cell: "LUT__392" port: "I[3]" }
+	terminal	{ cell: "LUT__393" port: "I[3]" }
  }
 net {
-	name: "n505"
-	terminal	{ cell: "LUT__876" port: "O" }
-	terminal	{ cell: "LUT__877" port: "I[0]" }
+	name: "n226"
+	terminal	{ cell: "LUT__395" port: "O" }
+	terminal	{ cell: "LUT__396" port: "I[3]" }
  }
 net {
-	name: "n507"
-	terminal	{ cell: "LUT__878" port: "O" }
-	terminal	{ cell: "LUT__880" port: "I[0]" }
+	name: "n227"
+	terminal	{ cell: "LUT__396" port: "O" }
+	terminal	{ cell: "LUT__399" port: "I[0]" }
+	terminal	{ cell: "LUT__411" port: "I[3]" }
  }
 net {
-	name: "n510"
-	terminal	{ cell: "LUT__881" port: "O" }
-	terminal	{ cell: "LUT__882" port: "I[3]" }
+	name: "n228"
+	terminal	{ cell: "LUT__397" port: "O" }
+	terminal	{ cell: "LUT__398" port: "I[1]" }
  }
 net {
-	name: "n512"
-	terminal	{ cell: "LUT__884" port: "O" }
-	terminal	{ cell: "LUT__885" port: "I[3]" }
+	name: "n232"
+	terminal	{ cell: "LUT__402" port: "O" }
+	terminal	{ cell: "LUT__403" port: "I[3]" }
  }
 net {
-	name: "n514"
-	terminal	{ cell: "LUT__886" port: "O" }
-	terminal	{ cell: "LUT__887" port: "I[1]" }
+	name: "n233"
+	terminal	{ cell: "LUT__403" port: "O" }
+	terminal	{ cell: "LUT__407" port: "I[0]" }
+	terminal	{ cell: "LUT__416" port: "I[3]" }
+	terminal	{ cell: "LUT__422" port: "I[3]" }
  }
 net {
-	name: "n516"
-	terminal	{ cell: "LUT__888" port: "O" }
-	terminal	{ cell: "LUT__890" port: "I[1]" }
+	name: "n234"
+	terminal	{ cell: "LUT__404" port: "O" }
+	terminal	{ cell: "LUT__407" port: "I[1]" }
  }
 net {
-	name: "n517"
-	terminal	{ cell: "LUT__889" port: "O" }
-	terminal	{ cell: "LUT__890" port: "I[2]" }
-	terminal	{ cell: "LUT__897" port: "I[1]" }
-	terminal	{ cell: "LUT__922" port: "I[2]" }
+	name: "n236"
+	terminal	{ cell: "LUT__406" port: "O" }
+	terminal	{ cell: "LUT__407" port: "I[3]" }
  }
 net {
-	name: "n519"
-	terminal	{ cell: "LUT__892" port: "O" }
-	terminal	{ cell: "LUT__893" port: "I[2]" }
+	name: "n237"
+	terminal	{ cell: "LUT__408" port: "O" }
+	terminal	{ cell: "LUT__409" port: "I[0]" }
+	terminal	{ cell: "LUT__436" port: "I[1]" }
  }
 net {
-	name: "n520"
-	terminal	{ cell: "LUT__893" port: "O" }
-	terminal	{ cell: "LUT__895" port: "I[1]" }
+	name: "n240"
+	terminal	{ cell: "LUT__411" port: "O" }
+	terminal	{ cell: "LUT__412" port: "I[1]" }
  }
 net {
-	name: "n521"
-	terminal	{ cell: "LUT__894" port: "O" }
-	terminal	{ cell: "LUT__895" port: "I[2]" }
-	terminal	{ cell: "LUT__913" port: "I[1]" }
+	name: "n242"
+	terminal	{ cell: "LUT__414" port: "O" }
+	terminal	{ cell: "LUT__416" port: "I[1]" }
  }
 net {
-	name: "n522"
-	terminal	{ cell: "LUT__896" port: "O" }
-	terminal	{ cell: "LUT__898" port: "I[1]" }
-	terminal	{ cell: "LUT__915" port: "I[1]" }
-	terminal	{ cell: "LUT__920" port: "I[3]" }
-	terminal	{ cell: "LUT__936" port: "I[0]" }
-	terminal	{ cell: "LUT__940" port: "I[0]" }
+	name: "n243"
+	terminal	{ cell: "LUT__415" port: "O" }
+	terminal	{ cell: "LUT__416" port: "I[0]" }
+	terminal	{ cell: "LUT__418" port: "I[2]" }
  }
 net {
-	name: "n524"
-	terminal	{ cell: "LUT__898" port: "O" }
-	terminal	{ cell: "LUT__899" port: "I[1]" }
+	name: "n245"
+	terminal	{ cell: "LUT__418" port: "O" }
+	terminal	{ cell: "LUT__419" port: "I[1]" }
+	terminal	{ cell: "LUT__424" port: "I[2]" }
  }
 net {
-	name: "n530"
-	terminal	{ cell: "LUT__912" port: "O" }
-	terminal	{ cell: "LUT__913" port: "I[2]" }
+	name: "n250"
+	terminal	{ cell: "LUT__424" port: "O" }
+	terminal	{ cell: "LUT__425" port: "I[0]" }
  }
 net {
-	name: "n531"
-	terminal	{ cell: "LUT__913" port: "O" }
-	terminal	{ cell: "LUT__914" port: "I[2]" }
+	name: "n251"
+	terminal	{ cell: "LUT__426" port: "O" }
+	terminal	{ cell: "LUT__427" port: "I[3]" }
  }
 net {
-	name: "n533"
-	terminal	{ cell: "LUT__917" port: "O" }
-	terminal	{ cell: "LUT__918" port: "I[2]" }
+	name: "n253"
+	terminal	{ cell: "LUT__429" port: "O" }
+	terminal	{ cell: "LUT__430" port: "I[0]" }
  }
 net {
-	name: "n534"
-	terminal	{ cell: "LUT__918" port: "O" }
-	terminal	{ cell: "LUT__919" port: "I[0]" }
+	name: "n254"
+	terminal	{ cell: "LUT__431" port: "O" }
+	terminal	{ cell: "LUT__438" port: "I[1]" }
  }
 net {
-	name: "n535"
-	terminal	{ cell: "LUT__920" port: "O" }
-	terminal	{ cell: "LUT__922" port: "I[0]" }
+	name: "n258"
+	terminal	{ cell: "LUT__435" port: "O" }
+	terminal	{ cell: "LUT__436" port: "I[0]" }
  }
 net {
-	name: "n536"
-	terminal	{ cell: "LUT__921" port: "O" }
-	terminal	{ cell: "LUT__922" port: "I[1]" }
+	name: "n259"
+	terminal	{ cell: "LUT__436" port: "O" }
+	terminal	{ cell: "LUT__438" port: "I[2]" }
  }
 net {
-	name: "n537"
-	terminal	{ cell: "LUT__922" port: "O" }
-	terminal	{ cell: "LUT__927" port: "I[2]" }
+	name: "n260"
+	terminal	{ cell: "LUT__437" port: "O" }
+	terminal	{ cell: "LUT__438" port: "I[3]" }
  }
 net {
-	name: "n541"
-	terminal	{ cell: "LUT__926" port: "O" }
-	terminal	{ cell: "LUT__927" port: "I[3]" }
- }
-net {
-	name: "n545"
-	terminal	{ cell: "LUT__940" port: "O" }
-	terminal	{ cell: "LUT__941" port: "I[1]" }
-	terminal	{ cell: "LUT__950" port: "I[0]" }
- }
-net {
-	name: "n547"
-	terminal	{ cell: "LUT__945" port: "O" }
-	terminal	{ cell: "LUT__946" port: "I[1]" }
-	terminal	{ cell: "LUT__950" port: "I[2]" }
- }
-net {
-	name: "n549"
-	terminal	{ cell: "LUT__949" port: "O" }
-	terminal	{ cell: "LUT__950" port: "I[1]" }
- }
-net {
-	name: "n553"
-	terminal	{ cell: "LUT__982" port: "O" }
-	terminal	{ cell: "LUT__983" port: "I[1]" }
-	terminal	{ cell: "LUT__986" port: "I[1]" }
- }
-net {
-	name: "mipi_rx_cal_clk"
-	gbuf_driven: true
-	terminal	{ cell: "mipi_rx_cal_clk" port: "inpad" }
-	terminal	{ cell: "mipi_rx_cal_clk~CLKBUF" port: "IO_in" }
- }
-net {
-	name: "mipi_rx_cal_clk~CLKBUF"
-	type: GLOBAL_CLOCK
-	gbuf_driven: true
-	terminal	{ cell: "mipi_rx_cal_clk~CLKBUF" port: "clkout" }
- }
-net {
-	name: "rx_pixel_clk~CLKBUF"
-	type: GLOBAL_CLOCK
-	gbuf_driven: true
-	terminal	{ cell: "rx_pixel_clk~CLKBUF" port: "clkout" }
+	name: "n269"
+	terminal	{ cell: "LUT__486" port: "O" }
+	terminal	{ cell: "LUT__487" port: "I[1]" }
  }
 net {
 	name: "tx_esc_pll_CLKOUT0"
@@ -1599,4 +1503,10 @@ net {
 	type: GLOBAL_CLOCK
 	gbuf_driven: true
 	terminal	{ cell: "tx_esc_pll_CLKOUT0~CLKBUF" port: "clkout" }
+ }
+net {
+	name: "tx_pixel_clk~CLKBUF"
+	type: GLOBAL_CLOCK
+	gbuf_driven: true
+	terminal	{ cell: "tx_pixel_clk~CLKBUF" port: "clkout" }
  }

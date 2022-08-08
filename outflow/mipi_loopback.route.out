@@ -16,53 +16,53 @@ Running Placement and Routing for Family "Trion", Device "T85F324" ...
 Read ipin pattern from C:/Efinity/2021.2/arch/./ipin_oph.xml
 Finished parsing ipin pattern file 'C:/Efinity/2021.2/arch/./ipin_oph.xdb'.
 Finished parsing switch_block file 'C:/Efinity/2021.2/arch/.\sb_connectivity_subset.xdb'.
-BuildGraph process took 34.036 seconds.
-	BuildGraph process took 33.5312 seconds (approximately) in total CPU time.
-BuildGraph process virtual memory usage: begin = 59.56 MB, end = 2204.53 MB, delta = 2144.97 MB
-	BuildGraph process peak virtual memory usage = 2234.74 MB
-BuildGraph process resident set memory usage: begin = 64.588 MB, end = 2146.42 MB, delta = 2081.83 MB
-	BuildGraph process peak resident set memory usage = 2174.76 MB
-check rr_graph process took 0.636017 seconds.
-	check rr_graph process took 0.59375 seconds (approximately) in total CPU time.
-check rr_graph process virtual memory usage: begin = 2418.87 MB, end = 2418.87 MB, delta = 0 MB
-	check rr_graph process peak virtual memory usage = 2477.36 MB
-check rr_graph process resident set memory usage: begin = 2360.34 MB, end = 2360.29 MB, delta = -0.052 MB
-	check rr_graph process peak resident set memory usage = 2418.64 MB
-Generated 6637889 RR nodes and 25226096 RR edges
-This design has 0 global control net(s). See D:/MIPI_Loopback/outflow\mipi_loopback.route.rpt for details.
-Routing graph took 35.1985 seconds.
-	Routing graph took 34.625 seconds (approximately) in total CPU time.
-Routing graph virtual memory usage: begin = 56.724 MB, end = 2188.17 MB, delta = 2131.44 MB
-	Routing graph peak virtual memory usage = 2477.36 MB
-Routing graph resident set memory usage: begin = 63.596 MB, end = 2130.85 MB, delta = 2067.26 MB
-	Routing graph peak resident set memory usage = 2418.64 MB
+BuildGraph process took 34.422 seconds.
+	BuildGraph process took 33.7188 seconds (approximately) in total CPU time.
+BuildGraph process virtual memory usage: begin = 57.196 MB, end = 2236.32 MB, delta = 2179.12 MB
+	BuildGraph process peak virtual memory usage = 2262.36 MB
+BuildGraph process resident set memory usage: begin = 65.516 MB, end = 2176.29 MB, delta = 2110.77 MB
+	BuildGraph process peak resident set memory usage = 2202.2 MB
+check rr_graph process took 0.66668 seconds.
+	check rr_graph process took 0.625 seconds (approximately) in total CPU time.
+check rr_graph process virtual memory usage: begin = 2450.66 MB, end = 2450.66 MB, delta = 0 MB
+	check rr_graph process peak virtual memory usage = 2509.18 MB
+check rr_graph process resident set memory usage: begin = 2390.21 MB, end = 2390.27 MB, delta = 0.06 MB
+	check rr_graph process peak resident set memory usage = 2448.62 MB
+Generated 6637891 RR nodes and 25226090 RR edges
+This design has 0 global control net(s). See C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow\mipi_loopback.route.rpt for details.
+Routing graph took 35.5941 seconds.
+	Routing graph took 34.7812 seconds (approximately) in total CPU time.
+Routing graph virtual memory usage: begin = 55.572 MB, end = 2218.43 MB, delta = 2162.86 MB
+	Routing graph peak virtual memory usage = 2509.18 MB
+Routing graph resident set memory usage: begin = 64.64 MB, end = 2159.33 MB, delta = 2094.69 MB
+	Routing graph peak resident set memory usage = 2448.62 MB
 ***** Ending stage routing graph generation *****
 ***** Beginning stage routing ... *****
 
  ---------      -------     --------------      -------------
  Iteration      Overuse     Crit Path (ns)      Calc Time (s)
  ---------      -------     --------------      -------------
-         1          270              5.952              0.179
-         2           45              7.458              0.129
-         3           12              7.458              0.124
-         4            0              7.458              0.121
+         1          362              5.781              0.181
+         2           50              7.921              0.122
+         3            7              7.717              0.113
+         4            0              7.718              0.108
 
-Successfully routed netlist after 4 routing iterations and 284468 heapops
+Successfully routed netlist after 4 routing iterations and 282998 heapops
 Completed net delay value cross check successfully.
 
 ***** Beginning stage routing check ... *****
 ***** Ending stage routing check *****
 
-Serial number (magic cookie) for the routing is: 913758037
+Serial number (magic cookie) for the routing is: 1029312925
 Netlist fully routed.
 
-Successfully created FPGA route file 'D:/MIPI_Loopback/outflow/mipi_loopback.route'
-Routing took 1.34205 seconds.
-	Routing took 1.25 seconds (approximately) in total CPU time.
-Routing virtual memory usage: begin = 2213.6 MB, end = 2211.55 MB, delta = -2.044 MB
-	Routing peak virtual memory usage = 2731.22 MB
-Routing resident set memory usage: begin = 2156.9 MB, end = 2155.95 MB, delta = -0.948 MB
-	Routing peak resident set memory usage = 2544 MB
+Successfully created FPGA route file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.route'
+Routing took 1.27449 seconds.
+	Routing took 1.17188 seconds (approximately) in total CPU time.
+Routing virtual memory usage: begin = 2243.86 MB, end = 2243.86 MB, delta = 0 MB
+	Routing peak virtual memory usage = 2763.53 MB
+Routing resident set memory usage: begin = 2185.38 MB, end = 2186.54 MB, delta = 1.156 MB
+	Routing peak resident set memory usage = 2574.42 MB
 ***** Ending stage routing *****
 ***** Beginning stage final timing analysis ... *****
 
@@ -70,42 +70,42 @@ Cross clock domain timing relationship was detected. Refer to the clocks section
 
 Maximum possible analyzed clocks frequency
 Clock Name            Period (ns)   Frequency (MHz)   Edge
-tx_vga_clk                  7.578         131.958     (R-R)
+tx_vga_clk                  7.838         127.587     (R-R)
 
-Geomean max period: 7.578
+Geomean max period: 7.838
 
 Setup (Max) Clock Relationship
 Launch Clock        Capture Clock       Constraint (ns)   Slack (ns)    Edge
-tx_vga_clk           tx_vga_clk               25.000        17.422     (R-R)
-tx_vga_clk           tx_pixel_clk             25.000        17.969     (R-R)
+tx_vga_clk           tx_vga_clk               25.000        17.162     (R-R)
+tx_vga_clk           tx_pixel_clk             25.000        17.557     (R-R)
 
 Hold (Min) Clock Relationship
 Launch Clock        Capture Clock       Constraint (ns)   Slack (ns)    Edge
 tx_vga_clk           tx_vga_clk                0.000         0.307     (R-R)
-tx_vga_clk           tx_pixel_clk              0.000         0.558     (R-R)
+tx_vga_clk           tx_pixel_clk              0.000         1.110     (R-R)
 
 
-final timing analysis took 0.0230198 seconds.
+final timing analysis took 0.0217398 seconds.
 	final timing analysis took 0.03125 seconds (approximately) in total CPU time.
-final timing analysis virtual memory usage: begin = 2186.12 MB, end = 2186.12 MB, delta = 0 MB
-	final timing analysis peak virtual memory usage = 2731.22 MB
-final timing analysis resident set memory usage: begin = 2130.58 MB, end = 2130.89 MB, delta = 0.308 MB
-	final timing analysis peak resident set memory usage = 2544 MB
+final timing analysis virtual memory usage: begin = 2218.43 MB, end = 2218.43 MB, delta = 0 MB
+	final timing analysis peak virtual memory usage = 2763.53 MB
+final timing analysis resident set memory usage: begin = 2161.17 MB, end = 2161.48 MB, delta = 0.308 MB
+	final timing analysis peak resident set memory usage = 2574.42 MB
 ***** Ending stage final timing analysis *****
 ***** Beginning stage bitstream generation ... *****
-Reading core interface constraints from 'D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv'.
-Successfully processed interface constraints file "D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv".
-Finished writing bitstream file D:/MIPI_Loopback/work_pnr\mipi_loopback.lbf.
-Bitstream generation took 3.97825 seconds.
-	Bitstream generation took 3.79688 seconds (approximately) in total CPU time.
-Bitstream generation virtual memory usage: begin = 2186.12 MB, end = 2278.66 MB, delta = 92.54 MB
-	Bitstream generation peak virtual memory usage = 2731.22 MB
-Bitstream generation resident set memory usage: begin = 2130.9 MB, end = 2224.62 MB, delta = 93.712 MB
-	Bitstream generation peak resident set memory usage = 2544 MB
+Reading core interface constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv'.
+Successfully processed interface constraints file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv".
+Finished writing bitstream file C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.lbf.
+Bitstream generation took 3.77461 seconds.
+	Bitstream generation took 3.65625 seconds (approximately) in total CPU time.
+Bitstream generation virtual memory usage: begin = 2218.43 MB, end = 2289.57 MB, delta = 71.14 MB
+	Bitstream generation peak virtual memory usage = 2763.53 MB
+Bitstream generation resident set memory usage: begin = 2161.49 MB, end = 2235.84 MB, delta = 74.352 MB
+	Bitstream generation peak resident set memory usage = 2574.42 MB
 ***** Ending stage bitstream generation *****
-The entire flow of EFX_PNR took 59.0698 seconds.
-	The entire flow of EFX_PNR took 54.7344 seconds (approximately) in total CPU time.
-The entire flow of EFX_PNR virtual memory usage: begin = 6.372 MB, end = 628.628 MB, delta = 622.256 MB
-	The entire flow of EFX_PNR peak virtual memory usage = 2731.22 MB
-The entire flow of EFX_PNR resident set memory usage: begin = 12.772 MB, end = 612.376 MB, delta = 599.604 MB
-	The entire flow of EFX_PNR peak resident set memory usage = 2544 MB
+The entire flow of EFX_PNR took 61.2231 seconds.
+	The entire flow of EFX_PNR took 56.7656 seconds (approximately) in total CPU time.
+The entire flow of EFX_PNR virtual memory usage: begin = 6.372 MB, end = 641.432 MB, delta = 635.06 MB
+	The entire flow of EFX_PNR peak virtual memory usage = 2763.53 MB
+The entire flow of EFX_PNR resident set memory usage: begin = 12.768 MB, end = 625.236 MB, delta = 612.468 MB
+	The entire flow of EFX_PNR peak resident set memory usage = 2574.42 MB

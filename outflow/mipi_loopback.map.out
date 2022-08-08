@@ -4,70 +4,57 @@
 [EFX-0000 INFO] 
 [EFX-0000 INFO] Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
 
-INFO: Read project database "D:/MIPI_Loopback/mipi_loopback.xml"
+INFO: Read project database "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/mipi_loopback.xml"
 INFO: ***** Beginning Analysis ... *****
 INFO: default VHDL library search path is now "C:/Efinity/2021.2/sim_models/vhdl/packages/vhdl_2008" (VHDL-1504)
 -- Analyzing Verilog file 'C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v' (VERI-1482)
--- Analyzing Verilog file 'D:/MIPI_Loopback\debug_top.v' (VERI-1482)
--- Analyzing Verilog file 'D:/MIPI_Loopback\fifo.v' (VERI-1482)
--- Analyzing Verilog file 'D:/MIPI_Loopback\video_gen.v' (VERI-1482)
-D:/MIPI_Loopback\video_gen.v(44): WARNING: redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372)
-D:/MIPI_Loopback\video_gen.v(45): WARNING: redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372)
-D:/MIPI_Loopback\video_gen.v(46): WARNING: redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372)
-D:/MIPI_Loopback\video_gen.v(135): WARNING: redeclaration of ANSI port 'red_o' is not allowed (VERI-1372)
-D:/MIPI_Loopback\video_gen.v(136): WARNING: redeclaration of ANSI port 'green_o' is not allowed (VERI-1372)
-D:/MIPI_Loopback\video_gen.v(137): WARNING: redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372)
--- Analyzing Verilog file 'D:/MIPI_Loopback\sw_counter.v' (VERI-1482)
--- Analyzing Verilog file 'D:/MIPI_Loopback\memory.v' (VERI-1482)
--- Analyzing Verilog file 'D:/MIPI_Loopback\mipi_loopback_top.v' (VERI-1482)
-D:/MIPI_Loopback\mipi_loopback_top.v(332): INFO: undeclared symbol 'uart_rx', assumed default net type 'wire' (VERI-2561)
--- Analyzing Verilog file 'D:/MIPI_Loopback\true_dual_port _ram.v' (VERI-1482)
--- Analyzing VHDL file 'D:/MIPI_Loopback\uart.vhd' (VHDL-1481)
+-- Analyzing Verilog file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\debug_top.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\fifo.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v' (VERI-1482)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(44): WARNING: redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(45): WARNING: redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(46): WARNING: redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(135): WARNING: redeclaration of ANSI port 'red_o' is not allowed (VERI-1372)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(136): WARNING: redeclaration of ANSI port 'green_o' is not allowed (VERI-1372)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(137): WARNING: redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372)
+-- Analyzing Verilog file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\sw_counter.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\memory.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v' (VERI-1482)
+-- Analyzing Verilog file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\true_dual_port _ram.v' (VERI-1482)
+-- Analyzing VHDL file 'C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\uart.vhd' (VHDL-1481)
 -- Restoring VHDL unit 'ieee.std_logic_1164' from file 'C:/Efinity/2021.2/sim_models/vhdl/packages/vhdl_2008/ieee/std_logic_1164.vdb' (VHDL-1493)
 -- Restoring VHDL unit 'std.standard' from file 'C:/Efinity/2021.2/sim_models/vhdl/packages/vhdl_2008/std/standard.vdb' (VHDL-1493)
 -- Restoring VHDL unit 'std.textio' from file 'C:/Efinity/2021.2/sim_models/vhdl/packages/vhdl_2008/std/textio.vdb' (VHDL-1493)
-D:/MIPI_Loopback\uart.vhd(28): INFO: analyzing entity 'uart' (VHDL-1012)
-D:/MIPI_Loopback\uart.vhd(49): INFO: analyzing architecture 'logic' (VHDL-1010)
-INFO: Analysis took 0.0287151 seconds.
-INFO: 	Analysis took 0.03125 seconds (approximately) in total CPU time.
-INFO: Analysis virtual memory usage: begin = 57.712 MB, end = 60.108 MB, delta = 2.396 MB
-INFO: 	Analysis peak virtual memory usage = 109.104 MB
-INFO: Analysis resident set memory usage: begin = 57.96 MB, end = 63.6 MB, delta = 5.64 MB
-INFO: 	Analysis peak resident set memory usage = 63.6 MB
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\uart.vhd(28): INFO: analyzing entity 'uart' (VHDL-1012)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\uart.vhd(49): INFO: analyzing architecture 'logic' (VHDL-1010)
+INFO: Analysis took 0.0264961 seconds.
+INFO: 	Analysis took 0.015625 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 57.784 MB, end = 60.32 MB, delta = 2.536 MB
+INFO: 	Analysis peak virtual memory usage = 109.108 MB
+INFO: Analysis resident set memory usage: begin = 58.196 MB, end = 63.94 MB, delta = 5.744 MB
+INFO: 	Analysis peak resident set memory usage = 63.94 MB
 INFO: ***** Ending Analysis ... *****
 INFO: ***** Beginning Elaboration ... *****
-D:/MIPI_Loopback\mipi_loopback_top.v(333): WARNING: port 'tx_ena' remains unconnected for this instance (VERI-1927)
-D:/MIPI_Loopback\mipi_loopback_top.v(333): WARNING: port 'rx_error' is not connected on this instance (VERI-2435)
-D:/MIPI_Loopback\mipi_loopback_top.v(14): INFO: compiling module 'mipi_loopback_top' (VERI-1018)
-D:/MIPI_Loopback\video_gen.v(2): INFO: compiling module 'video_gen(syncPulse_h=80,backPorch_h=50,activeVideo_h=640,frontPorch_h=50,syncPulse_v=80,backPorch_v=5,activeVideo_v=480,frontPorch_v=5)' (VERI-1018)
-D:/MIPI_Loopback\video_gen.v(143): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
-D:/MIPI_Loopback\video_gen.v(149): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
-D:/MIPI_Loopback\video_gen.v(182): WARNING: expression size 16 truncated to fit in target size 8 (VERI-1209)
-D:/MIPI_Loopback\video_gen.v(179): WARNING: net 'buffer1[23]' does not have a driver (VDB-1002)
-D:/MIPI_Loopback\mipi_loopback_top.v(140): WARNING: actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330)
-D:/MIPI_Loopback\mipi_loopback_top.v(147): WARNING: actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330)
-D:/MIPI_Loopback\mipi_loopback_top.v(148): WARNING: actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330)
-D:/MIPI_Loopback\mipi_loopback_top.v(149): WARNING: actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330)
-D:/MIPI_Loopback\sw_counter.v(14): INFO: compiling module 'sw_counter(MAX_CNT=4)' (VERI-1018)
-D:/MIPI_Loopback\mipi_loopback_top.v(236): WARNING: expression size 4 truncated to fit in target size 3 (VERI-1209)
-D:/MIPI_Loopback\mipi_loopback_top.v(252): WARNING: expression size 88 truncated to fit in target size 64 (VERI-1209)
-D:/MIPI_Loopback\mipi_loopback_top.v(289): WARNING: expression size 27 truncated to fit in target size 26 (VERI-1209)
-D:/MIPI_Loopback\mipi_loopback_top.v(333): INFO: switching to VHDL mode to elaborate design unit 'uart' (VERI-1231)
-D:/MIPI_Loopback\uart.vhd(28): INFO: processing 'uart(logic)' (VHDL-1067)
-D:/MIPI_Loopback\uart.vhd(106): WARNING: 'os_pulse' should be on the sensitivity list of the process (VHDL-1251)
-D:/MIPI_Loopback\uart.vhd(142): WARNING: incomplete sensitivity list specified; assuming completeness (VHDL-1613)
-D:/MIPI_Loopback\mipi_loopback_top.v(333): INFO: returning to Verilog mode to proceed with elaboration (VERI-1232)
-D:/MIPI_Loopback\mipi_loopback_top.v(350): WARNING: expression size 65 truncated to fit in target size 64 (VERI-1209)
-D:/MIPI_Loopback\sw_counter.v(14): INFO: compiling module 'sw_counter(MAX_CNT=2)' (VERI-1018)
-D:/MIPI_Loopback\mipi_loopback_top.v(283): WARNING: net 'valid_data' does not have a driver (VDB-1002)
-D:/MIPI_Loopback\mipi_loopback_top.v(332): WARNING: net 'uart_rx' does not have a driver (VDB-1002)
-D:/MIPI_Loopback\mipi_loopback_top.v(327): WARNING: input port 'tx_ena' remains unconnected for this instance (VDB-1053)
-INFO: Elaboration took 0.0242985 seconds.
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(14): INFO: compiling module 'mipi_loopback_top' (VERI-1018)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(2): INFO: compiling module 'video_gen(syncPulse_h=80,backPorch_h=50,activeVideo_h=640,frontPorch_h=50,syncPulse_v=80,backPorch_v=5,activeVideo_v=480,frontPorch_v=5)' (VERI-1018)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(143): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(149): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(182): WARNING: expression size 16 truncated to fit in target size 8 (VERI-1209)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(179): WARNING: net 'buffer1[23]' does not have a driver (VDB-1002)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(105): WARNING: actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(112): WARNING: actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(113): WARNING: actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(114): WARNING: actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(130): WARNING: expression size 27 truncated to fit in target size 26 (VERI-1209)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(146): WARNING: expression size 65 truncated to fit in target size 64 (VERI-1209)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(83): WARNING: net 'video_pattern[1]' does not have a driver (VDB-1002)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(124): WARNING: net 'valid_data' does not have a driver (VDB-1002)
+INFO: Elaboration took 0.0104652 seconds.
 INFO: 	Elaboration took 0.015625 seconds (approximately) in total CPU time.
-INFO: Elaboration virtual memory usage: begin = 60.108 MB, end = 65.076 MB, delta = 4.968 MB
-INFO: 	Elaboration peak virtual memory usage = 109.104 MB
-INFO: Elaboration resident set memory usage: begin = 63.608 MB, end = 69.888 MB, delta = 6.28 MB
-INFO: 	Elaboration peak resident set memory usage = 69.888 MB
+INFO: Elaboration virtual memory usage: begin = 60.32 MB, end = 61.476 MB, delta = 1.156 MB
+INFO: 	Elaboration peak virtual memory usage = 109.108 MB
+INFO: Elaboration resident set memory usage: begin = 63.948 MB, end = 66.04 MB, delta = 2.092 MB
+INFO: 	Elaboration peak resident set memory usage = 66.04 MB
 INFO: ***** Ending Elaboration ... *****
 [EFX-0000 INFO] Setting Synthesis Option: mode=speed
 INFO: ***** Beginning Reading Mapping Library ... *****
@@ -92,12 +79,12 @@ C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(601): INFO: compiling module
 C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(693): INFO: compiling module 'EFX_RAM10' (VERI-1018)
 C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(794): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
 C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(924): INFO: compiling module 'EFX_SRL8' (VERI-1018)
-INFO: Reading Mapping Library took 0.0128537 seconds.
+INFO: Reading Mapping Library took 0.0132044 seconds.
 INFO: 	Reading Mapping Library took 0.015625 seconds (approximately) in total CPU time.
-INFO: Reading Mapping Library virtual memory usage: begin = 65.804 MB, end = 65.804 MB, delta = 0 MB
-INFO: 	Reading Mapping Library peak virtual memory usage = 109.104 MB
-INFO: Reading Mapping Library resident set memory usage: begin = 70.744 MB, end = 70.764 MB, delta = 0.02 MB
-INFO: 	Reading Mapping Library peak resident set memory usage = 70.764 MB
+INFO: Reading Mapping Library virtual memory usage: begin = 61.96 MB, end = 61.96 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 109.108 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 66.648 MB, end = 66.672 MB, delta = 0.024 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 66.672 MB
 INFO: ***** Ending Reading Mapping Library ... *****
 [EFX-0000 INFO] ... Pre-synthesis checks begin
 [EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s)
@@ -105,58 +92,41 @@ INFO: ***** Ending Reading Mapping Library ... *****
 [EFX-0000 INFO] ... NameSpace init end (Real time : 0s)
 [EFX-0000 INFO] ... Mapping design "mipi_loopback_top"
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "video_gen(syncPulse_h=80,backPorch_h=50,activeVideo_h=640,frontPorch_h=50,syncPulse_v=80,backPorch_v=5,activeVideo_v=480,frontPorch_v=5)" begin
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_DPHY_RSTN' wire 'my_mipi_rx_DPHY_RSTN' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_RSTN' wire 'my_mipi_rx_RSTN' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_CLEAR' wire 'my_mipi_rx_CLEAR' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[1]' wire 'my_mipi_rx_LANES[1]' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_LANES[0]' wire 'my_mipi_rx_LANES[0]' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[3]' wire 'my_mipi_rx_VC_ENA[3]' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[2]' wire 'my_mipi_rx_VC_ENA[2]' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[1]' wire 'my_mipi_rx_VC_ENA[1]' is not driven.
-[EFX-0256 WARNING] The primary output port 'my_mipi_rx_VC_ENA[0]' wire 'my_mipi_rx_VC_ENA[0]' is not driven.
-[EFX-0256 WARNING] The primary output port 'bscan_TDO' wire 'bscan_TDO' is not driven.
-[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (D:/MIPI_Loopback\video_gen.v:5)
-[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (D:/MIPI_Loopback\video_gen.v:5)
-[EFX-0200 WARNING] Removing redundant signal : video_vsync. (D:/MIPI_Loopback\video_gen.v:42)
-[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (D:/MIPI_Loopback\video_gen.v:42)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (D:/MIPI_Loopback\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_vsync. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
 [EFX-0200 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (D:/MIPI_Loopback\video_gen.v:179)
-[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (D:/MIPI_Loopback\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
 [EFX-0201 WARNING] The above message was generated too many times, subsequent similar messages will be muted.
-[EFX-0266 WARNING] Module Instance 'uart_txrx' input pin tied to constant (reset_n=1).
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "video_gen(syncPulse_h=80,backPorch_h=50,activeVideo_h=640,frontPorch_h=50,syncPulse_v=80,backPorch_v=5,activeVideo_v=480,frontPorch_v=5)" end (Real time : 0s)
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "sw_counter(MAX_CNT=4)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "sw_counter(MAX_CNT=4)" end (Real time : 0s)
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "uart" end (Real time : 0s)
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "sw_counter(MAX_CNT=2)" begin
-[EFX-0000 INFO] ... Hierarchical pre-synthesis "sw_counter(MAX_CNT=2)" end (Real time : 0s)
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "mipi_loopback_top" begin
-[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 36 flops.
+[EFX-0000 INFO] ... Clock Enable Synthesis Performed on 2 flops.
 [EFX-0000 INFO] ... Hierarchical pre-synthesis "mipi_loopback_top" end (Real time : 0s)
 [EFX-0000 INFO] ... Flat optimizations begin
 [EFX-0000 INFO] ... Flat optimizations end (Real time : 0s)
@@ -167,23 +137,18 @@ INFO: ***** Ending Reading Mapping Library ... *****
 [EFX-0000 INFO] ... Check and break combinational loops begin
 [EFX-0000 INFO] ... Check and break combinational loops end (Real time : 0s)
 [EFX-0000 INFO] ... Sequential Optimization begin
-[EFX-0000 INFO] ... Clock Network tx_vga_clk with 109 loads will be considered for sequential optimization.
-[EFX-0000 INFO] ... Clock Network uart_clk with 36 loads will be considered for sequential optimization.
-[EFX-0000 INFO] ... Clock Network rx_vga_clk with 20 loads will be considered for sequential optimization.
-[EFX-0000 INFO] ... Sequential Optimization deduced 103 equivalent points.
+[EFX-0000 INFO] ... Clock Network tx_vga_clk with 84 loads will be considered for sequential optimization.
+[EFX-0000 INFO] ... Sequential Optimization deduced 40 equivalent points.
 [EFX-0000 INFO] ... Sequential Optimization end (Real time : 0s)
 [EFX-0000 INFO] ... SOP modeling begin
 [EFX-0000 INFO] ... SOP modeling end (Real time : 0s)
 [EFX-0000 INFO] ... LUT mapping begin
-[EFX-0000 INFO] ... LS, strategy: 3, nd: 290, ed: 896, lv: 5, pw: 457.57
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 166, ed: 532, lv: 5, pw: 263.31
 [EFX-0000 INFO] ... LUT mapping end (Real time : 1s)
 [EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
 [EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s)
 [EFX-0000 INFO] ... Postmap Retiming Optimization begin
-[EFX-0000 INFO] ... Clock Network n3 with 104 loads will be considered for retiming optimization.
-[EFX-0000 INFO] ... Clock Network n7 with 30 loads will be considered for retiming optimization.
-[EFX-0000 INFO] ... Clock Network n8 with 17 loads will be considered for retiming optimization.
-[EFX-0000 INFO] ... Clock Network n9 with 2 loads will be considered for retiming optimization.
+[EFX-0000 INFO] ... Clock Network n3 with 83 loads will be considered for retiming optimization.
 [EFX-0000 INFO] ... Performed 0 retime moves.
 [EFX-0000 INFO] ... Postmap Retiming Optimization end (Real time : 0s)
 [EFX-0000 INFO] ... Post-synthesis Verific netlist unification/params processing begin
@@ -191,140 +156,19 @@ INFO: ***** Ending Reading Mapping Library ... *****
 INFO: ***** Beginning VDB Netlist Checker ... *****
 WARNING: Input/Inout Port sw4 is unconnected and will be removed
 WARNING: Input/Inout Port sw5 is unconnected and will be removed
-WARNING: Input/Inout Port rx is unconnected and will be removed
-WARNING: Input/Inout Port uart_clk is unconnected and will be removed
-WARNING: Input/Inout Port rx_vga_clk is unconnected and will be removed
-WARNING: Input/Inout Port rx_pixel_clk is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_VALID is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_HSYNC[3] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_HSYNC[2] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_HSYNC[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_HSYNC[0] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_VSYNC[3] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_VSYNC[2] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_VSYNC[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_VSYNC[0] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[63] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[62] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[61] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[60] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[59] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[58] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[57] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[56] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[55] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[54] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[53] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[52] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[51] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[50] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[49] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[48] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[47] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[46] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[45] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[44] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[43] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[42] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[41] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[40] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[39] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[38] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[37] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[36] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[35] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[34] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[33] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[32] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[31] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[30] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[29] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[28] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[27] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[26] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[25] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[24] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[23] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[22] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[21] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[20] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[19] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[18] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[17] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[16] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[15] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[14] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[13] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[12] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[11] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[10] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[9] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[8] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[7] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[6] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[5] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[4] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[3] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[2] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_DATA[0] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_TYPE[5] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_TYPE[4] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_TYPE[3] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_TYPE[2] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_TYPE[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_TYPE[0] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_VC[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_VC[0] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_CNT[3] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_CNT[2] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_CNT[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_CNT[0] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[17] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[16] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[15] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[14] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[13] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[12] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[11] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[10] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[9] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[8] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[7] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[6] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[5] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[4] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[3] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[2] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ERROR[0] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ULPS_CLK is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ULPS[3] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ULPS[2] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ULPS[1] is unconnected and will be removed
-WARNING: Input/Inout Port my_mipi_rx_ULPS[0] is unconnected and will be removed
-WARNING: Input/Inout Port bscan_DRCK is unconnected and will be removed
-WARNING: Input/Inout Port bscan_RESET is unconnected and will be removed
-WARNING: Input/Inout Port bscan_TMS is unconnected and will be removed
-WARNING: Input/Inout Port bscan_RUNTEST is unconnected and will be removed
-WARNING: Input/Inout Port bscan_SEL is unconnected and will be removed
-WARNING: Input/Inout Port bscan_SHIFT is unconnected and will be removed
-WARNING: Input/Inout Port bscan_TDI is unconnected and will be removed
-WARNING: Input/Inout Port bscan_CAPTURE is unconnected and will be removed
-WARNING: Input/Inout Port bscan_TCK is unconnected and will be removed
-WARNING: Input/Inout Port bscan_UPDATE is unconnected and will be removed
-INFO: Found 124 warnings in the post-synthesis netlist.
-INFO: VDB Netlist Checker took 0.0023501 seconds.
+WARNING: Input/Inout Port tx_pixel_clk is unconnected and will be removed
+INFO: Found 3 warnings in the post-synthesis netlist.
+INFO: VDB Netlist Checker took 0.0007731 seconds.
 INFO: 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
-INFO: VDB Netlist Checker virtual memory usage: begin = 80.864 MB, end = 80.864 MB, delta = 0 MB
-INFO: 	VDB Netlist Checker peak virtual memory usage = 109.104 MB
-INFO: VDB Netlist Checker resident set memory usage: begin = 87.512 MB, end = 87.556 MB, delta = 0.044 MB
-INFO: 	VDB Netlist Checker peak resident set memory usage = 106.932 MB
+INFO: VDB Netlist Checker virtual memory usage: begin = 75.168 MB, end = 75.168 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 109.108 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 81.648 MB, end = 81.692 MB, delta = 0.044 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 101.128 MB
 INFO: ***** Ending VDB Netlist Checker ... *****
--- Writing netlist 'mipi_loopback_top' to Verilog file 'D:/MIPI_Loopback/outflow/mipi_loopback.map.v' (VDB-1030)
+-- Writing netlist 'mipi_loopback_top' to Verilog file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.map.v' (VDB-1030)
 [EFX-0000 INFO] Resource Summary 
 [EFX-0000 INFO] =============================== 
-[EFX-0000 INFO] EFX_LUT4        : 	131
-[EFX-0000 INFO] EFX_FF          : 	58
-[EFX-0000 INFO] EFX_GBUFCE      : 	2
+[EFX-0000 INFO] EFX_LUT4        : 	125
+[EFX-0000 INFO] EFX_FF          : 	57
+[EFX-0000 INFO] EFX_GBUFCE      : 	1
 [EFX-0000 INFO] =============================== 

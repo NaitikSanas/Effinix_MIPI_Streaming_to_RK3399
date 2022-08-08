@@ -2,7 +2,7 @@
 <efxpt:periphery design="mipi_loopback" device="T85F324" xmlns:efxpt="http://www.efinixinc.com/peri_device_db" xmlns:efxutil="http://www.efinixinc.com/peri_tool" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.efinixinc.com/peri_device_db lpf.xsd">
   <!-- Efinity Logical Peripheral File -->
   <!-- Version: 2021.2.323 -->
-  <!-- Date: 2022-08-06 12:35 -->
+  <!-- Date: 2022-08-08 09:56 -->
   <!-- Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved. -->
   <efxpt:sequence size="333">
     <efxpt:instance id="GPIOL_00" index="0" type="gpio"/>
@@ -5979,7 +5979,7 @@
     <efxpt:parameter name="PCR_OUT_RESYNC" value="DISABLE"/>
     <efxpt:parameter name="PCR_OUT_SEL" value="BYPASS"/>
     <efxpt:parameter name="PCR_PULLDOWN" value="DISABLE"/>
-    <efxpt:parameter name="PCR_PULLUP" value="DISABLE"/>
+    <efxpt:parameter name="PCR_PULLUP" value="ENABLE"/>
     <efxpt:parameter name="PCR_SCHMITT_TRIGGER" value="DISABLE"/>
     <efxpt:parameter name="PCR_SLEW_RATE" value="DISABLE"/>
   </efxpt:instance>
@@ -6019,17 +6019,17 @@
     <efxpt:parameter name="PCR_DEL_SEL0" value="0"/>
     <efxpt:parameter name="PCR_DEL_SEL1" value="0"/>
     <efxpt:parameter name="PCR_DEL_SEL2" value="0"/>
-    <efxpt:parameter name="PCR_DIV_SEL0" value="116"/>
-    <efxpt:parameter name="PCR_DIV_SEL1" value="233"/>
-    <efxpt:parameter name="PCR_DIV_SEL2" value="14"/>
+    <efxpt:parameter name="PCR_DIV_SEL0" value="120"/>
+    <efxpt:parameter name="PCR_DIV_SEL1" value="241"/>
+    <efxpt:parameter name="PCR_DIV_SEL2" value="128"/>
     <efxpt:parameter name="PCR_DYNREF_SEL" value="DISABLE"/>
     <efxpt:parameter name="PCR_EXTCLK_DELAY" value="7"/>
     <efxpt:parameter name="PCR_EXTFB_EN" value="DISABLE"/>
     <efxpt:parameter name="PCR_EXTSRC_SEL" value="DISABLE"/>
     <efxpt:parameter name="PCR_IPENABLE" value="ENABLE"/>
     <efxpt:parameter name="PCR_IPEN_PCR_FRZ" value="DISABLE"/>
-    <efxpt:parameter name="PCR_MCOUNTER" value="121"/>
-    <efxpt:parameter name="PCR_NCOUNTER" value="6"/>
+    <efxpt:parameter name="PCR_MCOUNTER" value="146"/>
+    <efxpt:parameter name="PCR_NCOUNTER" value="7"/>
     <efxpt:parameter name="PCR_OCOUNTER" value="1"/>
     <efxpt:parameter name="PCR_OUT_EN0" value="ENABLE"/>
     <efxpt:parameter name="PCR_OUT_EN1" value="ENABLE"/>
@@ -6053,28 +6053,28 @@
     <efxpt:parameter name="PCR_DEL_SEL0" value="0"/>
     <efxpt:parameter name="PCR_DEL_SEL1" value="0"/>
     <efxpt:parameter name="PCR_DEL_SEL2" value="0"/>
-    <efxpt:parameter name="PCR_DIV_SEL0" value="129"/>
-    <efxpt:parameter name="PCR_DIV_SEL1" value="38"/>
-    <efxpt:parameter name="PCR_DIV_SEL2" value="155"/>
+    <efxpt:parameter name="PCR_DIV_SEL0" value="0"/>
+    <efxpt:parameter name="PCR_DIV_SEL1" value="0"/>
+    <efxpt:parameter name="PCR_DIV_SEL2" value="0"/>
     <efxpt:parameter name="PCR_DYNREF_SEL" value="DISABLE"/>
     <efxpt:parameter name="PCR_EXTCLK_DELAY" value="0"/>
     <efxpt:parameter name="PCR_EXTFB_EN" value="DISABLE"/>
-    <efxpt:parameter name="PCR_EXTSRC_SEL" value="DISABLE"/>
-    <efxpt:parameter name="PCR_IPENABLE" value="ENABLE"/>
+    <efxpt:parameter name="PCR_EXTSRC_SEL" value="DIRECT"/>
+    <efxpt:parameter name="PCR_IPENABLE" value="DISABLE"/>
     <efxpt:parameter name="PCR_IPEN_PCR_FRZ" value="DISABLE"/>
-    <efxpt:parameter name="PCR_MCOUNTER" value="78"/>
+    <efxpt:parameter name="PCR_MCOUNTER" value="1"/>
     <efxpt:parameter name="PCR_NCOUNTER" value="1"/>
     <efxpt:parameter name="PCR_OCOUNTER" value="1"/>
-    <efxpt:parameter name="PCR_OUT_EN0" value="ENABLE"/>
-    <efxpt:parameter name="PCR_OUT_EN1" value="ENABLE"/>
-    <efxpt:parameter name="PCR_OUT_EN2" value="ENABLE"/>
+    <efxpt:parameter name="PCR_OUT_EN0" value="DISABLE"/>
+    <efxpt:parameter name="PCR_OUT_EN1" value="DISABLE"/>
+    <efxpt:parameter name="PCR_OUT_EN2" value="DISABLE"/>
     <efxpt:parameter name="PCR_PLLBYPASS" value="DISABLE"/>
     <efxpt:parameter name="PCR_PLL_TESTEN" value="DISABLE"/>
     <efxpt:parameter name="PCR_PSHIFT_SEL0" value="0"/>
     <efxpt:parameter name="PCR_PSHIFT_SEL1" value="0"/>
     <efxpt:parameter name="PCR_PSHIFT_SEL2" value="0"/>
     <efxpt:parameter name="PCR_REFCLK_DELAY" value="0"/>
-    <efxpt:parameter name="PCR_REF_SEL" value="2"/>
+    <efxpt:parameter name="PCR_REF_SEL" value="0"/>
     <efxpt:parameter name="PCR_USER_EN" value="DISABLE"/>
     <efxpt:parameter name="PCR_XCOUNTER" value="0"/>
     <efxpt:parameter name="UNUSED" value="ENABLE"/>
@@ -6178,9 +6178,9 @@
     <efxpt:parameter name="PCR_DPDN_SWAP_LAN2" value="NORMAL"/>
     <efxpt:parameter name="PCR_DPDN_SWAP_LAN3" value="NORMAL"/>
     <efxpt:parameter name="PCR_HS_RX_TIMEOUT_CNT" value="FIXED"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_CLK" value="RXD0"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN0" value="RXD1"/>
-    <efxpt:parameter name="PCR_LANE_SWAP_LAN1" value="RXD2"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_CLK" value="RXD2"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN0" value="RXD0"/>
+    <efxpt:parameter name="PCR_LANE_SWAP_LAN1" value="RXD1"/>
     <efxpt:parameter name="PCR_LANE_SWAP_LAN2" value="RXD3"/>
     <efxpt:parameter name="PCR_LANE_SWAP_LAN3" value="RXD4"/>
     <efxpt:parameter name="PCR_MP_TEST_EN" value="DISABLE"/>
@@ -6192,9 +6192,9 @@
     <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN1" value="7"/>
     <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN2" value="7"/>
     <efxpt:parameter name="PCR_PRECOUNTER_IN_LAN3" value="7"/>
-    <efxpt:parameter name="PCR_PWRDN_N" value="ENABLE"/>
+    <efxpt:parameter name="PCR_PWRDN_N" value="DISABLE"/>
     <efxpt:parameter name="PCR_PWRUP_MODE" value="FIXED"/>
-    <efxpt:parameter name="PCR_USRCTRL_RST" value="ENABLE"/>
+    <efxpt:parameter name="PCR_USRCTRL_RST" value="DISABLE"/>
     <efxpt:parameter name="PCR_XCFGI0" value="FIXED"/>
     <efxpt:parameter name="PCR_XCFGI1_RESERVED_0" value="FIXED"/>
     <efxpt:parameter name="PCR_XCFGI1_RESERVED_1" value="FIXED"/>
@@ -6611,9 +6611,9 @@
     <efxpt:parameter name="PCR_MUX0" value="1"/>
     <efxpt:parameter name="PCR_MUX1" value="1"/>
     <efxpt:parameter name="PCR_MUX2" value="1"/>
-    <efxpt:parameter name="PCR_MUX3" value="1"/>
-    <efxpt:parameter name="PCR_MUX4" value="1"/>
-    <efxpt:parameter name="PCR_MUX5" value="1"/>
+    <efxpt:parameter name="PCR_MUX3" value="0"/>
+    <efxpt:parameter name="PCR_MUX4" value="0"/>
+    <efxpt:parameter name="PCR_MUX5" value="0"/>
     <efxpt:parameter name="PCR_MUX6" value="0"/>
     <efxpt:parameter name="PCR_MUX7" value="0"/>
   </efxpt:instance>

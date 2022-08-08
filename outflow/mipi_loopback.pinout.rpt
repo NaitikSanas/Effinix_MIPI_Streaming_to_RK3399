@@ -1,7 +1,7 @@
 
 # Efinity Pinout Report
 # Version: 2021.2.323
-# Date: 2022-08-06 12:35
+# Date: 2022-08-08 09:56
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -73,11 +73,11 @@
 |     D2     |    --UNUSED--   |    MIPI1_TXDP3     |           |                      |                  |      3B     |             |                       |
 |     D3     |    --UNUSED--   |    MIPI1_RXDP4     |           |                      |                  |      3B     |             |                       |
 |     D4     |    --UNUSED--   |    MIPI1_RXDP0     |           |                      |                  |      3B     |             |                       |
-|     D5     | my_mipi_rx.CLKN |    MIPI0_RXDN0     |           |                      |                  |      3A     |             |                       |
-|     D6     | my_mipi_rx.LN2N |    MIPI0_RXDN3     |           |                      |                  |      3A     |             |                       |
+|     D5     |    --UNUSED--   |    MIPI0_RXDN0     |           |                      |                  |      3A     |             |                       |
+|     D6     |    --UNUSED--   |    MIPI0_RXDN3     |           |                      |                  |      3A     |             |                       |
 |     D7     |     --VCC--     |    VCC25A_MIPI0    |   Power   |                      |                  |      3A     |             |    2.5 V MIPI Power   |
-|     D8     | my_mipi_rx.LN0N |    MIPI0_RXDN1     |           |                      |                  |      3A     |             |                       |
-|     D9     |     refclk2     |  GPIOR_167_PLLIN1  |   Input   | 3.3 V LVTTL / LVCMOS |      3.3 V       |   3D_TR_BR  |             |   User IO/PLL_CLKIN   |
+|     D8     |    --UNUSED--   |    MIPI0_RXDN1     |           |                      |                  |      3A     |             |                       |
+|     D9     |    --UNUSED--   |  GPIOR_167_PLLIN1  |   Input   |                      |      3.3 V       |   3D_TR_BR  | weak pullup |   User IO/PLL_CLKIN   |
 |    D10     |     --GND--     |        GND         |   Power   |                      |                  |             |             |         Ground        |
 |    D11     |    --UNUSED--   |    GPIOT_RXP03     |           |                      |      3.3 V       |      2D     |             |        User IO        |
 |    D12     |    --UNUSED--   |    GPIOT_RXN06     |           |                      |      3.3 V       |      2D     |             |        User IO        |
@@ -91,10 +91,10 @@
 |     E2     |    --UNUSED--   |    MIPI1_TXDN3     |           |                      |                  |      3B     |             |                       |
 |     E3     |    --UNUSED--   |    MIPI1_RXDN4     |           |                      |                  |      3B     |             |                       |
 |     E4     |    --UNUSED--   |    MIPI1_RXDN0     |           |                      |                  |      3B     |             |                       |
-|     E5     | my_mipi_rx.CLKP |    MIPI0_RXDP0     |           |                      |                  |      3A     |             |                       |
-|     E6     | my_mipi_rx.LN2P |    MIPI0_RXDP3     |           |                      |                  |      3A     |             |                       |
-|     E7     | my_mipi_rx.LN3P |    MIPI0_RXDP4     |           |                      |                  |      3A     |             |                       |
-|     E8     | my_mipi_rx.LN0P |    MIPI0_RXDP1     |           |                      |                  |      3A     |             |                       |
+|     E5     |    --UNUSED--   |    MIPI0_RXDP0     |           |                      |                  |      3A     |             |                       |
+|     E6     |    --UNUSED--   |    MIPI0_RXDP3     |           |                      |                  |      3A     |             |                       |
+|     E7     |    --UNUSED--   |    MIPI0_RXDP4     |           |                      |                  |      3A     |             |                       |
+|     E8     |    --UNUSED--   |    MIPI0_RXDP1     |           |                      |                  |      3A     |             |                       |
 |     E9     |    --UNUSED--   |  GPIOR_168_PLLIN2  |   Input   |                      |      3.3 V       |   3D_TR_BR  | weak pullup |   User IO/PLL_CLKIN   |
 |    E10     |     --VCC--     |      VCCIO2D       |   Power   |                      |      3.3 V       |      2D     |             |      VCCIO Power      |
 |    E11     |    --UNUSED--   | GPIOT_RXP08_EXTFB0 |           |                      |      3.3 V       |      2D     |             |   User IO/PLL_EXTFB   |
@@ -109,9 +109,9 @@
 |     F2     |     --GND--     |     GNDA_MIPI      |   Power   |                      |                  |             |             |      MIPI Ground      |
 |     F3     |    --UNUSED--   |    MIPI1_RXDP1     |           |                      |                  |      3B     |             |                       |
 |     F4     |     --GND--     |        GND         |   Power   |                      |                  |             |             |         Ground        |
-|     F5     | my_mipi_rx.LN1N |    MIPI0_RXDN2     |           |                      |                  |      3A     |             |                       |
-|     F6     | my_mipi_rx.LN1P |    MIPI0_RXDP2     |           |                      |                  |      3A     |             |                       |
-|     F7     | my_mipi_rx.LN3N |    MIPI0_RXDN4     |           |                      |                  |      3A     |             |                       |
+|     F5     |    --UNUSED--   |    MIPI0_RXDN2     |           |                      |                  |      3A     |             |                       |
+|     F6     |    --UNUSED--   |    MIPI0_RXDP2     |           |                      |                  |      3A     |             |                       |
+|     F7     |    --UNUSED--   |    MIPI0_RXDN4     |           |                      |                  |      3A     |             |                       |
 |     F8     |     --VCC--     |      VCCA_TR       |   Power   |                      |      3.3 V       |   3D_TR_BR  |             |    1.2 V PLL Power    |
 |     F9     |     --VCC--     |      VCCA_TR       |   Power   |                      |      3.3 V       |   3D_TR_BR  |             |    1.2 V PLL Power    |
 |    F10     |   mipi_refclk   | GPIOR_169_MREFCLK  |   Input   | 3.3 V LVTTL / LVCMOS |      3.3 V       |   3D_TR_BR  | weak pullup |   User IO/MIPI_CLKIN  |

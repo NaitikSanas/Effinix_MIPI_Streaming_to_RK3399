@@ -797,18 +797,6 @@ clock {
   }
 }
 clock {
-  name: "mipi_rx_cal_clk"
-  period: 10000
-  target_pin {
-    cell: "mipi_rx_cal_clk"
-    port: "INPAD"
-  }
-  origin: SDC
-  uncertainty {
-    value: 120
-  }
-}
-clock {
   name: "tx_esc_pll_CLKOUT0"
   period: 50000
   target_pin {
@@ -818,62 +806,5 @@ clock {
   origin: SDC
   uncertainty {
     value: 120
-  }
-}
-clock {
-  name: "rx_pixel_clk"
-  period: 100000
-  target_pin {
-    cell: "rx_pixel_clk"
-    port: "INPAD"
-  }
-  origin: SDC
-  uncertainty {
-    value: 120
-  }
-  output_delay {
-    pin {
-      cell: "my_mipi_rx_VC_ENA[3]"
-      port: "OUTPAD"
-    }
-    setup: -3546
-    analysis: MAX
-    ref_clock_edge: RISING
-  }
-  output_delay {
-    pin {
-      cell: "my_mipi_rx_VC_ENA[2]"
-      port: "OUTPAD"
-    }
-    setup: -3546
-    analysis: MAX
-    ref_clock_edge: RISING
-  }
-  output_delay {
-    pin {
-      cell: "my_mipi_rx_VC_ENA[1]"
-      port: "OUTPAD"
-    }
-    setup: -3546
-    analysis: MAX
-    ref_clock_edge: RISING
-  }
-  output_delay {
-    pin {
-      cell: "my_mipi_rx_VC_ENA[0]"
-      port: "OUTPAD"
-    }
-    setup: -3546
-    analysis: MAX
-    ref_clock_edge: RISING
-  }
-  output_delay {
-    pin {
-      cell: "my_mipi_rx_CLEAR"
-      port: "OUTPAD"
-    }
-    setup: -3997
-    analysis: MAX
-    ref_clock_edge: RISING
   }
 }

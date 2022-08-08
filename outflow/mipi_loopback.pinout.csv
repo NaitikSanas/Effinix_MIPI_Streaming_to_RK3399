@@ -1,7 +1,7 @@
 
 # Efinity Pinout Report
 # Version: 2021.2.323
-# Date: 2022-08-06 12:35
+# Date: 2022-08-08 09:56
 
 # Copyright (C) 2017 - 2021 Efinix Inc. All rights reserved.
 
@@ -69,11 +69,11 @@ D1,MIPI1_TXDN4,,,3B,,,,
 D2,MIPI1_TXDP3,,,3B,,,,
 D3,MIPI1_RXDP4,,,3B,,,,
 D4,MIPI1_RXDP0,,,3B,,,,
-D5,MIPI0_RXDN0,my_mipi_rx.CLKN,,3A,,,,
-D6,MIPI0_RXDN3,my_mipi_rx.LN2N,,3A,,,,
+D5,MIPI0_RXDN0,,,3A,,,,
+D6,MIPI0_RXDN3,,,3A,,,,
 D7,VCC25A_MIPI0,,Power,3A,,,,2.5 V MIPI Power
-D8,MIPI0_RXDN1,my_mipi_rx.LN0N,,3A,,,,
-D9,GPIOR_167_PLLIN1,refclk2,Input,3D_TR_BR,3.3 V,3.3 V LVTTL / LVCMOS,,User IO/PLL_CLKIN
+D8,MIPI0_RXDN1,,,3A,,,,
+D9,GPIOR_167_PLLIN1,,Input,3D_TR_BR,3.3 V,,weak pullup,User IO/PLL_CLKIN
 D10,GND,,Power,,,,,Ground
 D11,GPIOT_RXP03,,,2D,3.3 V,,,User IO
 D12,GPIOT_RXN06,,,2D,3.3 V,,,User IO
@@ -87,10 +87,10 @@ E1,MIPI1_TXDP4,,,3B,,,,
 E2,MIPI1_TXDN3,,,3B,,,,
 E3,MIPI1_RXDN4,,,3B,,,,
 E4,MIPI1_RXDN0,,,3B,,,,
-E5,MIPI0_RXDP0,my_mipi_rx.CLKP,,3A,,,,
-E6,MIPI0_RXDP3,my_mipi_rx.LN2P,,3A,,,,
-E7,MIPI0_RXDP4,my_mipi_rx.LN3P,,3A,,,,
-E8,MIPI0_RXDP1,my_mipi_rx.LN0P,,3A,,,,
+E5,MIPI0_RXDP0,,,3A,,,,
+E6,MIPI0_RXDP3,,,3A,,,,
+E7,MIPI0_RXDP4,,,3A,,,,
+E8,MIPI0_RXDP1,,,3A,,,,
 E9,GPIOR_168_PLLIN2,,Input,3D_TR_BR,3.3 V,,weak pullup,User IO/PLL_CLKIN
 E10,VCCIO2D,,Power,2D,3.3 V,,,VCCIO Power
 E11,GPIOT_RXP08_EXTFB0,,,2D,3.3 V,,,User IO/PLL_EXTFB
@@ -105,9 +105,9 @@ F1,MIPI1_RXDN2,,,3B,,,,
 F2,GNDA_MIPI,,Power,,,,,MIPI Ground
 F3,MIPI1_RXDP1,,,3B,,,,
 F4,GND,,Power,,,,,Ground
-F5,MIPI0_RXDN2,my_mipi_rx.LN1N,,3A,,,,
-F6,MIPI0_RXDP2,my_mipi_rx.LN1P,,3A,,,,
-F7,MIPI0_RXDN4,my_mipi_rx.LN3N,,3A,,,,
+F5,MIPI0_RXDN2,,,3A,,,,
+F6,MIPI0_RXDP2,,,3A,,,,
+F7,MIPI0_RXDN4,,,3A,,,,
 F8,VCCA_TR,,Power,3D_TR_BR,3.3 V,,,1.2 V PLL Power
 F9,VCCA_TR,,Power,3D_TR_BR,3.3 V,,,1.2 V PLL Power
 F10,GPIOR_169_MREFCLK,mipi_refclk,Input,3D_TR_BR,3.3 V,3.3 V LVTTL / LVCMOS,weak pullup,User IO/MIPI_CLKIN

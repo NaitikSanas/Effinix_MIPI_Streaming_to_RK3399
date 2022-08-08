@@ -13,436 +13,219 @@ a free open source code under MIT license.
 Running Placement and Routing for Family "Trion", Device "T85F324" ...
 
 ***** Beginning stage netlist pre-processing ... *****
-Successfully Read in Verific binary Netlist dump file "D:/MIPI_Loopback/mipi_loopback.vdb".
+Successfully Read in Verific binary Netlist dump file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/mipi_loopback.vdb".
 ***** Beginning VDB Netlist Checker ... *****
-VDB Netlist Checker took 0.0018859 seconds.
+VDB Netlist Checker took 0.0021863 seconds.
 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
-VDB Netlist Checker virtual memory usage: begin = 13.812 MB, end = 13.812 MB, delta = 0 MB
-	VDB Netlist Checker peak virtual memory usage = 78.372 MB
-VDB Netlist Checker resident set memory usage: begin = 22.596 MB, end = 22.804 MB, delta = 0.208 MB
-	VDB Netlist Checker peak resident set memory usage = 61.332 MB
+VDB Netlist Checker virtual memory usage: begin = 12.592 MB, end = 12.592 MB, delta = 0 MB
+	VDB Netlist Checker peak virtual memory usage = 78.456 MB
+VDB Netlist Checker resident set memory usage: begin = 21.916 MB, end = 22.124 MB, delta = 0.208 MB
+	VDB Netlist Checker peak resident set memory usage = 60.328 MB
 ***** Ending VDB Netlist Checker ... *****
-Reading core interface constraints from 'D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv'.
-Successfully processed interface constraints file "D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv".
-Creating interface clock pin mipi_rx_cal_clk.
-Creating interface clock buffer mipi_rx_cal_clk~CLKBUF.
-Creating interface clock buffer rx_pixel_clk~CLKBUF.
+Reading core interface constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv'.
+Successfully processed interface constraints file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv".
 Creating interface clock pin tx_esc_pll_CLKOUT0.
 Creating interface clock buffer tx_esc_pll_CLKOUT0~CLKBUF.
+Creating interface clock buffer tx_pixel_clk~CLKBUF.
 Found 0 constant generator nets.
 Pass 0: Swept away 0 nets with no fanout.
 logical_block #1(sw4) has no fanout.
 Removing input.
 logical_block #2(sw5) has no fanout.
 Removing input.
-logical_block #3(rx) has no fanout.
-Removing input.
-logical_block #4(uart_clk) has no fanout.
-Removing input.
-logical_block #5(rx_vga_clk) has no fanout.
-Removing input.
-logical_block #125(my_mipi_rx_VALID) has no fanout.
-Removing input.
-logical_block #126(my_mipi_rx_HSYNC[3]) has no fanout.
-Removing input.
-logical_block #127(my_mipi_rx_HSYNC[2]) has no fanout.
-Removing input.
-logical_block #128(my_mipi_rx_HSYNC[1]) has no fanout.
-Removing input.
-logical_block #129(my_mipi_rx_HSYNC[0]) has no fanout.
-Removing input.
-logical_block #130(my_mipi_rx_VSYNC[3]) has no fanout.
-Removing input.
-logical_block #131(my_mipi_rx_VSYNC[2]) has no fanout.
-Removing input.
-logical_block #132(my_mipi_rx_VSYNC[1]) has no fanout.
-Removing input.
-logical_block #133(my_mipi_rx_VSYNC[0]) has no fanout.
-Removing input.
-logical_block #134(my_mipi_rx_DATA[63]) has no fanout.
-Removing input.
-logical_block #135(my_mipi_rx_DATA[62]) has no fanout.
-Removing input.
-logical_block #136(my_mipi_rx_DATA[61]) has no fanout.
-Removing input.
-logical_block #137(my_mipi_rx_DATA[60]) has no fanout.
-Removing input.
-logical_block #138(my_mipi_rx_DATA[59]) has no fanout.
-Removing input.
-logical_block #139(my_mipi_rx_DATA[58]) has no fanout.
-Removing input.
-logical_block #140(my_mipi_rx_DATA[57]) has no fanout.
-Removing input.
-logical_block #141(my_mipi_rx_DATA[56]) has no fanout.
-Removing input.
-logical_block #142(my_mipi_rx_DATA[55]) has no fanout.
-Removing input.
-logical_block #143(my_mipi_rx_DATA[54]) has no fanout.
-Removing input.
-logical_block #144(my_mipi_rx_DATA[53]) has no fanout.
-Removing input.
-logical_block #145(my_mipi_rx_DATA[52]) has no fanout.
-Removing input.
-logical_block #146(my_mipi_rx_DATA[51]) has no fanout.
-Removing input.
-logical_block #147(my_mipi_rx_DATA[50]) has no fanout.
-Removing input.
-logical_block #148(my_mipi_rx_DATA[49]) has no fanout.
-Removing input.
-logical_block #149(my_mipi_rx_DATA[48]) has no fanout.
-Removing input.
-logical_block #150(my_mipi_rx_DATA[47]) has no fanout.
-Removing input.
-logical_block #151(my_mipi_rx_DATA[46]) has no fanout.
-Removing input.
-logical_block #152(my_mipi_rx_DATA[45]) has no fanout.
-Removing input.
-logical_block #153(my_mipi_rx_DATA[44]) has no fanout.
-Removing input.
-logical_block #154(my_mipi_rx_DATA[43]) has no fanout.
-Removing input.
-logical_block #155(my_mipi_rx_DATA[42]) has no fanout.
-Removing input.
-logical_block #156(my_mipi_rx_DATA[41]) has no fanout.
-Removing input.
-logical_block #157(my_mipi_rx_DATA[40]) has no fanout.
-Removing input.
-logical_block #158(my_mipi_rx_DATA[39]) has no fanout.
-Removing input.
-logical_block #159(my_mipi_rx_DATA[38]) has no fanout.
-Removing input.
-logical_block #160(my_mipi_rx_DATA[37]) has no fanout.
-Removing input.
-logical_block #161(my_mipi_rx_DATA[36]) has no fanout.
-Removing input.
-logical_block #162(my_mipi_rx_DATA[35]) has no fanout.
-Removing input.
-logical_block #163(my_mipi_rx_DATA[34]) has no fanout.
-Removing input.
-logical_block #164(my_mipi_rx_DATA[33]) has no fanout.
-Removing input.
-logical_block #165(my_mipi_rx_DATA[32]) has no fanout.
-Removing input.
-logical_block #166(my_mipi_rx_DATA[31]) has no fanout.
-Removing input.
-logical_block #167(my_mipi_rx_DATA[30]) has no fanout.
-Removing input.
-logical_block #168(my_mipi_rx_DATA[29]) has no fanout.
-Removing input.
-logical_block #169(my_mipi_rx_DATA[28]) has no fanout.
-Removing input.
-logical_block #170(my_mipi_rx_DATA[27]) has no fanout.
-Removing input.
-logical_block #171(my_mipi_rx_DATA[26]) has no fanout.
-Removing input.
-logical_block #172(my_mipi_rx_DATA[25]) has no fanout.
-Removing input.
-logical_block #173(my_mipi_rx_DATA[24]) has no fanout.
-Removing input.
-logical_block #174(my_mipi_rx_DATA[23]) has no fanout.
-Removing input.
-logical_block #175(my_mipi_rx_DATA[22]) has no fanout.
-Removing input.
-logical_block #176(my_mipi_rx_DATA[21]) has no fanout.
-Removing input.
-logical_block #177(my_mipi_rx_DATA[20]) has no fanout.
-Removing input.
-logical_block #178(my_mipi_rx_DATA[19]) has no fanout.
-Removing input.
-logical_block #179(my_mipi_rx_DATA[18]) has no fanout.
-Removing input.
-logical_block #180(my_mipi_rx_DATA[17]) has no fanout.
-Removing input.
-logical_block #181(my_mipi_rx_DATA[16]) has no fanout.
-Removing input.
-logical_block #182(my_mipi_rx_DATA[15]) has no fanout.
-Removing input.
-logical_block #183(my_mipi_rx_DATA[14]) has no fanout.
-Removing input.
-logical_block #184(my_mipi_rx_DATA[13]) has no fanout.
-Removing input.
-logical_block #185(my_mipi_rx_DATA[12]) has no fanout.
-Removing input.
-logical_block #186(my_mipi_rx_DATA[11]) has no fanout.
-Removing input.
-logical_block #187(my_mipi_rx_DATA[10]) has no fanout.
-Removing input.
-logical_block #188(my_mipi_rx_DATA[9]) has no fanout.
-Removing input.
-logical_block #189(my_mipi_rx_DATA[8]) has no fanout.
-Removing input.
-logical_block #190(my_mipi_rx_DATA[7]) has no fanout.
-Removing input.
-logical_block #191(my_mipi_rx_DATA[6]) has no fanout.
-Removing input.
-logical_block #192(my_mipi_rx_DATA[5]) has no fanout.
-Removing input.
-logical_block #193(my_mipi_rx_DATA[4]) has no fanout.
-Removing input.
-logical_block #194(my_mipi_rx_DATA[3]) has no fanout.
-Removing input.
-logical_block #195(my_mipi_rx_DATA[2]) has no fanout.
-Removing input.
-logical_block #196(my_mipi_rx_DATA[1]) has no fanout.
-Removing input.
-logical_block #197(my_mipi_rx_DATA[0]) has no fanout.
-Removing input.
-logical_block #198(my_mipi_rx_TYPE[5]) has no fanout.
-Removing input.
-logical_block #199(my_mipi_rx_TYPE[4]) has no fanout.
-Removing input.
-logical_block #200(my_mipi_rx_TYPE[3]) has no fanout.
-Removing input.
-logical_block #201(my_mipi_rx_TYPE[2]) has no fanout.
-Removing input.
-logical_block #202(my_mipi_rx_TYPE[1]) has no fanout.
-Removing input.
-logical_block #203(my_mipi_rx_TYPE[0]) has no fanout.
-Removing input.
-logical_block #204(my_mipi_rx_VC[1]) has no fanout.
-Removing input.
-logical_block #205(my_mipi_rx_VC[0]) has no fanout.
-Removing input.
-logical_block #206(my_mipi_rx_CNT[3]) has no fanout.
-Removing input.
-logical_block #207(my_mipi_rx_CNT[2]) has no fanout.
-Removing input.
-logical_block #208(my_mipi_rx_CNT[1]) has no fanout.
-Removing input.
-logical_block #209(my_mipi_rx_CNT[0]) has no fanout.
-Removing input.
-logical_block #210(my_mipi_rx_ERROR[17]) has no fanout.
-Removing input.
-logical_block #211(my_mipi_rx_ERROR[16]) has no fanout.
-Removing input.
-logical_block #212(my_mipi_rx_ERROR[15]) has no fanout.
-Removing input.
-logical_block #213(my_mipi_rx_ERROR[14]) has no fanout.
-Removing input.
-logical_block #214(my_mipi_rx_ERROR[13]) has no fanout.
-Removing input.
-logical_block #215(my_mipi_rx_ERROR[12]) has no fanout.
-Removing input.
-logical_block #216(my_mipi_rx_ERROR[11]) has no fanout.
-Removing input.
-logical_block #217(my_mipi_rx_ERROR[10]) has no fanout.
-Removing input.
-logical_block #218(my_mipi_rx_ERROR[9]) has no fanout.
-Removing input.
-logical_block #219(my_mipi_rx_ERROR[8]) has no fanout.
-Removing input.
-logical_block #220(my_mipi_rx_ERROR[7]) has no fanout.
-Removing input.
-logical_block #221(my_mipi_rx_ERROR[6]) has no fanout.
-Removing input.
-logical_block #222(my_mipi_rx_ERROR[5]) has no fanout.
-Removing input.
-logical_block #223(my_mipi_rx_ERROR[4]) has no fanout.
-Removing input.
-logical_block #224(my_mipi_rx_ERROR[3]) has no fanout.
-Removing input.
-logical_block #225(my_mipi_rx_ERROR[2]) has no fanout.
-Removing input.
-logical_block #226(my_mipi_rx_ERROR[1]) has no fanout.
-Removing input.
-logical_block #227(my_mipi_rx_ERROR[0]) has no fanout.
-Removing input.
-logical_block #228(my_mipi_rx_ULPS_CLK) has no fanout.
-Removing input.
-logical_block #229(my_mipi_rx_ULPS[3]) has no fanout.
-Removing input.
-logical_block #230(my_mipi_rx_ULPS[2]) has no fanout.
-Removing input.
-logical_block #231(my_mipi_rx_ULPS[1]) has no fanout.
-Removing input.
-logical_block #232(my_mipi_rx_ULPS[0]) has no fanout.
-Removing input.
-logical_block #233(bscan_DRCK) has no fanout.
-Removing input.
-logical_block #234(bscan_RESET) has no fanout.
-Removing input.
-logical_block #235(bscan_TMS) has no fanout.
-Removing input.
-logical_block #236(bscan_RUNTEST) has no fanout.
-Removing input.
-logical_block #237(bscan_SEL) has no fanout.
-Removing input.
-logical_block #238(bscan_SHIFT) has no fanout.
-Removing input.
-logical_block #239(bscan_TDI) has no fanout.
-Removing input.
-logical_block #240(bscan_CAPTURE) has no fanout.
-Removing input.
-logical_block #241(bscan_TCK) has no fanout.
-Removing input.
-logical_block #242(bscan_UPDATE) has no fanout.
-Removing input.
-Pass 0: Swept away 123 blocks with no fanout.
+Pass 0: Swept away 2 blocks with no fanout.
 Pass 1: Swept away 0 nets with no fanout.
 Pass 1: Swept away 0 blocks with no fanout.
-Swept away 0 nets and 123 blocks in total.
+Swept away 0 nets and 2 blocks in total.
 Removed 0 LUT buffers.
-Sweeped away 123 nodes.
-Successfully created VPR logical netlist from Verific binary DataBase file "D:/MIPI_Loopback/mipi_loopback.vdb".
-Netlist pre-processing took 0.0269374 seconds.
+Sweeped away 2 nodes.
+Successfully created VPR logical netlist from Verific binary DataBase file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/mipi_loopback.vdb".
+Netlist pre-processing took 0.0197218 seconds.
 	Netlist pre-processing took 0.015625 seconds (approximately) in total CPU time.
-Netlist pre-processing virtual memory usage: begin = 13.812 MB, end = 14.548 MB, delta = 0.736 MB
-	Netlist pre-processing peak virtual memory usage = 78.372 MB
-Netlist pre-processing resident set memory usage: begin = 22.408 MB, end = 23.828 MB, delta = 1.42 MB
-	Netlist pre-processing peak resident set memory usage = 61.332 MB
+Netlist pre-processing virtual memory usage: begin = 12.112 MB, end = 13.344 MB, delta = 1.232 MB
+	Netlist pre-processing peak virtual memory usage = 78.456 MB
+Netlist pre-processing resident set memory usage: begin = 21.404 MB, end = 23.292 MB, delta = 1.888 MB
+	Netlist pre-processing peak resident set memory usage = 60.328 MB
 ***** Ending stage netlist pre-processing *****
 ***** Beginning stage pre-packing ... *****
 ***** Ending stage pre-packing *****
 ***** Beginning stage packing ... *****
-Generate proto netlist for file "D:/MIPI_Loopback/work_pnr\mipi_loopback.net_proto" took 0 seconds
-Creating IO constraints file 'D:/MIPI_Loopback/work_pnr\mipi_loopback.io_place'
-Packing took 0.0035936 seconds.
-	Packing took 0.015625 seconds (approximately) in total CPU time.
-Packing virtual memory usage: begin = 30.872 MB, end = 30.872 MB, delta = 0 MB
-	Packing peak virtual memory usage = 78.372 MB
-Packing resident set memory usage: begin = 40.572 MB, end = 40.808 MB, delta = 0.236 MB
-	Packing peak resident set memory usage = 61.332 MB
+Generate proto netlist for file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.net_proto" took 0.001 seconds
+Creating IO constraints file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.io_place'
+Packing took 0.0037664 seconds.
+	Packing took 0 seconds (approximately) in total CPU time.
+Packing virtual memory usage: begin = 30.64 MB, end = 30.64 MB, delta = 0 MB
+	Packing peak virtual memory usage = 78.456 MB
+Packing resident set memory usage: begin = 40.304 MB, end = 40.54 MB, delta = 0.236 MB
+	Packing peak resident set memory usage = 60.328 MB
 ***** Ending stage packing *****
 ***** Beginning stage packed netlist loading ... *****
-Read proto netlist file D:/MIPI_Loopback/work_pnr\mipi_loopback.net_proto
-Read proto netlist for file "D:/MIPI_Loopback/work_pnr\mipi_loopback.net_proto" took 0 seconds
+Read proto netlist file C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.net_proto
+Read proto netlist for file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.net_proto" took 0 seconds
 Setup net and block data structure took 0.005 seconds
-Packed netlist loading took 0.0165712 seconds.
+Packed netlist loading took 0.0164745 seconds.
 	Packed netlist loading took 0.015625 seconds (approximately) in total CPU time.
-Packed netlist loading virtual memory usage: begin = 30.872 MB, end = 32.284 MB, delta = 1.412 MB
-	Packed netlist loading peak virtual memory usage = 78.372 MB
-Packed netlist loading resident set memory usage: begin = 40.816 MB, end = 42.3 MB, delta = 1.484 MB
-	Packed netlist loading peak resident set memory usage = 81.352 MB
+Packed netlist loading virtual memory usage: begin = 30.64 MB, end = 31.9 MB, delta = 1.26 MB
+	Packed netlist loading peak virtual memory usage = 78.456 MB
+Packed netlist loading resident set memory usage: begin = 40.548 MB, end = 41.952 MB, delta = 1.404 MB
+	Packed netlist loading peak resident set memory usage = 81.004 MB
 ***** Ending stage packed netlist loading *****
 ***** Beginning stage pre-placement ... *****
 
 ***** Ending stage pre-placement *****
-WARNING(1): [SDC line 19] Clock name or regular expression (rx_vga_clk) does not correspond to any nets.
+WARNING(1): [SDC line 17] Clock name or regular expression (mipi_rx_cal_clk) does not correspond to any nets.
 If you'd like to create a virtual clock, use the '-name' keyword without providing any target clock.
 Unable to create clock due to warning found
-WARNING(2): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[3]" does not correspond to any ports.
-WARNING(3): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[2]" does not correspond to any ports.
-WARNING(4): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[1]" does not correspond to any ports.
-WARNING(5): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[0]" does not correspond to any ports.
-WARNING(6): Unable to set input delay due to warnings found
+WARNING(2): [SDC line 19] Clock name or regular expression (rx_vga_clk) does not correspond to any nets.
+If you'd like to create a virtual clock, use the '-name' keyword without providing any target clock.
+Unable to create clock due to warning found
+WARNING(3): [SDC line 20] Clock name or regular expression (rx_pixel_clk) does not correspond to any nets.
+If you'd like to create a virtual clock, use the '-name' keyword without providing any target clock.
+Unable to create clock due to warning found
+WARNING(4): [SDC line 87] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[3]" does not correspond to any ports.
+WARNING(5): [SDC line 87] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[2]" does not correspond to any ports.
+WARNING(6): [SDC line 87] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[1]" does not correspond to any ports.
+WARNING(7): [SDC line 87] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[0]" does not correspond to any ports.
+WARNING(8): Unable to set output delay due to warnings found
+Unable to set output delay due to warning found
+WARNING(9): [SDC line 88] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[3]" does not correspond to any ports.
+WARNING(10): [SDC line 88] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[2]" does not correspond to any ports.
+WARNING(11): [SDC line 88] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[1]" does not correspond to any ports.
+WARNING(12): [SDC line 88] Specified get_ports name or regular expression "my_mipi_rx_VC_ENA[0]" does not correspond to any ports.
+WARNING(13): Unable to set output delay due to warnings found
+Unable to set output delay due to warning found
+WARNING(14): [SDC line 89] Specified get_ports name or regular expression "my_mipi_rx_CLEAR" does not correspond to any ports.
+WARNING(15): Unable to set output delay due to warnings found
+Unable to set output delay due to warning found
+WARNING(16): [SDC line 90] Specified get_ports name or regular expression "my_mipi_rx_CLEAR" does not correspond to any ports.
+WARNING(17): Unable to set output delay due to warnings found
+Unable to set output delay due to warning found
+WARNING(18): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[3]" does not correspond to any ports.
+WARNING(19): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[2]" does not correspond to any ports.
+WARNING(20): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[1]" does not correspond to any ports.
+WARNING(21): [SDC line 91] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[0]" does not correspond to any ports.
+WARNING(22): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(7): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[3]" does not correspond to any ports.
-WARNING(8): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[2]" does not correspond to any ports.
-WARNING(9): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[1]" does not correspond to any ports.
-WARNING(10): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[0]" does not correspond to any ports.
-WARNING(11): Unable to set input delay due to warnings found
+WARNING(23): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[3]" does not correspond to any ports.
+WARNING(24): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[2]" does not correspond to any ports.
+WARNING(25): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[1]" does not correspond to any ports.
+WARNING(26): [SDC line 92] Specified get_ports name or regular expression "my_mipi_rx_VSYNC[0]" does not correspond to any ports.
+WARNING(27): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(12): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[3]" does not correspond to any ports.
-WARNING(13): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[2]" does not correspond to any ports.
-WARNING(14): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[1]" does not correspond to any ports.
-WARNING(15): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[0]" does not correspond to any ports.
-WARNING(16): Unable to set input delay due to warnings found
+WARNING(28): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[3]" does not correspond to any ports.
+WARNING(29): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[2]" does not correspond to any ports.
+WARNING(30): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[1]" does not correspond to any ports.
+WARNING(31): [SDC line 93] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[0]" does not correspond to any ports.
+WARNING(32): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(17): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[3]" does not correspond to any ports.
-WARNING(18): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[2]" does not correspond to any ports.
-WARNING(19): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[1]" does not correspond to any ports.
-WARNING(20): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[0]" does not correspond to any ports.
-WARNING(21): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(22): [SDC line 95] Specified get_ports name or regular expression "my_mipi_rx_VALID" does not correspond to any ports.
-WARNING(23): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(24): [SDC line 96] Specified get_ports name or regular expression "my_mipi_rx_VALID" does not correspond to any ports.
-WARNING(25): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(26): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[3]" does not correspond to any ports.
-WARNING(27): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[2]" does not correspond to any ports.
-WARNING(28): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[1]" does not correspond to any ports.
-WARNING(29): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[0]" does not correspond to any ports.
-WARNING(30): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(31): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[3]" does not correspond to any ports.
-WARNING(32): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[2]" does not correspond to any ports.
-WARNING(33): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[1]" does not correspond to any ports.
-WARNING(34): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[0]" does not correspond to any ports.
-WARNING(35): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-No ports found in design
-WARNING(36): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-No ports found in design
+WARNING(33): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[3]" does not correspond to any ports.
+WARNING(34): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[2]" does not correspond to any ports.
+WARNING(35): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[1]" does not correspond to any ports.
+WARNING(36): [SDC line 94] Specified get_ports name or regular expression "my_mipi_rx_HSYNC[0]" does not correspond to any ports.
 WARNING(37): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-No ports found in design
-WARNING(38): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-No ports found in design
+WARNING(38): [SDC line 95] Specified get_ports name or regular expression "my_mipi_rx_VALID" does not correspond to any ports.
 WARNING(39): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(40): [SDC line 103] Specified get_ports name or regular expression "my_mipi_rx_ULPS_CLK" does not correspond to any ports.
+WARNING(40): [SDC line 96] Specified get_ports name or regular expression "my_mipi_rx_VALID" does not correspond to any ports.
 WARNING(41): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(42): [SDC line 104] Specified get_ports name or regular expression "my_mipi_rx_ULPS_CLK" does not correspond to any ports.
-WARNING(43): Unable to set input delay due to warnings found
+WARNING(42): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[3]" does not correspond to any ports.
+WARNING(43): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[2]" does not correspond to any ports.
+WARNING(44): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[1]" does not correspond to any ports.
+WARNING(45): [SDC line 97] Specified get_ports name or regular expression "my_mipi_rx_CNT[0]" does not correspond to any ports.
+WARNING(46): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(44): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[3]" does not correspond to any ports.
-WARNING(45): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[2]" does not correspond to any ports.
-WARNING(46): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[1]" does not correspond to any ports.
-WARNING(47): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[0]" does not correspond to any ports.
-WARNING(48): Unable to set input delay due to warnings found
+WARNING(47): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[3]" does not correspond to any ports.
+WARNING(48): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[2]" does not correspond to any ports.
+WARNING(49): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[1]" does not correspond to any ports.
+WARNING(50): [SDC line 98] Specified get_ports name or regular expression "my_mipi_rx_CNT[0]" does not correspond to any ports.
+WARNING(51): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(49): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[3]" does not correspond to any ports.
-WARNING(50): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[2]" does not correspond to any ports.
-WARNING(51): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[1]" does not correspond to any ports.
-WARNING(52): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[0]" does not correspond to any ports.
+No ports found in design
+WARNING(52): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+No ports found in design
 WARNING(53): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(54): [SDC line 139] Specified get_ports name or regular expression "bscan_CAPTURE" does not correspond to any ports.
+No ports found in design
+WARNING(54): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+No ports found in design
 WARNING(55): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(56): [SDC line 140] Specified get_ports name or regular expression "bscan_CAPTURE" does not correspond to any ports.
+WARNING(56): [SDC line 103] Specified get_ports name or regular expression "my_mipi_rx_ULPS_CLK" does not correspond to any ports.
 WARNING(57): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(58): [SDC line 141] Specified get_ports name or regular expression "bscan_RESET" does not correspond to any ports.
+WARNING(58): [SDC line 104] Specified get_ports name or regular expression "my_mipi_rx_ULPS_CLK" does not correspond to any ports.
 WARNING(59): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(60): [SDC line 142] Specified get_ports name or regular expression "bscan_RESET" does not correspond to any ports.
-WARNING(61): Unable to set input delay due to warnings found
+WARNING(60): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[3]" does not correspond to any ports.
+WARNING(61): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[2]" does not correspond to any ports.
+WARNING(62): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[1]" does not correspond to any ports.
+WARNING(63): [SDC line 105] Specified get_ports name or regular expression "my_mipi_rx_ULPS[0]" does not correspond to any ports.
+WARNING(64): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(62): [SDC line 143] Specified get_ports name or regular expression "bscan_RUNTEST" does not correspond to any ports.
-WARNING(63): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(64): [SDC line 144] Specified get_ports name or regular expression "bscan_RUNTEST" does not correspond to any ports.
-WARNING(65): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(66): [SDC line 145] Specified get_ports name or regular expression "bscan_SEL" does not correspond to any ports.
-WARNING(67): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(68): [SDC line 146] Specified get_ports name or regular expression "bscan_SEL" does not correspond to any ports.
+WARNING(65): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[3]" does not correspond to any ports.
+WARNING(66): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[2]" does not correspond to any ports.
+WARNING(67): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[1]" does not correspond to any ports.
+WARNING(68): [SDC line 106] Specified get_ports name or regular expression "my_mipi_rx_ULPS[0]" does not correspond to any ports.
 WARNING(69): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(70): [SDC line 147] Specified get_ports name or regular expression "bscan_UPDATE" does not correspond to any ports.
-WARNING(71): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(72): [SDC line 148] Specified get_ports name or regular expression "bscan_UPDATE" does not correspond to any ports.
-WARNING(73): Unable to set input delay due to warnings found
-Unable to set input delay due to warning found
-WARNING(74): [SDC line 149] Specified get_ports name or regular expression "bscan_SHIFT" does not correspond to any ports.
+WARNING(70): [SDC line 137] Specified get_ports name or regular expression "bscan_TDO" does not correspond to any ports.
+WARNING(71): Unable to set output delay due to warnings found
+Unable to set output delay due to warning found
+WARNING(72): [SDC line 138] Specified get_ports name or regular expression "bscan_TDO" does not correspond to any ports.
+WARNING(73): Unable to set output delay due to warnings found
+Unable to set output delay due to warning found
+WARNING(74): [SDC line 139] Specified get_ports name or regular expression "bscan_CAPTURE" does not correspond to any ports.
 WARNING(75): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(76): [SDC line 150] Specified get_ports name or regular expression "bscan_SHIFT" does not correspond to any ports.
+WARNING(76): [SDC line 140] Specified get_ports name or regular expression "bscan_CAPTURE" does not correspond to any ports.
 WARNING(77): Unable to set input delay due to warnings found
 Unable to set input delay due to warning found
-WARNING(78): [SDC line 137] Output bscan_TDO is associated with an unconstrained clock bscan_TCK.
-WARNING(79): [SDC line 138] Output bscan_TDO is associated with an unconstrained clock bscan_TCK.
-WARNING(80): Ignoring output constraints that were set with invalid clock.
+WARNING(78): [SDC line 141] Specified get_ports name or regular expression "bscan_RESET" does not correspond to any ports.
+WARNING(79): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(80): [SDC line 142] Specified get_ports name or regular expression "bscan_RESET" does not correspond to any ports.
+WARNING(81): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(82): [SDC line 143] Specified get_ports name or regular expression "bscan_RUNTEST" does not correspond to any ports.
+WARNING(83): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(84): [SDC line 144] Specified get_ports name or regular expression "bscan_RUNTEST" does not correspond to any ports.
+WARNING(85): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(86): [SDC line 145] Specified get_ports name or regular expression "bscan_SEL" does not correspond to any ports.
+WARNING(87): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(88): [SDC line 146] Specified get_ports name or regular expression "bscan_SEL" does not correspond to any ports.
+WARNING(89): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(90): [SDC line 147] Specified get_ports name or regular expression "bscan_UPDATE" does not correspond to any ports.
+WARNING(91): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(92): [SDC line 148] Specified get_ports name or regular expression "bscan_UPDATE" does not correspond to any ports.
+WARNING(93): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(94): [SDC line 149] Specified get_ports name or regular expression "bscan_SHIFT" does not correspond to any ports.
+WARNING(95): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
+WARNING(96): [SDC line 150] Specified get_ports name or regular expression "bscan_SHIFT" does not correspond to any ports.
+WARNING(97): Unable to set input delay due to warnings found
+Unable to set input delay due to warning found
 
-SDC file 'D:/MIPI_Loopback/mipi_loopback.sdc' parsed successfully.
-5 clocks (including virtual clocks), 0 inputs and 182 outputs were constrained.
+SDC file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/mipi_loopback.sdc' parsed successfully.
+3 clocks (including virtual clocks), 0 inputs and 172 outputs were constrained.
 
 ***** Beginning stage initial placement ... *****
-Reading core interface constraints from 'D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv'.
-Successfully processed interface constraints file "D:/MIPI_Loopback/outflow/mipi_loopback.interface.csv".
-Writing IO placement constraints to 'D:/MIPI_Loopback/outflow\mipi_loopback.interface.io'.
+Reading core interface constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv'.
+Successfully processed interface constraints file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv".
+Writing IO placement constraints to 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow\mipi_loopback.interface.io'.
 
-Reading placement constraints from 'D:/MIPI_Loopback/outflow\mipi_loopback.interface.io'.
+Reading placement constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow\mipi_loopback.interface.io'.
 
-Reading placement constraints from 'D:/MIPI_Loopback/work_pnr\mipi_loopback.io_place'.
+Reading placement constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.io_place'.
 ***** Ending stage initial placement *****
 ***** Beginning stage placement ... *****
 NumRegions 1
@@ -451,121 +234,138 @@ Starting Global Placer ...
  ----------     -------  --------------     -------
   Iteration       WHPWL Worst Slack (ps) Convergence
  ----------     -------  --------------     -------
-          1        1383           20814         1.7%
-          2        1127           20814         2.6%
-          3        1157           21025         3.8%
-          4         997           21025         5.1%
-          5        1059           20385         7.1%
-          6         845           19889        10.1%
-          7         756           19704        14.3%
-          8         596           19641        24.7%
-          9         546           18568        39.2%
-         10         570           18518        48.6%
-         11         597           18805        55.7%
-         12         485           18356        62.6%
-         13         436           18771        66.2%
-         14         438           18215        70.7%
-         15         438           17895        70.7%
-         16         451           18528        70.7%
-         17         430           18217        70.7%
-         18         423           18738        70.7%
-         19         416           18420        71.9%
-         20         410           18314        72.6%
-         21         402           18528        72.9%
-         22         403           18124        74.5%
-         23         388           18066        75.4%
-         24         401           18066        75.4%
-         25         414           18066        76.1%
-         26         408           17780        76.2%
-         27         411           18111        79.5%
-         28         422           18275        79.5%
-         29         401           18321        79.5%
-         30         407           18321        79.5%
-         31         405           17674        79.9%
-         32         414           18053        80.4%
-         33         396           17884        82.3%
-         34         405           18111        82.3%
-         35         403           18607        82.3%
-         36         388           18111        82.3%
-         37         390           17843        83.3%
-         38         381           18131        88.5%
-         39         387           18128        91.4%
-         40         386           17691        91.4%
-         41         392           17691        93.0%
-         42         387           17481        93.0%
-         43         384           17661        93.1%
-         44         385           17736        93.8%
-         45         381           17616        95.8%
+          1        1369           20678         1.8%
+          2        1058           20889         2.7%
+          3         933           20889         4.2%
+          4         752           20889         5.3%
+          5         521           20485        10.3%
+          6         608           18939        11.7%
+          7         602           19275        13.4%
+          8         668           19495        20.3%
+          9         494           19531        25.1%
+         10         535           19730        30.0%
+         11         515           19485        35.2%
+         12         492           18927        39.8%
+         13         468           19002        45.5%
+         14         457           18745        46.0%
+         15         451           18730        50.6%
+         16         465           19288        50.6%
+         17         441           18339        52.4%
+         18         437           18743        53.9%
+         19         502           19110        53.9%
+         20         478           18669        55.1%
+         21         494           19429        56.3%
+         22         493           18680        56.7%
+         23         488           19429        56.7%
+         24         484           19429        59.0%
+         25         449           18979        59.4%
+         26         462           18678        61.3%
+         27         453           18237        63.2%
+         28         462           18678        63.2%
+         29         443           18513        63.2%
+         30         432           18513        63.4%
+         31         441           18447        65.0%
+         32         440           18072        66.6%
+         33         439           18237        66.7%
+         34         438           18628        71.0%
+         35         441           18447        71.0%
+         36         438           18780        72.0%
+         37         441           18780        72.6%
+         38         440           18339        74.2%
+         39         446           18339        74.2%
+         40         443           18339        76.0%
+         41         453           17977        76.0%
+         42         415           18334        78.1%
+         43         430           18018        78.8%
+         44         428           18018        79.4%
+         45         438           18018        80.4%
+         46         432           18018        82.2%
+         47         415           18018        82.2%
+         48         422           18018        82.7%
+         49         425           18018        83.8%
+         50         416           18018        86.5%
+         51         424           18018        86.5%
+         52         419           17989        86.5%
+         53         422           17989        86.5%
+         54         416           17980        86.5%
+         55         423           18420        86.5%
+         56         412           17985        86.5%
+         57         412           18399        87.5%
+         58         402           18396        87.6%
+         59         401           18329        92.3%
+         60         399           18332        93.4%
+         61         392           18332        94.4%
+         62         392           18399        95.2%
 Starting Annealer
 
  ----------     -------  --------------     -------
   Iteration       WHPWL  Delay Max (ps)     R Limit
  ----------     -------  --------------     -------
-          0         381            7416        30.0
-          1         592            7335        30.0
-          2         856            7334        30.0
-          3         768            7058        30.0
-          4         699            6611        30.0
-          5         720            6349        29.7
-          6         741            6315        28.8
-          7         708            6165        27.6
-          8         675            6165        26.1
-          9         610            6165        24.5
-         10         622            5991        23.1
-         11         641            5992        21.9
-         12         657            5992        20.7
-         13         628            6323        19.6
-         14         586            5890        18.6
-         15         559            5890        17.5
-         16         549            5879        16.4
-         17         526            6089        15.4
-         18         533            5874        14.4
-         19         531            5874        13.7
-         20         491            5778        12.9
-         21         493            5700        12.2
-         22         470            5813        11.4
-         23         461            5813        10.7
-         24         463            5813        10.1
-         25         461            5700         9.6
-         26         465            5700         9.1
-         27         460            5700         8.6
-         28         446            5700         8.1
-         29         464            5700         7.7
-         30         455            5700         7.2
-         31         453            5700         6.9
-         32         457            5700         6.6
-         33         440            5700         6.4
-         34         428            5700         6.2
-         35         425            5700         5.9
-         36         419            5700         5.7
-         37         409            5700         5.5
-         38         413            5885         5.3
-         39         403            5885         5.2
-         40         397            5873         5.0
-         41         386            5700         5.0
-         42         373            5745         4.8
-         43         368            5745         4.7
-         44         358            5745         4.5
-         45         359            5828         4.4
-         46         348            5700         4.3
-         47         349            5700         4.0
-Placement successful: 138 cells are placed
-Peak congestion smeared over 1/4 of the chip is 0.00762113 at 338,643
-Congestion-weighted HPWL per net: 1.13455
+          0         392            6650        30.0
+          1         504            6601        30.0
+          2         644            6436        30.0
+          3         593            6425        29.7
+          4         595            6278        28.8
+          5         614            5817        27.7
+          6         620            5817        26.5
+          7         595            5817        25.4
+          8         582            5778        24.2
+          9         561            5778        23.1
+         10         520            5735        21.9
+         11         513            5906        20.8
+         12         524            5906        19.5
+         13         505            5759        18.5
+         14         501            5759        17.5
+         15         490            5759        16.8
+         16         486            5759        15.9
+         17         496            5759        15.2
+         18         478            5759        14.5
+         19         470            5759        13.8
+         20         461            5759        13.1
+         21         461            5721        12.5
+         22         474            5721        11.9
+         23         472            5965        11.4
+         24         464            6003        11.0
+         25         456            5999        10.6
+         26         450            5999        10.2
+         27         441            5999         9.8
+         28         423            5752         9.4
+         29         410            5752         9.2
+         30         407            5734         8.9
+         31         413            5733         8.5
+         32         380            5733         8.2
+         33         348            5696         7.9
+         34         335            5697         7.6
+         35         331            5965         7.2
+         36         313            6046         6.8
+         37         314            5863         6.5
+         38         300            5911         6.2
+         39         300            5803         5.9
+         40         300            5803         5.6
+         41         294            5803         5.4
+         42         288            5803         5.2
+         43         284            5803         5.0
+         44         283            5803         4.7
+         45         269            5803         4.5
+         46         255            5803         4.4
+         47         251            5803         4.0
+Placement successful: 132 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.00603765 at 338,643
+Congestion-weighted HPWL per net: 0.945211
 
-Reading placement constraints from 'D:/MIPI_Loopback/outflow/mipi_loopback.qplace'.
+Reading placement constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.qplace'.
 [TimingCost::InitializeTimingData]
-Finished Realigning Types (47 blocks needed type change)
+Finished Realigning Types (48 blocks needed type change)
 [TimingCost::InitializeTimingData]
 
 Completed placement consistency check successfully.
 
-Placement estimated critical path delay: 5.58022 ns
-Successfully created FPGA place file 'D:/MIPI_Loopback/outflow/mipi_loopback.place'
-Placement took 14.2963 seconds.
-	Placement took 11.75 seconds (approximately) in total CPU time.
-Placement virtual memory usage: begin = 32.284 MB, end = 56.724 MB, delta = 24.44 MB
-	Placement peak virtual memory usage = 917.696 MB
-Placement resident set memory usage: begin = 42.316 MB, end = 63.596 MB, delta = 21.28 MB
-	Placement peak resident set memory usage = 905.3 MB
+Placement estimated critical path delay: 5.68299 ns
+Successfully created FPGA place file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.place'
+Placement took 16.3071 seconds.
+	Placement took 13.7812 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 31.9 MB, end = 55.572 MB, delta = 23.672 MB
+	Placement peak virtual memory usage = 916.844 MB
+Placement resident set memory usage: begin = 41.968 MB, end = 64.64 MB, delta = 22.672 MB
+	Placement peak resident set memory usage = 905.864 MB
 ***** Ending stage placement *****
