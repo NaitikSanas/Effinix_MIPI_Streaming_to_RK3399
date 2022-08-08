@@ -1,31 +1,10 @@
-/////////////////////////////////////////////////////////////////////////////
-//
-// Copyright (C) 2013-2019 Efinix Inc. All rights reserved.
-//
-// mipi_loopback_top.v
-//
-// *******************************
-// Revisions:
-// 1.0 Initial rev
-// *******************************
-/////////////////////////////////////////////////////////////////////////////
-
-
 module mipi_loopback_top (
 /* Signals of the video pattern generator */
 
 	input         tx_vga_clk,
 	input         sw4,  // change video pattern
 	input         sw5,  // bypass MIPI channels
-/* Signals of VGA display output interface */
-	    
-    /*
-	output        vga_hs,
-	output        vga_vs,
-	output [4:0]  vga_r,
-	output [5:0]  vga_g,
-	output [4:0]  vga_b,
-    */
+
 /* Flashing LEDs to indicate successful comparison of MIPI data */
 
         output        led5,
@@ -132,14 +111,12 @@ end
 
 
 
-assign pixel_data = ( y > 100 && y < (480-100) && x > 100  && x < (640-100))?64'h204f4c4c4548: 64'hFF00FFFF00FF;
+assign pixel_data = ( y > 100 && y < (480-100) && x > 100  && x < (640-100))?64'h204f4c4c4548: 64'h00FFFF00FFFF;
                     //(i[25:24]==2'b10)?64'h00ff0000ff00:
                     //(i[25:24]==2'b11)?64'h0000ff0000ff:
-                                          //  64'hFFFFFFFFFFFF;
-//assign pixel_data = {x,y};                                            
+                                          //  64'hFFFFFFFFFFFF;                                         
 assign my_mipi_tx_DPHY_RSTN = 1'b1;
 assign my_mipi_tx_RSTN = 1'b1;
-//assign my_mipi_tx_VALID = valid_h_patgen_PC;
 assign my_mipi_tx_VALID = valid_h_patgen;
 assign my_mipi_tx_HSYNC = hsync_patgen;//hsync_patgen_PC;
 assign my_mipi_tx_VSYNC = vsync_patgen;//vsync_patgen_PC;
@@ -153,12 +130,6 @@ assign my_mipi_tx_ULPS_ENTER = 4'b0000;
 assign my_mipi_tx_ULPS_EXIT = 4'b0000;
 assign my_mipi_tx_ULPS_CLK_ENTER = 1'b0;
 assign my_mipi_tx_ULPS_CLK_EXIT = 1'b0;
-
-//***************************************************************
-// Switch 5 debouncer
-//   Press sw5 to toggle between sourcing the VGA output display
-//   from MIPI Rx & directly from pattern generator (MIPI_bypass)
-//***************************************************************
 
    assign led5 = hsync_patgen;//(flash_cnt==25'b0) ? 1 : flash_cnt[24];
    assign led6 = valid_data;//vsync_patgen_PC;//(flash_cnt==25'b0) ? 1 : ~flash_cnt[24];

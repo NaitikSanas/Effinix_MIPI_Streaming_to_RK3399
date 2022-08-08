@@ -1,5 +1,5 @@
 Synthesis report for project mipi_loopback
-Generated at: Aug 08, 2022 09:56:08
+Generated at: Aug 08, 2022 10:05:35
 Copyright (C) 2013 - 2021 Efinix Inc. All rights reserved.
 
 ### ### ### ### ### ### ### ### ### ### ### ### ### ### ###
@@ -75,7 +75,7 @@ FF instance: i[25]~FF(unreachable)
 
 Module                                                               FFs        ADDs        LUTs      RAMs DSP/MULTs
 ------------------------------------------------------------         ---        ----        ----      ---- ---------
-mipi_loopback_top:mipi_loopback_top                                57(0)        0(0)      125(8)      0(0)      0(0)
+mipi_loopback_top:mipi_loopback_top                                57(0)        0(0)      121(4)      0(0)      0(0)
 +patgen:video_gen(syncPulse_h=80,backPorch_h=50,activeVid...      57(57)        0(0)    117(117)      0(0)      0(0)
 
 ### ### Module Resource Usage Distribution Estimates (end) ### ###
@@ -113,13 +113,13 @@ veri_options : verilog_mode=verilog_2k,vhdl_mode=vhdl_2008
 INPUT  PORTS    : 	4
 OUTPUT PORTS    : 	108
 
-EFX_LUT4        : 	125
+EFX_LUT4        : 	121
    1-2  Inputs  : 	30
    3    Inputs  : 	35
-   4    Inputs  : 	60
+   4    Inputs  : 	56
 EFX_FF          : 	57
 EFX_GBUFCE      : 	1
 ### ### Resource Summary (end) ### ### ###
 
 Plain synthesis (without verilog dump and post-map checks) time : 1s
-Elapsed synthesis time : 1s
+Elapsed synthesis time : 2s

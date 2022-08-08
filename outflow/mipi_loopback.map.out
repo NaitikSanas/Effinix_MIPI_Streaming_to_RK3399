@@ -27,34 +27,34 @@ C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_
 -- Restoring VHDL unit 'std.textio' from file 'C:/Efinity/2021.2/sim_models/vhdl/packages/vhdl_2008/std/textio.vdb' (VHDL-1493)
 C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\uart.vhd(28): INFO: analyzing entity 'uart' (VHDL-1012)
 C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\uart.vhd(49): INFO: analyzing architecture 'logic' (VHDL-1010)
-INFO: Analysis took 0.0264961 seconds.
-INFO: 	Analysis took 0.015625 seconds (approximately) in total CPU time.
-INFO: Analysis virtual memory usage: begin = 57.784 MB, end = 60.32 MB, delta = 2.536 MB
-INFO: 	Analysis peak virtual memory usage = 109.108 MB
-INFO: Analysis resident set memory usage: begin = 58.196 MB, end = 63.94 MB, delta = 5.744 MB
-INFO: 	Analysis peak resident set memory usage = 63.94 MB
+INFO: Analysis took 0.0261821 seconds.
+INFO: 	Analysis took 0.03125 seconds (approximately) in total CPU time.
+INFO: Analysis virtual memory usage: begin = 57.768 MB, end = 60.304 MB, delta = 2.536 MB
+INFO: 	Analysis peak virtual memory usage = 109.124 MB
+INFO: Analysis resident set memory usage: begin = 58.192 MB, end = 63.936 MB, delta = 5.744 MB
+INFO: 	Analysis peak resident set memory usage = 63.936 MB
 INFO: ***** Ending Analysis ... *****
 INFO: ***** Beginning Elaboration ... *****
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(14): INFO: compiling module 'mipi_loopback_top' (VERI-1018)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(1): INFO: compiling module 'mipi_loopback_top' (VERI-1018)
 C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(2): INFO: compiling module 'video_gen(syncPulse_h=80,backPorch_h=50,activeVideo_h=640,frontPorch_h=50,syncPulse_v=80,backPorch_v=5,activeVideo_v=480,frontPorch_v=5)' (VERI-1018)
 C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(143): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
 C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(149): WARNING: expression size 32 truncated to fit in target size 10 (VERI-1209)
 C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(182): WARNING: expression size 16 truncated to fit in target size 8 (VERI-1209)
 C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v(179): WARNING: net 'buffer1[23]' does not have a driver (VDB-1002)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(105): WARNING: actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(112): WARNING: actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(113): WARNING: actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(114): WARNING: actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(130): WARNING: expression size 27 truncated to fit in target size 26 (VERI-1209)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(146): WARNING: expression size 65 truncated to fit in target size 64 (VERI-1209)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(83): WARNING: net 'video_pattern[1]' does not have a driver (VDB-1002)
-C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(124): WARNING: net 'valid_data' does not have a driver (VDB-1002)
-INFO: Elaboration took 0.0104652 seconds.
-INFO: 	Elaboration took 0.015625 seconds (approximately) in total CPU time.
-INFO: Elaboration virtual memory usage: begin = 60.32 MB, end = 61.476 MB, delta = 1.156 MB
-INFO: 	Elaboration peak virtual memory usage = 109.108 MB
-INFO: Elaboration resident set memory usage: begin = 63.948 MB, end = 66.04 MB, delta = 2.092 MB
-INFO: 	Elaboration peak resident set memory usage = 66.04 MB
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(84): WARNING: actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(91): WARNING: actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(92): WARNING: actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(93): WARNING: actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(109): WARNING: expression size 27 truncated to fit in target size 26 (VERI-1209)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(123): WARNING: expression size 65 truncated to fit in target size 64 (VERI-1209)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(62): WARNING: net 'video_pattern[1]' does not have a driver (VDB-1002)
+C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v(103): WARNING: net 'valid_data' does not have a driver (VDB-1002)
+INFO: Elaboration took 0.0094637 seconds.
+INFO: 	Elaboration took 0 seconds (approximately) in total CPU time.
+INFO: Elaboration virtual memory usage: begin = 60.304 MB, end = 61.464 MB, delta = 1.16 MB
+INFO: 	Elaboration peak virtual memory usage = 109.124 MB
+INFO: Elaboration resident set memory usage: begin = 63.944 MB, end = 66.036 MB, delta = 2.092 MB
+INFO: 	Elaboration peak resident set memory usage = 66.036 MB
 INFO: ***** Ending Elaboration ... *****
 [EFX-0000 INFO] Setting Synthesis Option: mode=speed
 INFO: ***** Beginning Reading Mapping Library ... *****
@@ -79,12 +79,12 @@ C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(601): INFO: compiling module
 C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(693): INFO: compiling module 'EFX_RAM10' (VERI-1018)
 C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(794): INFO: compiling module 'EFX_DPRAM10' (VERI-1018)
 C:/Efinity/2021.2/sim_models/maplib/efinix_maplib.v(924): INFO: compiling module 'EFX_SRL8' (VERI-1018)
-INFO: Reading Mapping Library took 0.0132044 seconds.
+INFO: Reading Mapping Library took 0.0127684 seconds.
 INFO: 	Reading Mapping Library took 0.015625 seconds (approximately) in total CPU time.
-INFO: Reading Mapping Library virtual memory usage: begin = 61.96 MB, end = 61.96 MB, delta = 0 MB
-INFO: 	Reading Mapping Library peak virtual memory usage = 109.108 MB
-INFO: Reading Mapping Library resident set memory usage: begin = 66.648 MB, end = 66.672 MB, delta = 0.024 MB
-INFO: 	Reading Mapping Library peak resident set memory usage = 66.672 MB
+INFO: Reading Mapping Library virtual memory usage: begin = 61.944 MB, end = 61.944 MB, delta = 0 MB
+INFO: 	Reading Mapping Library peak virtual memory usage = 109.124 MB
+INFO: Reading Mapping Library resident set memory usage: begin = 66.64 MB, end = 66.66 MB, delta = 0.02 MB
+INFO: 	Reading Mapping Library peak resident set memory usage = 66.66 MB
 INFO: ***** Ending Reading Mapping Library ... *****
 [EFX-0000 INFO] ... Pre-synthesis checks begin
 [EFX-0000 INFO] ... Pre-synthesis checks end (Real time : 0s)
@@ -143,10 +143,10 @@ INFO: ***** Ending Reading Mapping Library ... *****
 [EFX-0000 INFO] ... SOP modeling begin
 [EFX-0000 INFO] ... SOP modeling end (Real time : 0s)
 [EFX-0000 INFO] ... LUT mapping begin
-[EFX-0000 INFO] ... LS, strategy: 3, nd: 166, ed: 532, lv: 5, pw: 263.31
-[EFX-0000 INFO] ... LUT mapping end (Real time : 1s)
+[EFX-0000 INFO] ... LS, strategy: 3, nd: 162, ed: 516, lv: 5, pw: 253.59
+[EFX-0000 INFO] ... LUT mapping end (Real time : 0s)
 [EFX-0000 INFO] ... Post-synthesis Verific netlist creation begin
-[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 0s)
+[EFX-0000 INFO] ... Post-synthesis Verific netlist creation end (Real time : 1s)
 [EFX-0000 INFO] ... Postmap Retiming Optimization begin
 [EFX-0000 INFO] ... Clock Network n3 with 83 loads will be considered for retiming optimization.
 [EFX-0000 INFO] ... Performed 0 retime moves.
@@ -158,17 +158,17 @@ WARNING: Input/Inout Port sw4 is unconnected and will be removed
 WARNING: Input/Inout Port sw5 is unconnected and will be removed
 WARNING: Input/Inout Port tx_pixel_clk is unconnected and will be removed
 INFO: Found 3 warnings in the post-synthesis netlist.
-INFO: VDB Netlist Checker took 0.0007731 seconds.
+INFO: VDB Netlist Checker took 0.0010599 seconds.
 INFO: 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
-INFO: VDB Netlist Checker virtual memory usage: begin = 75.168 MB, end = 75.168 MB, delta = 0 MB
-INFO: 	VDB Netlist Checker peak virtual memory usage = 109.108 MB
-INFO: VDB Netlist Checker resident set memory usage: begin = 81.648 MB, end = 81.692 MB, delta = 0.044 MB
-INFO: 	VDB Netlist Checker peak resident set memory usage = 101.128 MB
+INFO: VDB Netlist Checker virtual memory usage: begin = 76.132 MB, end = 76.132 MB, delta = 0 MB
+INFO: 	VDB Netlist Checker peak virtual memory usage = 109.124 MB
+INFO: VDB Netlist Checker resident set memory usage: begin = 82.644 MB, end = 82.688 MB, delta = 0.044 MB
+INFO: 	VDB Netlist Checker peak resident set memory usage = 102.012 MB
 INFO: ***** Ending VDB Netlist Checker ... *****
 -- Writing netlist 'mipi_loopback_top' to Verilog file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.map.v' (VDB-1030)
 [EFX-0000 INFO] Resource Summary 
 [EFX-0000 INFO] =============================== 
-[EFX-0000 INFO] EFX_LUT4        : 	125
+[EFX-0000 INFO] EFX_LUT4        : 	121
 [EFX-0000 INFO] EFX_FF          : 	57
 [EFX-0000 INFO] EFX_GBUFCE      : 	1
 [EFX-0000 INFO] =============================== 

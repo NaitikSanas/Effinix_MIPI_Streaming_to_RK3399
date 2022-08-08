@@ -28479,3 +28479,60 @@
 [EFX-0011 VERI-WARNING] Input/Inout Port sw4 is unconnected and will be removed 
 [EFX-0011 VERI-WARNING] Input/Inout Port sw5 is unconnected and will be removed 
 [EFX-0011 VERI-WARNING] Input/Inout Port tx_pixel_clk is unconnected and will be removed 
+
+///////////////////////////////////
+// Efinity Synthesis Started 
+// Aug 08, 2022 10:05:34
+///////////////////////////////////
+
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_vsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:44)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:45)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'video_hsync_o_2' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:46)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'red_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:135)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'green_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:136)
+[EFX-0011 VERI-WARNING] redeclaration of ANSI port 'blue_o' is not allowed (VERI-1372) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:137)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:143)
+[EFX-0011 VERI-WARNING] expression size 32 truncated to fit in target size 10 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:149)
+[EFX-0011 VERI-WARNING] expression size 16 truncated to fit in target size 8 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:182)
+[EFX-0011 VERI-WARNING] net 'buffer1[23]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] actual bit length 4 differs from formal bit length 2 for port 'video_pattern' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:84)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'red_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:91)
+[EFX-0011 VERI-WARNING] actual bit length 6 differs from formal bit length 8 for port 'green_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:92)
+[EFX-0011 VERI-WARNING] actual bit length 5 differs from formal bit length 8 for port 'blue_o' (VERI-1330) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:93)
+[EFX-0011 VERI-WARNING] expression size 27 truncated to fit in target size 26 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:109)
+[EFX-0011 VERI-WARNING] expression size 65 truncated to fit in target size 64 (VERI-1209) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:123)
+[EFX-0011 VERI-WARNING] net 'video_pattern[1]' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:62)
+[EFX-0011 VERI-WARNING] net 'valid_data' does not have a driver (VDB-1002) (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\mipi_loopback_top.v:103)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[1]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_pattern[0]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:5)
+[EFX-0200 WARNING] Removing redundant signal : video_vsync. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : video_valid_v. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:42)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[63]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[62]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[61]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[60]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[59]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[58]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[57]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[56]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[55]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[54]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[53]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[52]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[51]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[50]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[49]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0200 WARNING] Removing redundant signal : buffer1[48]. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[23]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[22]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[21]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[20]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[19]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[18]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[17]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[16]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[15]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0201 WARNING] Re-wiring to GND non-driven net 'buffer1[14]'. (C:/Users\sanas\OneDrive\Documents\GitHub\Effinix_MIPI_Streaming_to_RK3399\video_gen.v:179)
+[EFX-0011 VERI-WARNING] Input/Inout Port sw4 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port sw5 is unconnected and will be removed 
+[EFX-0011 VERI-WARNING] Input/Inout Port tx_pixel_clk is unconnected and will be removed 

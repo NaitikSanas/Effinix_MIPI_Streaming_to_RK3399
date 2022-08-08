@@ -15,12 +15,12 @@ Running Placement and Routing for Family "Trion", Device "T85F324" ...
 ***** Beginning stage netlist pre-processing ... *****
 Successfully Read in Verific binary Netlist dump file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/mipi_loopback.vdb".
 ***** Beginning VDB Netlist Checker ... *****
-VDB Netlist Checker took 0.0021863 seconds.
+VDB Netlist Checker took 0.0020332 seconds.
 	VDB Netlist Checker took 0 seconds (approximately) in total CPU time.
-VDB Netlist Checker virtual memory usage: begin = 12.592 MB, end = 12.592 MB, delta = 0 MB
-	VDB Netlist Checker peak virtual memory usage = 78.456 MB
-VDB Netlist Checker resident set memory usage: begin = 21.916 MB, end = 22.124 MB, delta = 0.208 MB
-	VDB Netlist Checker peak resident set memory usage = 60.328 MB
+VDB Netlist Checker virtual memory usage: begin = 12.568 MB, end = 12.568 MB, delta = 0 MB
+	VDB Netlist Checker peak virtual memory usage = 78.444 MB
+VDB Netlist Checker resident set memory usage: begin = 21.892 MB, end = 22.104 MB, delta = 0.212 MB
+	VDB Netlist Checker peak resident set memory usage = 60.312 MB
 ***** Ending VDB Netlist Checker ... *****
 Reading core interface constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv'.
 Successfully processed interface constraints file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.interface.csv".
@@ -40,35 +40,35 @@ Swept away 0 nets and 2 blocks in total.
 Removed 0 LUT buffers.
 Sweeped away 2 nodes.
 Successfully created VPR logical netlist from Verific binary DataBase file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/mipi_loopback.vdb".
-Netlist pre-processing took 0.0197218 seconds.
+Netlist pre-processing took 0.0185607 seconds.
 	Netlist pre-processing took 0.015625 seconds (approximately) in total CPU time.
-Netlist pre-processing virtual memory usage: begin = 12.112 MB, end = 13.344 MB, delta = 1.232 MB
-	Netlist pre-processing peak virtual memory usage = 78.456 MB
-Netlist pre-processing resident set memory usage: begin = 21.404 MB, end = 23.292 MB, delta = 1.888 MB
-	Netlist pre-processing peak resident set memory usage = 60.328 MB
+Netlist pre-processing virtual memory usage: begin = 12.088 MB, end = 13.32 MB, delta = 1.232 MB
+	Netlist pre-processing peak virtual memory usage = 78.444 MB
+Netlist pre-processing resident set memory usage: begin = 21.388 MB, end = 23.264 MB, delta = 1.876 MB
+	Netlist pre-processing peak resident set memory usage = 60.312 MB
 ***** Ending stage netlist pre-processing *****
 ***** Beginning stage pre-packing ... *****
 ***** Ending stage pre-packing *****
 ***** Beginning stage packing ... *****
 Generate proto netlist for file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.net_proto" took 0.001 seconds
 Creating IO constraints file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.io_place'
-Packing took 0.0037664 seconds.
+Packing took 0.003751 seconds.
 	Packing took 0 seconds (approximately) in total CPU time.
-Packing virtual memory usage: begin = 30.64 MB, end = 30.64 MB, delta = 0 MB
-	Packing peak virtual memory usage = 78.456 MB
-Packing resident set memory usage: begin = 40.304 MB, end = 40.54 MB, delta = 0.236 MB
-	Packing peak resident set memory usage = 60.328 MB
+Packing virtual memory usage: begin = 30.584 MB, end = 30.584 MB, delta = 0 MB
+	Packing peak virtual memory usage = 78.444 MB
+Packing resident set memory usage: begin = 40.316 MB, end = 40.556 MB, delta = 0.24 MB
+	Packing peak resident set memory usage = 60.312 MB
 ***** Ending stage packing *****
 ***** Beginning stage packed netlist loading ... *****
 Read proto netlist file C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.net_proto
 Read proto netlist for file "C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/work_pnr\mipi_loopback.net_proto" took 0 seconds
 Setup net and block data structure took 0.005 seconds
-Packed netlist loading took 0.0164745 seconds.
+Packed netlist loading took 0.0148561 seconds.
 	Packed netlist loading took 0.015625 seconds (approximately) in total CPU time.
-Packed netlist loading virtual memory usage: begin = 30.64 MB, end = 31.9 MB, delta = 1.26 MB
-	Packed netlist loading peak virtual memory usage = 78.456 MB
-Packed netlist loading resident set memory usage: begin = 40.548 MB, end = 41.952 MB, delta = 1.404 MB
-	Packed netlist loading peak resident set memory usage = 81.004 MB
+Packed netlist loading virtual memory usage: begin = 30.584 MB, end = 31.84 MB, delta = 1.256 MB
+	Packed netlist loading peak virtual memory usage = 78.444 MB
+Packed netlist loading resident set memory usage: begin = 40.564 MB, end = 41.904 MB, delta = 1.34 MB
+	Packed netlist loading peak resident set memory usage = 80.956 MB
 ***** Ending stage packed netlist loading *****
 ***** Beginning stage pre-placement ... *****
 
@@ -234,138 +234,125 @@ Starting Global Placer ...
  ----------     -------  --------------     -------
   Iteration       WHPWL Worst Slack (ps) Convergence
  ----------     -------  --------------     -------
-          1        1369           20678         1.8%
-          2        1058           20889         2.7%
-          3         933           20889         4.2%
-          4         752           20889         5.3%
-          5         521           20485        10.3%
-          6         608           18939        11.7%
-          7         602           19275        13.4%
-          8         668           19495        20.3%
-          9         494           19531        25.1%
-         10         535           19730        30.0%
-         11         515           19485        35.2%
-         12         492           18927        39.8%
-         13         468           19002        45.5%
-         14         457           18745        46.0%
-         15         451           18730        50.6%
-         16         465           19288        50.6%
-         17         441           18339        52.4%
-         18         437           18743        53.9%
-         19         502           19110        53.9%
-         20         478           18669        55.1%
-         21         494           19429        56.3%
-         22         493           18680        56.7%
-         23         488           19429        56.7%
-         24         484           19429        59.0%
-         25         449           18979        59.4%
-         26         462           18678        61.3%
-         27         453           18237        63.2%
-         28         462           18678        63.2%
-         29         443           18513        63.2%
-         30         432           18513        63.4%
-         31         441           18447        65.0%
-         32         440           18072        66.6%
-         33         439           18237        66.7%
-         34         438           18628        71.0%
-         35         441           18447        71.0%
-         36         438           18780        72.0%
-         37         441           18780        72.6%
-         38         440           18339        74.2%
-         39         446           18339        74.2%
-         40         443           18339        76.0%
-         41         453           17977        76.0%
-         42         415           18334        78.1%
-         43         430           18018        78.8%
-         44         428           18018        79.4%
-         45         438           18018        80.4%
-         46         432           18018        82.2%
-         47         415           18018        82.2%
-         48         422           18018        82.7%
-         49         425           18018        83.8%
-         50         416           18018        86.5%
-         51         424           18018        86.5%
-         52         419           17989        86.5%
-         53         422           17989        86.5%
-         54         416           17980        86.5%
-         55         423           18420        86.5%
-         56         412           17985        86.5%
-         57         412           18399        87.5%
-         58         402           18396        87.6%
-         59         401           18329        92.3%
-         60         399           18332        93.4%
-         61         392           18332        94.4%
-         62         392           18399        95.2%
+          1        1140           20922         1.6%
+          2        1056           20922         2.1%
+          3         951           21259         3.0%
+          4         908           21259         4.0%
+          5         692           20451         7.6%
+          6         678           20078        11.2%
+          7         585           19442        14.3%
+          8         542           19845        24.9%
+          9         627           19446        27.1%
+         10         610           19085        34.1%
+         11         547           19541        42.1%
+         12         553           18927        47.1%
+         13         567           18927        55.8%
+         14         497           18459        55.8%
+         15         509           18979        56.4%
+         16         494           18889        58.7%
+         17         474           18539        60.3%
+         18         517           18536        63.2%
+         19         532           18539        63.2%
+         20         515           18827        63.8%
+         21         507           18247        65.1%
+         22         515           18247        67.4%
+         23         501           18826        67.7%
+         24         500           18183        68.7%
+         25         502           18930        70.0%
+         26         511           17821        70.8%
+         27         514           18662        72.1%
+         28         524           17456        72.3%
+         29         536           18322        72.7%
+         30         478           18082        72.7%
+         31         472           18360        73.2%
+         32         471           18498        76.4%
+         33         479           17712        79.6%
+         34         461           17715        79.6%
+         35         464           17864        79.6%
+         36         487           17864        80.0%
+         37         455           18291        80.0%
+         38         456           17964        81.1%
+         39         480           17935        81.1%
+         40         509           18317        81.4%
+         41         458           18317        81.4%
+         42         478           18317        83.0%
+         43         500           18044        83.0%
+         44         489           17888        85.4%
+         45         475           17888        85.4%
+         46         524           17535        85.9%
+         47         559           17944        85.9%
+         48         594           17973        85.9%
+         49         593           18153        86.3%
 Starting Annealer
 
  ----------     -------  --------------     -------
   Iteration       WHPWL  Delay Max (ps)     R Limit
  ----------     -------  --------------     -------
-          0         392            6650        30.0
-          1         504            6601        30.0
-          2         644            6436        30.0
-          3         593            6425        29.7
-          4         595            6278        28.8
-          5         614            5817        27.7
-          6         620            5817        26.5
-          7         595            5817        25.4
-          8         582            5778        24.2
-          9         561            5778        23.1
-         10         520            5735        21.9
-         11         513            5906        20.8
-         12         524            5906        19.5
-         13         505            5759        18.5
-         14         501            5759        17.5
-         15         490            5759        16.8
-         16         486            5759        15.9
-         17         496            5759        15.2
-         18         478            5759        14.5
-         19         470            5759        13.8
-         20         461            5759        13.1
-         21         461            5721        12.5
-         22         474            5721        11.9
-         23         472            5965        11.4
-         24         464            6003        11.0
-         25         456            5999        10.6
-         26         450            5999        10.2
-         27         441            5999         9.8
-         28         423            5752         9.4
-         29         410            5752         9.2
-         30         407            5734         8.9
-         31         413            5733         8.5
-         32         380            5733         8.2
-         33         348            5696         7.9
-         34         335            5697         7.6
-         35         331            5965         7.2
-         36         313            6046         6.8
-         37         314            5863         6.5
-         38         300            5911         6.2
-         39         300            5803         5.9
-         40         300            5803         5.6
-         41         294            5803         5.4
-         42         288            5803         5.2
-         43         284            5803         5.0
-         44         283            5803         4.7
-         45         269            5803         4.5
-         46         255            5803         4.4
-         47         251            5803         4.0
-Placement successful: 132 cells are placed
-Peak congestion smeared over 1/4 of the chip is 0.00603765 at 338,643
-Congestion-weighted HPWL per net: 0.945211
+          0         455            7487        30.0
+          1         507            7230        30.0
+          2         752            7376        30.0
+          3         720            6189        30.0
+          4         691            6097        30.0
+          5         669            6080        29.2
+          6         713            5778        27.9
+          7         716            5756        26.8
+          8         696            5756        25.3
+          9         686            5697        23.9
+         10         665            5874        22.2
+         11         655            6167        20.8
+         12         628            5871        19.4
+         13         622            5871        18.0
+         14         605            5700        16.7
+         15         598            5700        15.6
+         16         590            5700        14.5
+         17         566            5664        13.5
+         18         542            5664        12.6
+         19         531            5664        11.7
+         20         517            5663        10.9
+         21         498            5662        10.3
+         22         507            5662         9.7
+         23         497            5662         9.1
+         24         500            5661         8.5
+         25         499            5661         8.0
+         26         490            5661         7.5
+         27         484            5661         7.1
+         28         469            5661         6.8
+         29         469            5663         6.4
+         30         467            5663         6.1
+         31         458            5663         5.8
+         32         453            5678         5.6
+         33         453            5662         5.3
+         34         454            5662         5.1
+         35         443            5662         5.0
+         36         452            5906         4.8
+         37         447            5700         4.6
+         38         441            5662         4.6
+         39         438            5663         4.4
+         40         426            5662         4.3
+         41         427            5662         4.2
+         42         424            5662         4.1
+         43         420            5663         4.0
+         44         418            5662         3.9
+         45         414            5869         3.8
+         46         406            5662         3.6
+         47         403            5662         3.3
+Placement successful: 128 cells are placed
+Peak congestion smeared over 1/4 of the chip is 0.0117582 at 338,643
+Congestion-weighted HPWL per net: 1.63442
 
 Reading placement constraints from 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.qplace'.
 [TimingCost::InitializeTimingData]
-Finished Realigning Types (48 blocks needed type change)
+Finished Realigning Types (49 blocks needed type change)
 [TimingCost::InitializeTimingData]
 
 Completed placement consistency check successfully.
 
-Placement estimated critical path delay: 5.68299 ns
+Placement estimated critical path delay: 5.54206 ns
 Successfully created FPGA place file 'C:/Users/sanas/OneDrive/Documents/GitHub/Effinix_MIPI_Streaming_to_RK3399/outflow/mipi_loopback.place'
-Placement took 16.3071 seconds.
-	Placement took 13.7812 seconds (approximately) in total CPU time.
-Placement virtual memory usage: begin = 31.9 MB, end = 55.572 MB, delta = 23.672 MB
-	Placement peak virtual memory usage = 916.844 MB
-Placement resident set memory usage: begin = 41.968 MB, end = 64.64 MB, delta = 22.672 MB
-	Placement peak resident set memory usage = 905.864 MB
+Placement took 14.822 seconds.
+	Placement took 12.5 seconds (approximately) in total CPU time.
+Placement virtual memory usage: begin = 31.84 MB, end = 56.42 MB, delta = 24.58 MB
+	Placement peak virtual memory usage = 917.776 MB
+Placement resident set memory usage: begin = 41.92 MB, end = 65.116 MB, delta = 23.196 MB
+	Placement peak resident set memory usage = 905.452 MB
 ***** Ending stage placement *****
